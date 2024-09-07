@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* Todo: add hover animation time on nav items */
 
 * {
   font-family: Poppins, sans-serif;
