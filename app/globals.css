@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 /* Todo: add hover animation time on nav items */
-
 * {
-  font-family: Poppins, sans-serif;
-} 
+  transition: all 0.3s;
+}
+
 
 @layer utilities {
   .text-balance {

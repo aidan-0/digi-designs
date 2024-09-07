@@ -3,12 +3,13 @@ import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import Navbar from "@/components/Navbar";
 import { Poppins, Space_Grotesk } from "next/font/google";
+import { ModeToggle } from "@/components/ModeToggle";
 
-const poppins = Poppins({
-	subsets: ["latin"],
-	variable: "--font-poppins",
-	weight: ["300", "400", "500", "600", "700"],
-});
+// const poppins = Poppins({
+// 	subsets: ["latin"],
+// 	variable: "--font-poppins",
+// 	weight: ["300", "400", "500", "600", "700"],
+// });
 const space_grotesk = Space_Grotesk({ subsets: ["latin"] });
 
 
@@ -25,16 +26,16 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${poppins.variable} ${space_grotesk.className} antialiased`}>
-				{/* <ThemeProvider
+			<body className={`${space_grotesk.className} antialiased`}>
+				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
 					enableSystem
 					// disableTransitionOnChange
-				> */}
-					{/* <Navbar /> */}
+				>
+					<ModeToggle /> {/* causes nav bar to move atm */}
 					{children}
-				{/* </ThemeProvider> */}
+				</ThemeProvider>
 			</body>
 		</html>
 	);
