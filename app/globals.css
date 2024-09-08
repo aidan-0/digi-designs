@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 /* Todo: add hover animation time on nav items */
-* {
-  transition: all 0.3s;
-}
+
 
 
 @layer utilities {
