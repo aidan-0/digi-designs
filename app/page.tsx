@@ -18,15 +18,15 @@ export default function Home() {
 				{/* Nav Bar */}
 				<Element
 					name="top"
-					className="overflow-hidden shadow rounded-[6px] top-5 sticky md:mx-auto z-50 xl:w-4/5 2xl:w-[68%] bg-dd-light dark:bg-card flex items-center justify-between py-6 px-4 md:px-8 mx-6"
+					className="overflow-hidden shadow rounded-[6px] top-5 sticky md:mx-auto z-50 xl:w-4/5 2xl:w-[68%] bg-dd-light dark:bg-card flex items-center justify-between py-6 px-4 md:px-8 "
 				>
 					<Link href="/">
 						<Image
-							src="/webp-logos/Digi_Designs_Logo_Blue_Long.webp"
+							src="/webp-logos/Digi_Designs_Logo_Blue.webp"
 							alt="Digi Logo"
-							width={1000}
-							height={1000}
-							className="w-56"
+							width={128}
+							height={128}
+							className="w-28"
 						/>
 					</Link>
 
@@ -64,7 +64,7 @@ export default function Home() {
 
 					<Link
 						href="mailto:hello@digidesigns.com.au"
-						className="px-5 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
+						className="px-4 sm:px-5 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
 					>
 						Contact Us
 					</Link>
@@ -72,8 +72,10 @@ export default function Home() {
 
 				{/* Main Section */}
 				<main className="md:pb-10">
-					<div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20">
-						<h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
+					<div className="px-4 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20">
+					{/* Hero and CTA - START */}
+						<h1 className="text-4xl md:text-5xl lg:text-6xl mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
+							<div className="flex justify-center">
 							<FadeText
 								className="text-dd-dark dark:text-dd-light"
 								direction="right"
@@ -82,7 +84,6 @@ export default function Home() {
 								}}
 								text="We make"
 							/>
-							<div className="flex justify-center">
 								<FadeText
 									className=" text-dd-light-blue px-2"
 									direction="up"
@@ -91,6 +92,7 @@ export default function Home() {
 									}}
 									text="damn"
 								/>
+									</div>
 								<FadeText
 									className="text-dd-dark dark:text-dd-light"
 									direction="left"
@@ -99,30 +101,30 @@ export default function Home() {
 									}}
 									text="good websites."
 								/>
-							</div>
 						</h1>
 
 						<p className="md:text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-600">
 							Change to CTASOur mission is simple; make you a damn
 							good website.
 						</p>
-						<div className="flex md:justify-center items-center gap-x-4">
+						<div className="flex justify-center items-center gap-4">
 							<Link
 								href="mailto:hello@digidesigns.com.au"
-								className="px-12 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
+								className="px-4 sm:px-12 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
 							>
-								Book a Call
+								Get in Touch
 							</Link>
 							<Link
 								href="mailto:hello@digidesigns.com.au"
-								className="px-12 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
+								className="px-4 sm:px-12 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
 							>
 								Showcase
 							</Link>
 						</div>
+						{/* Hero and CTA - END */}
 
-						{/* Box reveal */}
-						<div className="grid grid-cols-3 md:grid-cols-3 gap-4 items-center text-left md:justify-items-center md:mx-auto mt-10 md:mt-16 md:w-4/5">
+						{/* Box Reveal - START*/}
+						<div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 items-center text-left sm:justify-items-center md:mx-auto mt-10 md:mt-16 md:w-4/5 ">
 							<BoxReveal boxColor={"#4e9edd"} duration={0.5}>
 								<p className="md:text-xl font-semibold flex gap-2 md:gap-x-4 items-center">
 									<CheckIcon className="text-dd-light-blue text-xl" />
@@ -142,7 +144,9 @@ export default function Home() {
 								</p>
 							</BoxReveal>
 						</div>
+						{/* Box Reveal - END */}
 
+						{/* Trusted By - START */}
 						<div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
 							<div className="md:w-2/5">
 								<h1 className="text-2xl font-medium text-gray-600 w-4/5">
@@ -195,7 +199,7 @@ export default function Home() {
 										{
 											logo: "/client-logos/Ironstate-Capital-Partners-logo.webp",
 											name: "Logo",
-											url: "https://ironstate.com",
+											url: "https://ironstate.com.au",
 										},
 										{
 											logo: "/client-logos/white-round-richards-muscle-lab-no-background.webp",
@@ -206,9 +210,11 @@ export default function Home() {
 								/>
 							</section>
 						</div>
+						{/* Trusted By - END */}
 					</div>
 				</main>
 			</div>
 		</>
 	);
 }
+ 
