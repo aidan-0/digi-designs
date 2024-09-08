@@ -1,11 +1,13 @@
 "use client";
 
+import { WordPullUpDemo } from "@/components/demos/word-pull-up-demo";
 import { CheckIcon } from "@/components/icons/check-icon";
 import BoxReveal from "@/components/magicui/box-reveal";
 import { FadeText } from "@/components/magicui/fade-text";
 import NumberTicker from "@/components/magicui/number-ticker";
 import { Button } from "@/components/ui/button";
 import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
+import { services } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import { Link as ScrollLink, Element } from "react-scroll";
@@ -213,10 +215,10 @@ export default function Home() {
 						{/* Trusted By - END */}
 
 						<Element name="services">
-							<div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto ">
-								<h1>
+							<div className="md:px-0 mx-6 md:mx-auto ">
+								<h2>
 									<WordPullUpDemo />
-								</h1>
+								</h2>
 								<p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
 									All of our services are designed to help
 									your business stand out
@@ -226,18 +228,18 @@ export default function Home() {
 									{services.map((service) => (
 										<div
 											key={service.title}
-											className="flex flex-col justify-between h-full space-y-4 text-center bg-gray-100 p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
+											className="flex flex-col justify-between h-full space-y-4 text-center bg-card p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
 										>
 											<Image
 												src={service.icon}
-												width={10000}
-												height={10000}
-												className="object-contain bg-gray-100 p-4 w-full h-40 rounded-md"
+												width={400}
+												height={400}
+												className="object-contain w-full h-48 rounded-md"
 												alt="image"
 											/>
-											<h1 className="text-xl font-medium">
+											<h5 className="text-xl font-medium">
 												{service.title}
-											</h1>
+											</h5>
 											<p className="text-gray-500">
 												{service.description}
 											</p>
