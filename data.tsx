@@ -12,15 +12,15 @@ export const services = [
 			"Tailor-made software solutions that streamline operations and fulfill your unique business requirements.",
 	},
 	{
-		icon: "/service-images/svgs/html.svg",
-		title: "Custom Software Development",
-		description: "Bespoke creation of software to meet your business needs",
-	},
-	{
 		icon: "/service-images/svgs/security.svg",
 		title: "Security & Maintenance",
 		description:
 			"Protect your website with security solutions and regular maintenance to ensure peak performance.",
+	},	
+    {
+		icon: "/service-images/svgs/html.svg",
+		title: "Custom Software Development",
+		description: "Bespoke creation of software to meet your business needs.",
 	},
 	{
 		icon: "/service-images/svgs/integration.svg",
@@ -28,7 +28,6 @@ export const services = [
 		description:
 			"Architect scalable solutions and integrate platforms seamlessly to optimize your business workflows.",
 	},
-
 	{
 		icon: "/service-images/svgs/guaranteed-up-time.svg",
 		title: "Guaranteed Up Time",

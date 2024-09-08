@@ -1,5 +1,6 @@
 "use client";
 
+import { ScrollBasedVelocityDemo } from "@/components/demos/scroll-based-velocity-demo";
 import { WordPullUpDemo } from "@/components/demos/word-pull-up-demo";
 import { CheckIcon } from "@/components/icons/check-icon";
 import BoxReveal from "@/components/magicui/box-reveal";
@@ -118,7 +119,7 @@ export default function Home() {
 							</Link>
 							<Link
 								href="mailto:hello@digidesigns.com.au"
-								className="px-4 sm:px-12 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
+								className="px-4 sm:px-12 py-2 font-semibold hover:bg-dd-dark hover:text-dd-light rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)] dark:hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)]"
 							>
 								Showcase
 							</Link>
@@ -151,29 +152,29 @@ export default function Home() {
 						{/* Trusted By - START */}
 						<div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
 							<div className="md:w-2/5">
-								<h1 className="text-2xl font-medium text-gray-600 w-4/5">
+								<h3 className="text-2xl font-medium text-gray-600 w-4/5">
 									Trusted by local Australian businesses
-								</h1>
+								</h3>
 
 								<div className="flex my-6 gap-x-5 w-full">
 									<div>
-										<h1 className="text-dd-light-blue text-3xl md:text-5xl">
+										<h4 className="text-dd-light-blue text-3xl md:text-5xl">
 											<NumberTicker value={1000} /> +
 											<p className="text-gray-500 text-sm md:text-md">
 												Hours of Development
 											</p>
-										</h1>
+										</h4>
 									</div>
 
 									<div className="w-px bg-gray-300 self-stretch"></div>
 
 									<div className="flex-1 min-w-0">
-										<h1 className="text-dd-light-blue text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
+										<h4 className="text-dd-light-blue text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
 											<NumberTicker value={25} /> +
 											<p className="text-gray-500 text-sm md:text-md">
 												Projects Completed
 											</p>
-										</h1>
+										</h4>
 									</div>
 								</div>
 							</div>
@@ -214,6 +215,7 @@ export default function Home() {
 						</div>
 						{/* Trusted By - END */}
 
+						{/* Services - Start */}
 						<Element name="services">
 							<div className="md:px-0 mx-6 md:mx-auto ">
 								<h2>
@@ -228,13 +230,13 @@ export default function Home() {
 									{services.map((service) => (
 										<div
 											key={service.title}
-											className="flex flex-col justify-between h-full space-y-4 text-center bg-card p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
+											className="flex flex-col justify-between h-full text-center bg-card p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
 										>
 											<Image
 												src={service.icon}
 												width={400}
 												height={400}
-												className="object-contain w-full h-48 rounded-md"
+												className="object-contain w-full h-52 rounded-md"
 												alt="image"
 											/>
 											<h5 className="text-xl font-medium">
@@ -248,6 +250,12 @@ export default function Home() {
 								</div>
 							</div>
 						</Element>
+						{/* Services - End */}
+
+
+						<section className="py-20">
+							<ScrollBasedVelocityDemo />
+						</section>
 					</div>
 				</main>
 			</div>
