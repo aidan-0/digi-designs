@@ -73,17 +73,17 @@ export default function Home() {
 				{/* Main Section */}
 				<main className="md:pb-10">
 					<div className="px-4 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20">
-					{/* Hero and CTA - START */}
+						{/* Hero and CTA - START */}
 						<h1 className="text-4xl md:text-5xl lg:text-6xl mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
 							<div className="flex justify-center">
-							<FadeText
-								className="text-dd-dark dark:text-dd-light"
-								direction="right"
-								framerProps={{
-									show: { transition: { delay: 0.3 } },
-								}}
-								text="We make"
-							/>
+								<FadeText
+									className="text-dd-dark dark:text-dd-light"
+									direction="right"
+									framerProps={{
+										show: { transition: { delay: 0.3 } },
+									}}
+									text="We make"
+								/>
 								<FadeText
 									className=" text-dd-light-blue px-2"
 									direction="up"
@@ -92,15 +92,15 @@ export default function Home() {
 									}}
 									text="damn"
 								/>
-									</div>
-								<FadeText
-									className="text-dd-dark dark:text-dd-light"
-									direction="left"
-									framerProps={{
-										show: { transition: { delay: 0.3 } },
-									}}
-									text="good websites."
-								/>
+							</div>
+							<FadeText
+								className="text-dd-dark dark:text-dd-light"
+								direction="left"
+								framerProps={{
+									show: { transition: { delay: 0.3 } },
+								}}
+								text="good websites."
+							/>
 						</h1>
 
 						<p className="md:text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-600">
@@ -188,22 +188,22 @@ export default function Home() {
 										},
 										{
 											logo: "/client-logos/Endeavour-Caravan-Centre-Logo-dark.webp",
-											name: "Logo",
+											name: "Endeavour Caravan Centre",
 											url: "https://endeavourcaravancentre.com.au",
 										},
 										{
 											logo: "/client-logos/House-of-stuart-logo.webp",
-											name: "Logo",
+											name: "House of Stuart",
 											url: "https://houseofstuart.com.au",
 										},
 										{
 											logo: "/client-logos/Ironstate-Capital-Partners-logo.webp",
-											name: "Logo",
+											name: "Ironstate Capital Partners",
 											url: "https://ironstate.com.au",
 										},
 										{
 											logo: "/client-logos/white-round-richards-muscle-lab-no-background.webp",
-											name: "Logo",
+											name: "Richards Muscle Lab",
 											url: "https://richardsmusclelab.com",
 										},
 									]}
@@ -211,10 +211,44 @@ export default function Home() {
 							</section>
 						</div>
 						{/* Trusted By - END */}
+
+						<Element name="services">
+							<div className="md:px-0 mx-6 xl:w-4/5 2xl:w-[68%] md:mx-auto ">
+								<h1>
+									<WordPullUpDemo />
+								</h1>
+								<p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+									All of our services are designed to help
+									your business stand out
+								</p>
+
+								<div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+									{services.map((service) => (
+										<div
+											key={service.title}
+											className="flex flex-col justify-between h-full space-y-4 text-center bg-gray-100 p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
+										>
+											<Image
+												src={service.icon}
+												width={10000}
+												height={10000}
+												className="object-contain bg-gray-100 p-4 w-full h-40 rounded-md"
+												alt="image"
+											/>
+											<h1 className="text-xl font-medium">
+												{service.title}
+											</h1>
+											<p className="text-gray-500">
+												{service.description}
+											</p>
+										</div>
+									))}
+								</div>
+							</div>
+						</Element>
 					</div>
 				</main>
 			</div>
 		</>
 	);
 }
- 
