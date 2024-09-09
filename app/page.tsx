@@ -15,65 +15,15 @@ import Link from "next/link";
 import { Link as ScrollLink, Element } from "react-scroll";
 import { IconStarFilled } from "@tabler/icons-react";
 import { BackgroundBeamsDemo } from "@/components/demos/background-beams-demo";
+import { ModeToggle } from "@/components/ModeToggle";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
 	return (
 		<>
 			<div className="min-h-screen bg-fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:14px_24px]">
 				{/* Nav Bar */}
-				<Element
-					name="top"
-					className="overflow-hidden shadow rounded-[6px] top-5 sticky md:mx-auto z-50 xl:w-4/5 2xl:w-[68%] bg-dd bg-dd-light dark:bg-card flex items-center justify-between py-6 px-4 md:px-8 max-w-[1600px]"
-				>
-					<Link href="/">
-						<Image
-							src="/webp-logos/Digi_Designs_Logo_Blue.webp"
-							alt="Digi Logo"
-							width={128}
-							height={128}
-							className="w-28"
-						/>
-					</Link>
-
-					<div className="absolute right-1/2 translate-x-1/2 transform">
-						<div className="hidden md:flex gap-x-10 items-center text-gray-800 dark:text-dd-light font-semibold text-2xl cursor-pointer">
-							<Link
-								href="/showcase"
-								className="hover:text-dd-light-blue transision duration-250"
-							>
-								showcase
-							</Link>
-							<ScrollLink
-								to="services"
-								smooth={true}
-								className="hover:text-dd-light-blue transision duration-250"
-							>
-								services
-							</ScrollLink>
-							<ScrollLink
-								to="process"
-								smooth={true}
-								className="hover:text-dd-light-blue transision duration-250"
-							>
-								process
-							</ScrollLink>
-							<ScrollLink
-								to="guarantees"
-								smooth={true}
-								className="hover:text-dd-light-blue transision duration-250"
-							>
-								guarantees
-							</ScrollLink>
-						</div>
-					</div>
-
-					<Link
-						href="mailto:hello@digidesigns.com.au"
-						className="px-4 sm:px-5 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
-					>
-						Contact Us
-					</Link>
-				</Element>
+				<Navbar />
 
 				{/* Main Section */}
 				<main className="md:pb-10">
@@ -171,7 +121,7 @@ export default function Home() {
 									{services.map((service) => (
 										<div
 											key={service.title}
-											className="flex flex-col justify-between h-full text-center bg-card p-4 cursor-pointer hover:scale-105 transition-transform rounded-md"
+											className="flex flex-col justify-between h-full text-center bg-card p-4 cursor-pointer hover:scale-105 transition-transform rounded-md border border-border shadow-sm"
 										>
 											<Image
 												src={service.icon}

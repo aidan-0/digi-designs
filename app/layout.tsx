@@ -12,7 +12,6 @@ import { ModeToggle } from "@/components/ModeToggle";
 // });
 const space_grotesk = Space_Grotesk({ subsets: ["latin"] });
 
-
 export const metadata: Metadata = {
 	title: "Digi Designs",
 	description:
@@ -27,15 +26,15 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${space_grotesk.className} antialiased`}>
-				{/* <ThemeProvider
+				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"
 					enableSystem
 					// disableTransitionOnChange
-				> */}
-					{/* <ModeToggle /> causes nav bar to move atm */}
+				>
+					{/* <ModeToggle />  */}
 					{children}
-				{/* </ThemeProvider> */}
+				</ThemeProvider>
 			</body>
 		</html>
 	);
