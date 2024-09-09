@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Todo: add hover animation time on nav items */
-
-
 
 @layer utilities {
   .text-balance {

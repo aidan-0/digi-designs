@@ -1,7 +1,6 @@
 "use client";
 
 import React, { forwardRef, useRef } from "react";
-
 import { cn } from "@/lib/utils";
 import { AnimatedBeam } from "@/components/magicui/animated-beam";
 import Image from "next/image";
@@ -14,7 +13,7 @@ const Circle = forwardRef<
 		<div
 			ref={ref}
 			className={cn(
-				"z-10 flex size-12 items-center justify-center rounded-full border-2 border-border  p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
+				"z-10 flex size-12 md:size-16 items-center justify-center rounded-full bg-dd-light border-2 border-border  p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)] hover:shadow-[0_0_10px_-1px_rgba(78,158,221)] transition duration-300",
 				className
 			)}
 		>
@@ -42,7 +41,7 @@ export function AnimatedBeamMultipleOutputDemo({
 	return (
 		<div
 			className={cn(
-				"relative flex xl:h-[500px] w-full items-center justify-center overflow-hidden  p-10 ",
+				"relative flex w-full items-center justify-center overflow-hidden p-2",
 				className
 			)}
 			ref={containerRef}

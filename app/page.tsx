@@ -14,6 +14,7 @@ import { services } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import { Link as ScrollLink, Element } from "react-scroll";
+import { IconStarFilled } from "@tabler/icons-react";
 
 export default function Home() {
 	return (
@@ -77,10 +78,10 @@ export default function Home() {
 
 				{/* Main Section */}
 				<main className="md:pb-10">
-					<div className="px-4 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px]">
+					<div className="px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px]">
 						{/* Hero and CTA - START */}
-						<div className="min-h-[60vh]">
-							<h1 className="text-4xl md:text-5xl lg:text-6xl mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
+						<div className="">
+							<h1 className="text-[37px] leading-[40px] md:text-5xl lg:text-6xl xl:text-7xl mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
 								<div className="flex justify-center">
 									<FadeText
 										className="text-dd-dark dark:text-dd-light"
@@ -157,7 +158,7 @@ export default function Home() {
 						</div>
 
 						{/* Trusted By - START */}
-						<div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
+						<div className="md:flex items-center justify-between gap-y-4 my-10 sm:my-24 gap-x-28 mx-auto">
 							<div className="md:w-2/5">
 								<h3 className="text-2xl font-medium text-gray-600 w-4/5">
 									Trusted by local Australian businesses
@@ -224,7 +225,7 @@ export default function Home() {
 
 						{/* Services - Start */}
 						<Element name="services">
-							<div className="md:px-0 mx-6 md:mx-auto ">
+							<div className="md:px-0  md:mx-auto ">
 								<h2>
 									<WordPullUpDemo />
 								</h2>
@@ -260,18 +261,16 @@ export default function Home() {
 						{/* Services - End */}
 					</div>
 
-						{/* Scroll Velocity - Start */}
-						<section className="py-20">
-							<ScrollBasedVelocityDemo />
-						</section>
-						{/* Scroll Velocity - End */}
+					{/* Scroll Velocity - Start */}
+					<section className="py-20">
+						<ScrollBasedVelocityDemo />
+					</section>
+					{/* Scroll Velocity - End */}
 
-
-
-						<div className="px-4 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px]">
+					<div className="px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px]">
 						<Element name="process">
-							<main className="md:px-0 mx-6 md:mx-auto">
-								<h2 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
+							<main className="md:px-0 md:mx-auto">
+								<h2 className="text-3xl md:text-5xl md:text-center font-medium flex flex-wrap items-center gap-x-2 mx-auto justify-center">
 									Our{" "}
 									<span className="text-dd-light-blue flex gap-x-1 items-center">
 										{" "}
@@ -299,7 +298,7 @@ export default function Home() {
 									your business to get noticed.
 								</p>
 
-								<div className="flex flex-col md:flex-row items-center justify-center w-full max-w-[1100px] mx-auto">
+								<div className="flex flex-col md:flex-row items-center justify-center w-full max-w-[1100px] mx-auto gap-3 sm:gap-0 ">
 									<div className="w-full md:w-3/5 order-2 md:order-1">
 										<AnimatedBeamMultipleOutputDemo />
 									</div>
@@ -309,6 +308,38 @@ export default function Home() {
 								</div>
 							</main>
 						</Element>
+
+						<section className="pt-20">
+						<h2 className="text-3xl md:text-5xl md:text-center font-medium flex flex-wrap items-center mx-auto justify-center pb-10">
+									Testimonials
+								</h2>
+							<main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20  px-6 md:px-0">
+								<Image
+									src={"/other/richard-from-richards-muscle-lab.webp"}
+									width={1000}
+									height={1000}
+									className=" md:w-1/3 rounded-md"
+									alt="image"
+								/>
+								<div className="flex flex-col gap-y-5 md:w-1/2">
+									<h1 className="text-lg md:text-2xl ">
+										&quot;Quote from richard Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perferendis repellat velit eaque quam optio vel earum ut officiis pariatur. &quot;
+									</h1>
+									<div className="flex items-center gap-x-1">
+										<IconStarFilled className="text-4xl text-yellow-500" />
+										<IconStarFilled className="text-4xl text-yellow-500" />
+										<IconStarFilled className="text-4xl text-yellow-500" />
+										<IconStarFilled className="text-4xl text-yellow-500" />
+										<IconStarFilled className="text-4xl text-yellow-500" />
+									</div>
+
+									<span className="text-xl font-medium">
+										Richard Detering<br />
+										Richards Muscle Labs
+									</span>
+								</div>
+							</main>
+						</section>
 					</div>
 				</main>
 			</div>
