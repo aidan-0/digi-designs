@@ -1,5 +1,7 @@
 "use client";
 
+import { AnimatedBeamMultipleOutputDemo } from "@/components/demos/animated-beam-demo";
+import BoxRevealDemo from "@/components/demos/box-reveal-demo";
 import { ScrollBasedVelocityDemo } from "@/components/demos/scroll-based-velocity-demo";
 import { WordPullUpDemo } from "@/components/demos/word-pull-up-demo";
 import { CheckIcon } from "@/components/icons/check-icon";
@@ -77,77 +79,82 @@ export default function Home() {
 				<main className="md:pb-10">
 					<div className="px-4 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20">
 						{/* Hero and CTA - START */}
-						<h1 className="text-4xl md:text-5xl lg:text-6xl mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
-							<div className="flex justify-center">
+						<div className="min-h-[60vh]">
+							<h1 className="text-4xl md:text-5xl lg:text-6xl mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
+								<div className="flex justify-center">
+									<FadeText
+										className="text-dd-dark dark:text-dd-light"
+										direction="right"
+										framerProps={{
+											show: {
+												transition: { delay: 0.3 },
+											},
+										}}
+										text="We make"
+									/>
+									<FadeText
+										className=" text-dd-light-blue px-2"
+										direction="up"
+										framerProps={{
+											show: { transition: { delay: 0 } },
+										}}
+										text="damn"
+									/>
+								</div>
 								<FadeText
 									className="text-dd-dark dark:text-dd-light"
-									direction="right"
+									direction="left"
 									framerProps={{
 										show: { transition: { delay: 0.3 } },
 									}}
-									text="We make"
+									text="good websites."
 								/>
-								<FadeText
-									className=" text-dd-light-blue px-2"
-									direction="up"
-									framerProps={{
-										show: { transition: { delay: 0 } },
-									}}
-									text="damn"
-								/>
+							</h1>
+
+							<p className="md:text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-600">
+								Get an estimate tailored to your specific needs
+								by completing the form below.
+							</p>
+							<div className="flex justify-center items-center gap-4">
+								<Link
+									href="mailto:hello@digidesigns.com.au"
+									className="px-4 sm:px-12 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
+								>
+									Get in Touch
+								</Link>
+								<Link
+									href="mailto:hello@digidesigns.com.au"
+									className="px-4 sm:px-12 py-2 font-semibold hover:bg-dd-dark hover:text-dd-light rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)] dark:hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)]"
+								>
+									Showcase
+								</Link>
 							</div>
-							<FadeText
-								className="text-dd-dark dark:text-dd-light"
-								direction="left"
-								framerProps={{
-									show: { transition: { delay: 0.3 } },
-								}}
-								text="good websites."
-							/>
-						</h1>
 
-						<p className="md:text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-600">
-							Change to CTASOur mission is simple; make you a damn
-							good website.
-						</p>
-						<div className="flex justify-center items-center gap-4">
-							<Link
-								href="mailto:hello@digidesigns.com.au"
-								className="px-4 sm:px-12 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
-							>
-								Get in Touch
-							</Link>
-							<Link
-								href="mailto:hello@digidesigns.com.au"
-								className="px-4 sm:px-12 py-2 font-semibold hover:bg-dd-dark hover:text-dd-light rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)] dark:hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)]"
-							>
-								Showcase
-							</Link>
-						</div>
-						{/* Hero and CTA - END */}
+							{/* Hero and CTA - END */}
 
-						{/* Box Reveal - START*/}
-						<div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 items-center text-left sm:justify-items-center md:mx-auto mt-10 md:mt-16 md:w-4/5 ">
-							<BoxReveal boxColor={"#4e9edd"} duration={0.5}>
-								<p className="md:text-xl font-semibold flex gap-2 md:gap-x-4 items-center">
-									<CheckIcon className="text-dd-light-blue text-xl" />
-									Websites
-								</p>
-							</BoxReveal>
-							<BoxReveal boxColor={"#4e9edd"} duration={0.5}>
-								<p className="md:text-xl font-semibold flex gap-2 md:gap-x-4 items-center">
-									<CheckIcon className="text-dd-light-blue text-xl" />
-									Applications
-								</p>
-							</BoxReveal>
-							<BoxReveal boxColor={"#4e9edd"} duration={0.5}>
-								<p className="md:text-xl font-semibold flex gap-2 md:gap-x-4 items-center">
-									<CheckIcon className="text-dd-light-blue text-xl" />
-									Solutions
-								</p>
-							</BoxReveal>
+							{/* Box Reveal - START*/}
+							<div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 items-center text-left sm:justify-items-center md:mx-auto mt-10 md:mt-16 md:w-4/5 ">
+								<BoxReveal boxColor={"#4e9edd"} duration={0.5}>
+									<p className="md:text-xl font-semibold flex gap-2 md:gap-x-4 items-center">
+										<CheckIcon className="text-dd-light-blue text-xl" />
+										Websites
+									</p>
+								</BoxReveal>
+								<BoxReveal boxColor={"#4e9edd"} duration={0.5}>
+									<p className="md:text-xl font-semibold flex gap-2 md:gap-x-4 items-center">
+										<CheckIcon className="text-dd-light-blue text-xl" />
+										Applications
+									</p>
+								</BoxReveal>
+								<BoxReveal boxColor={"#4e9edd"} duration={0.5}>
+									<p className="md:text-xl font-semibold flex gap-2 md:gap-x-4 items-center">
+										<CheckIcon className="text-dd-light-blue text-xl" />
+										Solutions
+									</p>
+								</BoxReveal>
+							</div>
+							{/* Box Reveal - END */}
 						</div>
-						{/* Box Reveal - END */}
 
 						{/* Trusted By - START */}
 						<div className="md:flex items-center justify-between gap-y-4 my-10 gap-x-28 mx-auto">
@@ -251,11 +258,57 @@ export default function Home() {
 							</div>
 						</Element>
 						{/* Services - End */}
+					</div>
 
-
+						{/* Scroll Velocity - Start */}
 						<section className="py-20">
 							<ScrollBasedVelocityDemo />
 						</section>
+						{/* Scroll Velocity - End */}
+
+
+
+						<div className="px-4 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20">
+						<Element name="process">
+							<main className="md:px-0 mx-6 md:mx-auto">
+								<h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
+									Our{" "}
+									<span className="text-dd-light-blue flex gap-x-1 items-center">
+										{" "}
+										<Image
+											src={"/icons/squiggle.svg"}
+											width={10000}
+											height={10000}
+											className="w-6"
+											alt="image"
+										/>
+										Development
+										<Image
+											src={"/icons/star.svg"}
+											width={10000}
+											height={10000}
+											className="w-6 mb-8"
+											alt="image"
+										/>
+									</span>{" "}
+									Process
+								</h1>
+
+								<p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+									All of our services are designed to help
+									your business to get noticed.
+								</p>
+
+								<div className="flex flex-col md:flex-row items-center justify-center w-full mx-auto">
+									<div className="w-full order-2 md:order-1">
+										<AnimatedBeamMultipleOutputDemo />
+									</div>
+									<div className="w-full order-1 md:order-2 md:ml-0">
+										<BoxRevealDemo />
+									</div>
+								</div>
+							</main>
+						</Element>
 					</div>
 				</main>
 			</div>
