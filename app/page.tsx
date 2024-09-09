@@ -8,7 +8,6 @@ import { CheckIcon } from "@/components/icons/check-icon";
 import BoxReveal from "@/components/magicui/box-reveal";
 import { FadeText } from "@/components/magicui/fade-text";
 import NumberTicker from "@/components/magicui/number-ticker";
-import { Button } from "@/components/ui/button";
 import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
 import { services } from "@/data";
 import Image from "next/image";
@@ -20,12 +19,11 @@ import { BackgroundBeamsDemo } from "@/components/demos/background-beams-demo";
 export default function Home() {
 	return (
 		<>
-			<div className="absolute inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]">
-				{/* <div className="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]"></div> */}
+			<div className="min-h-screen bg-fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:14px_24px]">
 				{/* Nav Bar */}
 				<Element
 					name="top"
-					className="overflow-hidden shadow rounded-[6px] top-5 sticky md:mx-auto z-50 xl:w-4/5 2xl:w-[68%] bg-dd-light dark:bg-card flex items-center justify-between py-6 px-4 md:px-8 max-w-[1600px]"
+					className="overflow-hidden shadow rounded-[6px] top-5 sticky md:mx-auto z-50 xl:w-4/5 2xl:w-[68%] bg-dd bg-dd-light dark:bg-card flex items-center justify-between py-6 px-4 md:px-8 max-w-[1600px]"
 				>
 					<Link href="/">
 						<Image
@@ -158,75 +156,9 @@ export default function Home() {
 							{/* Box Reveal - END */}
 						</div>
 
-						{/* Trusted By - START */}
-						<div className="md:flex items-center justify-between gap-y-4 my-10 sm:my-24 gap-x-28 mx-auto">
-							<div className="md:w-2/5">
-								<h3 className="text-2xl font-medium text-gray-600 w-4/5">
-									Trusted by local Australian businesses
-								</h3>
-
-								<div className="flex my-6 gap-x-5 w-full">
-									<div>
-										<h4 className="text-dd-light-blue text-3xl md:text-5xl">
-											<NumberTicker value={1000} /> +
-											<p className="text-gray-500 text-sm md:text-md">
-												Hours of Development
-											</p>
-										</h4>
-									</div>
-
-									<div className="w-px bg-gray-300 self-stretch"></div>
-
-									<div className="flex-1 min-w-0">
-										<h4 className="text-dd-light-blue text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
-											<NumberTicker value={25} /> +
-											<p className="text-gray-500 text-sm md:text-md">
-												Projects Completed
-											</p>
-										</h4>
-									</div>
-								</div>
-							</div>
-
-							<section className="overflow-hidden mt-10 md:w-4/5">
-								<InfiniteMovingLogos
-									speed="normal"
-									direction="left"
-									items={[
-										{
-											logo: "/client-logos/ETC-logo.webp",
-											name: "Edmonds Twins Coaching",
-											url: "https://edmondstwinscoaching.au",
-										},
-										{
-											logo: "/client-logos/Endeavour-Caravan-Centre-Logo-dark.webp",
-											name: "Endeavour Caravan Centre",
-											url: "https://endeavourcaravancentre.com.au",
-										},
-										{
-											logo: "/client-logos/House-of-stuart-logo.webp",
-											name: "House of Stuart",
-											url: "https://houseofstuart.com.au",
-										},
-										{
-											logo: "/client-logos/Ironstate-Capital-Partners-logo.webp",
-											name: "Ironstate Capital Partners",
-											url: "https://ironstate.com.au",
-										},
-										{
-											logo: "/client-logos/white-round-richards-muscle-lab-no-background.webp",
-											name: "Richards Muscle Lab",
-											url: "https://richardsmusclelab.com",
-										},
-									]}
-								/>
-							</section>
-						</div>
-						{/* Trusted By - END */}
-
 						{/* Services - Start */}
 						<Element name="services">
-							<div className="md:px-0  md:mx-auto ">
+							<div className="md:px-0 md:mx-auto pt-20">
 								<h2>
 									<WordPullUpDemo />
 								</h2>
@@ -311,11 +243,76 @@ export default function Home() {
 						</Element>
 
 						{/* Testimonials - Start */}
-						<section className="pt-20">
-							<h2 className="text-3xl md:text-5xl md:text-center font-medium flex flex-wrap items-center mx-auto justify-center pb-10">
-								Testimonials
+						<section className="pt-20 my-10 sm:my-24">
+							{/* Trusted By - START */}
+							<h2 className="text-3xl md:text-5xl md:text-center font-medium flex flex-wrap items-center mx-auto justify-center">
+								Trusted by Local Australian Businesses
 							</h2>
-							<main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20  px-6 md:px-0">
+							<p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+									All of our services are designed to help
+									your business to get noticed.
+								</p>
+							<div className="md:flex items-center justify-between gap-y-4 my-4 gap-x-28 mx-auto">
+								<div className="md:w-2/5">
+									<div className="flex my-6 gap-x-5 w-full">
+										<div>
+											<h4 className="text-dd-light-blue text-3xl md:text-5xl">
+												<NumberTicker value={1000} /> +
+												<p className="text-gray-500 text-sm md:text-md">
+													Hours of Development
+												</p>
+											</h4>
+										</div>
+
+										<div className="w-px bg-gray-300 self-stretch"></div>
+
+										<div className="flex-1 min-w-0">
+											<h4 className="text-dd-light-blue text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
+												<NumberTicker value={25} /> +
+												<p className="text-gray-500 text-sm md:text-md">
+													Projects Completed
+												</p>
+											</h4>
+										</div>
+									</div>
+								</div>
+
+								<div className="overflow-hidden md:w-4/5">
+									<InfiniteMovingLogos
+										speed="normal"
+										direction="left"
+										items={[
+											{
+												logo: "/client-logos/ETC-logo.webp",
+												name: "Edmonds Twins Coaching",
+												url: "https://edmondstwinscoaching.au",
+											},
+											{
+												logo: "/client-logos/Endeavour-Caravan-Centre-Logo-dark.webp",
+												name: "Endeavour Caravan Centre",
+												url: "https://endeavourcaravancentre.com.au",
+											},
+											{
+												logo: "/client-logos/House-of-stuart-logo.webp",
+												name: "House of Stuart",
+												url: "https://houseofstuart.com.au",
+											},
+											{
+												logo: "/client-logos/Ironstate-Capital-Partners-logo.webp",
+												name: "Ironstate Capital Partners",
+												url: "https://ironstate.com.au",
+											},
+											{
+												logo: "/client-logos/white-round-richards-muscle-lab-no-background.webp",
+												name: "Richards Muscle Lab",
+												url: "https://richardsmusclelab.com",
+											},
+										]}
+									/>
+								</div>
+							</div>
+							{/* Trusted By - END */}
+							<div className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20  px-6 md:px-0">
 								<Image
 									src={
 										"/other/richard-from-richards-muscle-lab.webp"
@@ -325,7 +322,7 @@ export default function Home() {
 									className=" md:w-1/3 rounded-md"
 									alt="image"
 								/>
-								<div className="flex flex-col gap-y-5 md:w-1/2">
+								<div className="flex flex-col gap-y-5">
 									<h1 className="text-lg md:text-2xl ">
 										&quot;Quote from richard Lorem ipsum
 										dolor sit amet, consectetur adipisicing
@@ -347,15 +344,13 @@ export default function Home() {
 										Richards Muscle Labs
 									</span>
 								</div>
-							</main>
+							</div>
 						</section>
 						{/* Testimonials - End */}
-
 					</div>
-						<section>
-							<BackgroundBeamsDemo />
-						</section>
-
+					<section>
+						<BackgroundBeamsDemo />
+					</section>
 				</main>
 			</div>
 		</>

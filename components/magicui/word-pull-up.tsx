@@ -20,6 +20,7 @@ export default function WordPullUp({
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
+        delayChildren: 0.5,
       },
     },
   },
