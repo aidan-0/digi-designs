@@ -23,7 +23,7 @@ export default function Home() {
 				{/* Nav Bar */}
 				<Element
 					name="top"
-					className="overflow-hidden shadow rounded-[6px] top-5 sticky md:mx-auto z-50 xl:w-4/5 2xl:w-[68%] bg-dd-light dark:bg-card flex items-center justify-between py-6 px-4 md:px-8 "
+					className="overflow-hidden shadow rounded-[6px] top-5 sticky md:mx-auto z-50 xl:w-4/5 2xl:w-[68%] bg-dd-light dark:bg-card flex items-center justify-between py-6 px-4 md:px-8 max-w-[1600px]"
 				>
 					<Link href="/">
 						<Image
@@ -77,7 +77,7 @@ export default function Home() {
 
 				{/* Main Section */}
 				<main className="md:pb-10">
-					<div className="px-4 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20">
+					<div className="px-4 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px]">
 						{/* Hero and CTA - START */}
 						<div className="min-h-[60vh]">
 							<h1 className="text-4xl md:text-5xl lg:text-6xl mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
@@ -268,42 +268,42 @@ export default function Home() {
 
 
 
-						<div className="px-4 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20">
+						<div className="px-4 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px]">
 						<Element name="process">
 							<main className="md:px-0 mx-6 md:mx-auto">
-								<h1 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
+								<h2 className="text-3xl md:text-5xl md:text-center font-medium flex items-center gap-x-2 mx-auto justify-center">
 									Our{" "}
 									<span className="text-dd-light-blue flex gap-x-1 items-center">
 										{" "}
 										<Image
 											src={"/icons/squiggle.svg"}
-											width={10000}
-											height={10000}
+											width={100}
+											height={100}
 											className="w-6"
 											alt="image"
 										/>
 										Development
 										<Image
 											src={"/icons/star.svg"}
-											width={10000}
-											height={10000}
+											width={100}
+											height={100}
 											className="w-6 mb-8"
 											alt="image"
 										/>
 									</span>{" "}
 									Process
-								</h1>
+								</h2>
 
 								<p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
 									All of our services are designed to help
 									your business to get noticed.
 								</p>
 
-								<div className="flex flex-col md:flex-row items-center justify-center w-full mx-auto">
-									<div className="w-full order-2 md:order-1">
+								<div className="flex flex-col md:flex-row items-center justify-center w-full max-w-[1100px] mx-auto">
+									<div className="w-full md:w-3/5 order-2 md:order-1">
 										<AnimatedBeamMultipleOutputDemo />
 									</div>
-									<div className="w-full order-1 md:order-2 md:ml-0">
+									<div className="w-full md:w-2/5 order-1 md:order-2 md:ml-0">
 										<BoxRevealDemo />
 									</div>
 								</div>
