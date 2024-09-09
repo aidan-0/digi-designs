@@ -35,3 +35,56 @@ export const services = [
 			"Enjoy reliable performance with a 99.9% uptime guarantee, ensuring your website is always accessible to your customers.",
 	},
 ];
+
+export const features = [
+	{
+	  icon: "/icons/fast.svg",
+	  title: "Fast Delivery",
+	  description:
+		"On-time project delivery, ensuring your business never misses an opportunity.",
+	},
+	{
+	  icon: "/icons/design.svg",
+	  title: "Design & Development",
+	  description:
+		"From concept to launch, we handle every aspect of web design and development.",
+	},
+	{
+	  icon: "/icons/scalable.svg",
+	  title: "Scalability + Maintenance ",
+	  description: "Future-proof websites that grow with your business, supported by ongoing maintenance.",
+	},
+	{
+	  icon: "/icons/team.svg",
+	  title: "Perth Based Team",
+	  description: "Our Perth based team of experts are ready to help you, at all times.",
+	},
+	{
+	  icon: "/icons/safe.svg",
+	  title: "Secure Building",
+	  description:
+		"Safe and secure building practices. To ensure your data is safe.",
+	},
+	{
+	  icon: "/icons/analytics.svg",
+	  title: "Analytics Tracking",
+	  description: "Gain valuable insights with built-in tracking tools to monitor your products performance.",
+	},
+  
+	{
+	  icon: "/icons/flexible.svg",
+	  title: "Dynamic Websites",
+	  description: "We build dynamic solutions that are easy to manage.",
+	},
+	{
+	  icon: "/icons/support.svg",
+	  title: "Fast Support",
+	  description:
+		"We provide rapid responses to keep your products up and running smoothly.",
+	},
+	{
+	  icon: "/icons/money.svg",
+	  title: "Affordable Pricing",
+	  description: "Cost-effective solutions without compromising on quality.",
+	},
+  ];

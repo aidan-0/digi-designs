@@ -15,6 +15,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Link as ScrollLink, Element } from "react-scroll";
 import { IconStarFilled } from "@tabler/icons-react";
+import { BackgroundBeamsDemo } from "@/components/demos/background-beams-demo";
 
 export default function Home() {
 	return (
@@ -81,7 +82,7 @@ export default function Home() {
 					<div className="px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px]">
 						{/* Hero and CTA - START */}
 						<div className="">
-							<h1 className="text-[37px] leading-[40px] md:text-5xl lg:text-6xl xl:text-7xl mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
+							<h1 className="text-[37px] leading-[40px] md:text-5xl lg:text-6xl xl:text-[4rem] mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
 								<div className="flex justify-center">
 									<FadeText
 										className="text-dd-dark dark:text-dd-light"
@@ -309,13 +310,16 @@ export default function Home() {
 							</main>
 						</Element>
 
+						{/* Testimonials - Start */}
 						<section className="pt-20">
-						<h2 className="text-3xl md:text-5xl md:text-center font-medium flex flex-wrap items-center mx-auto justify-center pb-10">
-									Testimonials
-								</h2>
+							<h2 className="text-3xl md:text-5xl md:text-center font-medium flex flex-wrap items-center mx-auto justify-center pb-10">
+								Testimonials
+							</h2>
 							<main className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20  px-6 md:px-0">
 								<Image
-									src={"/other/richard-from-richards-muscle-lab.webp"}
+									src={
+										"/other/richard-from-richards-muscle-lab.webp"
+									}
 									width={1000}
 									height={1000}
 									className=" md:w-1/3 rounded-md"
@@ -323,7 +327,11 @@ export default function Home() {
 								/>
 								<div className="flex flex-col gap-y-5 md:w-1/2">
 									<h1 className="text-lg md:text-2xl ">
-										&quot;Quote from richard Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis perferendis repellat velit eaque quam optio vel earum ut officiis pariatur. &quot;
+										&quot;Quote from richard Lorem ipsum
+										dolor sit amet, consectetur adipisicing
+										elit. Debitis perferendis repellat velit
+										eaque quam optio vel earum ut officiis
+										pariatur. &quot;
 									</h1>
 									<div className="flex items-center gap-x-1">
 										<IconStarFilled className="text-4xl text-yellow-500" />
@@ -334,13 +342,20 @@ export default function Home() {
 									</div>
 
 									<span className="text-xl font-medium">
-										Richard Detering<br />
+										Richard Detering
+										<br />
 										Richards Muscle Labs
 									</span>
 								</div>
 							</main>
 						</section>
+						{/* Testimonials - End */}
+
 					</div>
+						<section>
+							<BackgroundBeamsDemo />
+						</section>
+
 				</main>
 			</div>
 		</>
