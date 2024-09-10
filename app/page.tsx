@@ -124,15 +124,15 @@ export default function Home() {
 									your business stand out
 								</p>
 
-								<div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+								<div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 ">
 									{services.map((service) => (
 										      <MagicCard
-											  className="shadow-lg"
+											  className="shadow-sm"
 											  gradientColor={theme === "dark" ? "#4e9edd22" : "#f7fbff"}
 											>
 										<div
 											key={service.title}
-											className="flex flex-col justify-between h-full text-center p-4 hover:scale-[1.03] transition-transform duration-500 rounded-md border border-border shadow-sm"
+											className="flex flex-col justify-between h-full text-center p-4 hover:scale-[1.03] transition-transform duration-500 rounded-md  shadow-sm bg-card"
 										>
 											<Image
 												src={service.icon}

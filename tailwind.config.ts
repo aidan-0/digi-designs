@@ -19,6 +19,9 @@ const config: Config = {
 			colors: {
 				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",
+				"background-darker": "hsl(var(--background-darker))",
+				"background-darkest": "hsl(var(--background-darkest))",
+				"background-lighter": "hsl(var(--background-lighter))",
 				"dd-dark-blue": "#001d3d",
 				"dd-med-blue": "#003566",
 				"dd-light-blue": "#4e9edd",
@@ -96,4 +99,8 @@ function addVariablesForColors({ addBase, theme }: any) {
 	});
   }
 
+
 export default config;
+
+
+
