@@ -17,9 +17,16 @@ import { IconStarFilled } from "@tabler/icons-react";
 import { BackgroundBeamsDemo } from "@/components/demos/background-beams-demo";
 import { ModeToggle } from "@/components/ModeToggle";
 import Navbar from "@/components/Navbar";
+import { MagicCard } from "@/components/magicui/magic-card";
+import { useTheme } from "next-themes";
+
 
 export default function Home() {
+	const { theme } = useTheme();
+
+
 	return (
+	
 		<>
 			<div className="min-h-screen bg-fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:14px_24px]">
 				{/* Nav Bar */}
@@ -119,9 +126,13 @@ export default function Home() {
 
 								<div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
 									{services.map((service) => (
+										      <MagicCard
+											  className="shadow-lg"
+											  gradientColor={theme === "dark" ? "#4e9edd22" : "#f7fbff"}
+											>
 										<div
 											key={service.title}
-											className="flex flex-col justify-between h-full text-center bg-card p-4 cursor-pointer hover:scale-105 transition-transform rounded-md border border-border shadow-sm"
+											className="flex flex-col justify-between h-full text-center p-4 hover:scale-[1.03] transition-transform duration-500 rounded-md border border-border shadow-sm"
 										>
 											<Image
 												src={service.icon}
@@ -137,6 +148,7 @@ export default function Home() {
 												{service.description}
 											</p>
 										</div>
+										</MagicCard>
 									))}
 								</div>
 							</div>

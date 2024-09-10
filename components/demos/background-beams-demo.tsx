@@ -34,8 +34,8 @@ export function BackgroundBeamsDemo() {
               >
                 <Image
                   src={feature.icon}
-                  width={10000}
-                  height={10000}
+                  width={100}
+                  height={100}
                   alt="icon"
                   className="w-8 h-8"
                 />
