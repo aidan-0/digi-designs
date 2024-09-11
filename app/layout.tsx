@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import Navbar from "@/components/Navbar";
 import { Poppins, Space_Grotesk } from "next/font/google";
 import { ModeToggle } from "@/components/ModeToggle";
+import { Toaster } from "@/components/ui/toaster";
 
 // const poppins = Poppins({
 // 	subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
 				>
 					{/* <ModeToggle />  */}
 					{children}
+					<Toaster />
 				</ThemeProvider>
 			</body>
 		</html>
