@@ -19,21 +19,19 @@ import { ModeToggle } from "@/components/ModeToggle";
 import Navbar from "@/components/Navbar";
 import { MagicCard } from "@/components/magicui/magic-card";
 import { useTheme } from "next-themes";
-
+import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
 	const { theme } = useTheme();
 
-
 	return (
-	
 		<>
 			<div className="min-h-screen bg-fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:14px_24px]">
 				{/* Nav Bar */}
 				<Navbar />
 
 				{/* Main Section */}
-				<main className="md:pb-10">
+				<main className="">
 					<div className="px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px]">
 						{/* Hero and CTA - START */}
 						<div className="">
@@ -126,28 +124,32 @@ export default function Home() {
 
 								<div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 ">
 									{services.map((service) => (
-										      <MagicCard
-											  className="shadow-sm"
-											  gradientColor={theme === "dark" ? "#4e9edd22" : "#f7fbff"}
-											>
-										<div
-											key={service.title}
-											className="flex flex-col justify-between h-full text-center p-4 hover:scale-[1.03] transition-transform duration-500 rounded-md  shadow-sm bg-card"
+										<MagicCard
+											className="shadow-sm"
+											gradientColor={
+												theme === "dark"
+													? "#4e9edd22"
+													: "#f7fbff"
+											}
 										>
-											<Image
-												src={service.icon}
-												width={400}
-												height={400}
-												className="object-contain w-full h-52 rounded-md"
-												alt="image"
-											/>
-											<h5 className="text-xl font-medium">
-												{service.title}
-											</h5>
-											<p className="text-gray-500">
-												{service.description}
-											</p>
-										</div>
+											<div
+												key={service.title}
+												className="flex flex-col justify-between h-full text-center p-4 hover:scale-[1.03] transition-transform duration-500 rounded-md  shadow-sm bg-card"
+											>
+												<Image
+													src={service.icon}
+													width={400}
+													height={400}
+													className="object-contain w-full h-52 rounded-md"
+													alt="image"
+												/>
+												<h5 className="text-xl font-medium">
+													{service.title}
+												</h5>
+												<p className="text-gray-500">
+													{service.description}
+												</p>
+											</div>
 										</MagicCard>
 									))}
 								</div>
@@ -211,9 +213,9 @@ export default function Home() {
 								Trusted by Local Australian Businesses
 							</h2>
 							<p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
-									All of our services are designed to help
-									your business to get noticed.
-								</p>
+								All of our services are designed to help your
+								business to get noticed.
+							</p>
 							<div className="md:flex items-center justify-between gap-y-4 my-4 gap-x-28 mx-auto">
 								<div className="md:w-2/5">
 									<div className="flex my-6 gap-x-5 w-full">
@@ -310,9 +312,59 @@ export default function Home() {
 						</section>
 						{/* Testimonials - End */}
 					</div>
-					<section>
-						<BackgroundBeamsDemo />
+
+					{/* Background Beams */}
+					<section className="mt-20">
+						<Element name="guarantees">
+							<BackgroundBeamsDemo />
+						</Element>
 					</section>
+
+					{/* Contact Section */}
+					<Element name="contact">
+						<section className="w-full h-64 grid grid-cols-2 bg-card border border-border px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px] rounded-xl shadow">
+							<div className="flex justify-center items-center">
+								<ContactForm />
+							</div>
+							<div className="flex flex-col justify-center">
+								<h4 className="text-5xl">
+									Let's make things happen
+								</h4>
+								<p className="text-2xl">
+									Get in touch with us today!
+								</p>
+							</div>
+						</section>
+					</Element>
+
+					{/* Footer */}
+					<footer className="border-t bg-card dark:bg-background-darker mt-12 md:mt-20 h-20 rounded-t-xl flex flex-row justify-around items-center">
+						<div>
+							<a href="mailto:hello@digidesigns.com.au">
+								hello@digidesigns.com.au
+							</a>
+						</div>
+						<div>
+							© {new Date().getFullYear()} Digi Designs - Aidan
+							McDonald{" "}
+						</div>
+						<div className="flex flex-row gap-3 justify-center items-center">
+							<Image
+								src="/icons/github-mark.svg"
+								alt="Github logo"
+								width={30}
+								height={30}
+								className="cursor-pointer h-8 w-8"
+							/>
+							<Image
+								src="/icons/linkedin-logo.svg"
+								alt="LinkedIn logo"
+								width={30}
+								height={30}
+								className="cursor-pointer h-9 w-9"
+							/>
+						</div>
+					</footer>
 				</main>
 			</div>
 		</>
