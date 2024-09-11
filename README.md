@@ -8,3 +8,5 @@ Resend for emails
 Shadcn
 MagicUI
 AceternityUI
+
+Images by Rubytone - Pixel.Market

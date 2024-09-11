@@ -312,7 +312,7 @@ export default function Home() {
 
 					{/* Contact Section */}
 					<Element name="contact">
-						<section className="w-full h-64 grid grid-cols-2 bg-card border border-border px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px] rounded-xl shadow">
+						<section className="w-full p-12 grid grid-cols-2 bg-card border border-border px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px] rounded-xl shadow">
 							<div className="flex justify-center items-center">
 								<ContactForm />
 							</div>
@@ -328,9 +328,9 @@ export default function Home() {
 					</Element>
 
 					{/* Footer */}
-					<footer className="border-t bg-card dark:bg-background-darker mt-12 md:mt-20 h-20 rounded-t-xl flex flex-row justify-around items-center">
+					<footer className="border-t bg-card dark:bg-background-darker font-medium mt-12 md:mt-20 h-20 rounded-t-xl flex flex-row justify-around items-center">
 						<div>
-							<a href="mailto:hello@digidesigns.com.au">
+							<a href="mailto:hello@digidesigns.com.au" className="hover:text-[#035193] transition duration-400">
 								hello@digidesigns.com.au
 							</a>
 						</div>
@@ -344,14 +344,14 @@ export default function Home() {
 								alt="Github logo"
 								width={30}
 								height={30}
-								className="cursor-pointer h-8 w-8"
+								className="cursor-pointer h-8 w-8 hover:brightness-150 transition duration-400"
 							/>
 							<Image
 								src="/icons/linkedin-logo.svg"
 								alt="LinkedIn logo"
 								width={30}
 								height={30}
-								className="cursor-pointer h-9 w-9"
+								className="cursor-pointer h-9 w-9 hover:brightness-150 transition duration-400"
 							/>
 						</div>
 					</footer>

@@ -38,7 +38,7 @@
 		--destructive: 0 84.2% 60.2%;
 		--destructive-foreground: 0 0% 98%;
 
-		--ring: 225 100% 12%;
+		--ring: 208 96% 20%;
 
 		--radius: 0.5rem;
 
@@ -100,3 +100,4 @@
   backdrop-filter: blur(10px);
   background-opacity: 0.8;
 }
+
