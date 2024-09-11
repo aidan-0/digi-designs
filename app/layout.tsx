@@ -1,16 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
-import Navbar from "@/components/Navbar";
-import { Poppins, Space_Grotesk } from "next/font/google";
-import { ModeToggle } from "@/components/ModeToggle";
+import { Space_Grotesk } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
 
-// const poppins = Poppins({
-// 	subsets: ["latin"],
-// 	variable: "--font-poppins",
-// 	weight: ["300", "400", "500", "600", "700"],
-// });
+
 const space_grotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -31,9 +25,7 @@ export default function RootLayout({
 					attribute="class"
 					defaultTheme="system"
 					enableSystem
-					// disableTransitionOnChange
 				>
-					{/* <ModeToggle />  */}
 					{children}
 					<Toaster />
 				</ThemeProvider>

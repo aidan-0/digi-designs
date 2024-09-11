@@ -17,7 +17,6 @@ import { IconStarFilled } from "@tabler/icons-react";
 import { BackgroundBeamsDemo } from "@/components/demos/background-beams-demo";
 import { ModeToggle } from "@/components/ModeToggle";
 import Navbar from "@/components/Navbar";
-import { MagicCard } from "@/components/magicui/magic-card";
 import { useTheme } from "next-themes";
 import ContactForm from "@/components/ContactForm";
 
@@ -124,17 +123,9 @@ export default function Home() {
 
 								<div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 ">
 									{services.map((service) => (
-										<MagicCard
-											className="shadow-sm"
-											gradientColor={
-												theme === "dark"
-													? "#4e9edd22"
-													: "#f7fbff"
-											}
-										>
 											<div
 												key={service.title}
-												className="flex flex-col justify-between h-full text-center p-4 hover:scale-[1.03] transition-transform duration-500 rounded-md  shadow-sm bg-card"
+												className="flex flex-col justify-between h-full text-center p-4 hover:scale-[1.03] transition-transform duration-500 rounded-md shadow-sm bg-card border border-border"
 											>
 												<Image
 													src={service.icon}
@@ -150,7 +141,6 @@ export default function Home() {
 													{service.description}
 												</p>
 											</div>
-										</MagicCard>
 									))}
 								</div>
 							</div>
