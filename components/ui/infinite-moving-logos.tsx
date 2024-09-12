@@ -1,9 +1,7 @@
-"use client";
-
-import { cn } from "@/lib/utils";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 export const InfiniteMovingLogos = ({
   items,
@@ -25,11 +23,9 @@ export const InfiniteMovingLogos = ({
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
 
-  useEffect(() => {
-    addAnimation();
-  }, [addAnimation]);
   const [start, setStart] = useState(false);
-  function addAnimation() {
+
+  const addAnimation = useCallback(() => {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
 
@@ -44,7 +40,8 @@ export const InfiniteMovingLogos = ({
       getSpeed();
       setStart(true);
     }
-  }
+  }, [direction, speed]);
+
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
@@ -60,6 +57,7 @@ export const InfiniteMovingLogos = ({
       }
     }
   };
+
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
@@ -71,29 +69,30 @@ export const InfiniteMovingLogos = ({
       }
     }
   };
+
+  useEffect(() => {
+    addAnimation();
+  }, [addAnimation]);
+
   return (
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  w-full overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]",
+        "scroller relative z-20 w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_10%,white_90%,transparent)]",
         className
       )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          " flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
-          start && "animate-scroll ",
+          "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap",
+          start && "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
       >
         {items.map((item) => (
           <li
-            className="
-        
-              flex items-center
-              
-              flex-shrink-00 px-8 "
+            className="flex items-center flex-shrink-00 px-8"
             key={item.name}
           >
             <Link href={item.url} target="_blank" rel="noopener noreferrer">

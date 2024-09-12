@@ -19,7 +19,6 @@ import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
-
 	return (
 		<>
 			<div className="min-h-screen bg-fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:14px_24px]">
@@ -120,24 +119,24 @@ export default function Home() {
 
 								<div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 ">
 									{services.map((service) => (
-											<div
-												key={service.title}
-												className="flex flex-col justify-between h-full text-center p-4 hover:scale-[1.03] transition-transform duration-500 rounded-md shadow-sm bg-card border border-border"
-											>
-												<Image
-													src={service.icon}
-													width={400}
-													height={400}
-													className="object-contain w-full h-52 rounded-md"
-													alt="image"
-												/>
-												<h5 className="text-xl font-medium">
-													{service.title}
-												</h5>
-												<p className="text-gray-500">
-													{service.description}
-												</p>
-											</div>
+										<div
+											key={service.title}
+											className="flex flex-col justify-between h-full text-center p-4 hover:scale-[1.03] transition-transform duration-500 rounded-md shadow-sm bg-card border border-border"
+										>
+											<Image
+												src={service.icon}
+												width={400}
+												height={400}
+												className="object-contain w-full h-52 rounded-md"
+												alt="image"
+											/>
+											<h5 className="text-xl font-medium">
+												{service.title}
+											</h5>
+											<p className="text-gray-500">
+												{service.description}
+											</p>
+										</div>
 									))}
 								</div>
 							</div>
@@ -315,7 +314,7 @@ export default function Home() {
 							</div>
 							<div className="flex flex-col justify-center">
 								<h4 className="text-5xl">
-									Let's make things happen
+									Let&apos;s make things happen
 								</h4>
 								<p className="text-2xl">
 									Get in touch with us today!
@@ -327,7 +326,10 @@ export default function Home() {
 					{/* Footer */}
 					<footer className="border-t bg-card dark:bg-background-darker font-medium mt-12 md:mt-20 h-20 rounded-t-xl flex flex-row justify-around items-center">
 						<div>
-							<a href="mailto:hello@digidesigns.com.au" className="hover:text-[#035193] transition duration-400">
+							<a
+								href="mailto:hello@digidesigns.com.au"
+								className="hover:text-[#035193] transition duration-400"
+							>
 								hello@digidesigns.com.au
 							</a>
 						</div>
