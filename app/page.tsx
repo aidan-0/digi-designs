@@ -12,16 +12,13 @@ import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
 import { services } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
-import { Link as ScrollLink, Element } from "react-scroll";
+import { Element } from "react-scroll";
 import { IconStarFilled } from "@tabler/icons-react";
 import { BackgroundBeamsDemo } from "@/components/demos/background-beams-demo";
-import { ModeToggle } from "@/components/ModeToggle";
 import Navbar from "@/components/Navbar";
-import { useTheme } from "next-themes";
 import ContactForm from "@/components/ContactForm";
 
 export default function Home() {
-	const { theme } = useTheme();
 
 	return (
 		<>
