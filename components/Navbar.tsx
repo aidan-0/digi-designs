@@ -63,7 +63,6 @@ const Navbar = () => {
 
 				<div className="flex flex-row items-center gap-6">
 					<ScrollLink
-						// href="mailto:hello@digidesigns.com.au"
 						to="contact"
 						smooth={true}
 						offset={-50}
