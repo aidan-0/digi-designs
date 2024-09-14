@@ -1,20 +1,26 @@
 ## Using
 
+### **Tech Stack**
 Next.js
 React
 Resend for emails
 
-#UI
+### **UI**
 Shadcn
 MagicUI
 AceternityUI
-
 Images by Rubytone - Pixel.Market
 
 
-<!-- TODO -->
-[ ] Client Images on dark mode
+#### TODO
+##### General
+[x] Client Images on dark mode
+[x] Responsively style contact section
+[x] Responsively style footer
 [ ] Responsively style header
-[ ] Responsively style contact section
-[ ] Responsively style footer
+[ ] Create and animate mobile header
+[ ] Add in additional animations
+
+##### Showcase Page
 [ ] Build out showcase/portfolio section
+[ ] Add pointer follower for showcase cards
