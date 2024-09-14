@@ -333,9 +333,6 @@ export default function Home() {
 							</div>
 						</section>
 					</Element>
-
-					{/* Footer */}
-					<Footer />
 				</main>
 			</div>
 		</>

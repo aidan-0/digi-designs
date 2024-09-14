@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
 	return (
-		<footer className="border-t bg-card dark:bg-background-darker font-medium mt-12 md:mt-20 h-20 rounded-t-xl flex flex-row justify-around items-center">
+		<footer className="border-t bg-card dark:bg-background-darker font-medium mt-12 md:mt-20 min-h-20 rounded-t-xl flex flex-col md:flex-row justify-around items-center py-6 ">
 			<div>
 				<a
 					href="mailto:hello@digidesigns.com.au"
@@ -11,7 +11,7 @@ const Footer = () => {
 					hello@digidesigns.com.au
 				</a>
 			</div>
-			<div>
+			<div className="pt-[6px] pb-6 md:p-0">
 				© {new Date().getFullYear()} Digi Designs - Aidan McDonald{" "}
 			</div>
 			<div className="flex flex-row gap-3 justify-center items-center">

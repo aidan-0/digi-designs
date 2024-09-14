@@ -3,7 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { Space_Grotesk } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
-
+import Footer from "@/components/Footer";
 
 const space_grotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -27,6 +27,7 @@ export default function RootLayout({
 					enableSystem
 				>
 					{children}
+					<Footer />
 					<Toaster />
 				</ThemeProvider>
 			</body>
