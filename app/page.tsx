@@ -273,7 +273,7 @@ export default function Home() {
 								</div>
 							</div>
 							{/* Trusted By - END */}
-							<div className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20  px-6 md:px-0">
+							<div className="md:flex items-center justify-center space-y-6 md:space-y-0 md:gap-x-20">
 								<Image
 									src={
 										"/other/richard-from-richards-muscle-lab.webp"
@@ -284,12 +284,8 @@ export default function Home() {
 									alt="image"
 								/>
 								<div className="flex flex-col gap-y-5">
-									<h1 className="text-lg md:text-2xl ">
-										&quot;Quote from richard Lorem ipsum
-										dolor sit amet, consectetur adipisicing
-										elit. Debitis perferendis repellat velit
-										eaque quam optio vel earum ut officiis
-										pariatur. &quot;
+									<h1 className="text-md md:text-md lg:text-lg ">
+										&quot;Aidan at digi designs was an absolute pleasure to work with. The continuous communication allowed for the website to be complete without any drafts or edits needed and was ready to go on schedule as discussed in the proposal. I would highly recommend Digi Designs to anyone that is looking to create an awesome website tailored to your businesses exact needs.&quot;
 									</h1>
 									<div className="flex items-center gap-x-1">
 										<IconStarFilled className="text-4xl text-yellow-500" />
