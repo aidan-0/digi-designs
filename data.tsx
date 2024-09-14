@@ -52,7 +52,7 @@ export const features = [
 	{
 	  icon: "/icons/scalable.svg",
 	  title: "Scalability + Maintenance ",
-	  description: "Future-proof websites that grow with your business, supported by ongoing maintenance.",
+	  description: "Future-proof websites and projects that grow with your business, supported by ongoing maintenance.",
 	},
 	{
 	  icon: "/icons/team.svg",
@@ -63,7 +63,7 @@ export const features = [
 	  icon: "/icons/safe.svg",
 	  title: "Secure Building",
 	  description:
-		"Safe and secure building practices. To ensure your data is safe.",
+		"Safe and secure building practices to ensure your data remains safe.",
 	},
 	{
 	  icon: "/icons/analytics.svg",

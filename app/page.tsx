@@ -210,8 +210,7 @@ export default function Home() {
 								Trusted by Local Australian Businesses
 							</h2>
 							<p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
-								All of our services are designed to help your
-								business to get noticed.
+								Your local partner for tailored web solutions that drive results.
 							</p>
 							<div className="md:flex items-center justify-between gap-y-4 my-4 gap-x-28 mx-auto">
 								<div className="md:w-2/5">
