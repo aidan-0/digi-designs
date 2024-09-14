@@ -14,7 +14,7 @@ Images by Rubytone - Pixel.Market
 
 #### TODO
 ##### General
-+ [x] Client Images on dark mode
++ [x] Fix client images on dark mode
 + [x] Responsively style contact section
 + [x] Responsively style footer
 + [ ] Responsively style header

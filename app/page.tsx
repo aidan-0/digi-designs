@@ -17,8 +17,54 @@ import { IconStarFilled } from "@tabler/icons-react";
 import { BackgroundBeamsDemo } from "@/components/demos/background-beams-demo";
 import Navbar from "@/components/Navbar";
 import ContactForm from "@/components/ContactForm";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+	// Fade in
+	useGSAP(() => {
+		// Select all elements with class 'fade-in'
+		gsap.utils.toArray(".fade-in").forEach((element: any) => {
+			gsap.fromTo(
+				element,
+				{ opacity: 0 },
+				{
+					opacity: 1,
+					duration: 0.3,
+					ease: "power2.inOut",
+					scrollTrigger: {
+						trigger: element,
+						start: "top 80%", // start animation when element is 80% into view
+					},
+				}
+			);
+		});
+
+		gsap.fromTo(".services-item", {opacity: 0},{
+			opacity: 1,
+			duration: 1,
+			stagger: 0.15,
+			scrollTrigger: {
+			  trigger: ".services-item", 
+			  start: "top 95%", 
+			},
+		  });
+
+
+		gsap.fromTo(".features-item", {opacity: 0},{
+			opacity: 1,
+			duration: 1,
+			stagger: 0.15,
+			scrollTrigger: {
+			  trigger: ".features-item", 
+			  start: "top 95%", 
+			},
+		  });
+	}, []);
+
 	return (
 		<>
 			<div className="min-h-screen bg-fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:14px_24px]">
@@ -61,20 +107,20 @@ export default function Home() {
 								/>
 							</h1>
 
-							<p className="text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-600">
+							<p className="fade-in opacity-0 text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-600">
 								Get an estimate tailored to your specific needs
 								by completing the form below.
 							</p>
 							<div className="flex justify-center items-center gap-3 xs:gap-4">
 								<Link
 									href="mailto:hello@digidesigns.com.au"
-									className="px-4 sm:px-12 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
+									className="fade-in opacity-0 md:w-[210px] text-center px-4 sm:px-12 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
 								>
 									Get in Touch
 								</Link>
 								<Link
 									href="mailto:hello@digidesigns.com.au"
-									className="px-4 sm:px-12 py-2 font-semibold hover:bg-dd-dark hover:text-dd-light rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)] dark:hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)]"
+									className="fade-in opacity-0 md:w-[210px] text-center px-4 sm:px-12 py-2 font-semibold hover:bg-dd-dark hover:text-dd-light rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)] dark:hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)]"
 								>
 									Showcase
 								</Link>
@@ -83,8 +129,7 @@ export default function Home() {
 							{/* Hero and CTA - END */}
 
 							{/* Box Reveal - START*/}
-							{/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 items-center text-left sm:justify-items-center md:mx-auto mt-10 md:mt-16 md:w-4/5 "> */}
-							<div className="flex flex-row flex-wrap gap-3 sm:gap-4 items-center justify-center lg:gap-24 md:mx-auto mt-12 md:mt-16 md:w-4/5 text-xl font-semibold">
+							<div className="fade-in opacity-0 flex flex-row flex-wrap gap-3 sm:gap-4 items-center justify-center lg:gap-44 md:mx-auto mt-12 md:mt-16 md:w-4/5 text-xl font-semibold">
 								<BoxReveal boxColor={"#4e9edd"} duration={0.5}>
 									<p className="flex gap-2 md:gap-x-4 items-center">
 										<CheckIcon className="text-dd-light-blue" />
@@ -119,9 +164,10 @@ export default function Home() {
 
 						{/* Services - Start */}
 						<Element name="services">
-							<div className="md:px-0 md:mx-auto pt-16 md:pt-20">
-								<h2>
-									<WordPullUpDemo />
+							<div className="fade-in opacity-0 md:px-0 md:mx-auto pt-16 md:pt-20">
+								<h2 className="text-3xl md:text-5xl md:text-center font-medium">
+									{/* <WordPullUpDemo /> */}
+									Built from the ground up
 								</h2>
 								<p className="text-center pt-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
 									All of our services are designed to help
@@ -132,7 +178,7 @@ export default function Home() {
 									{services.map((service) => (
 										<div
 											key={service.title}
-											className="flex flex-col justify-between h-full text-center p-4 hover:scale-[1.03] transition-transform duration-500 rounded-md shadow-sm bg-card border border-border"
+											className="services-items flex flex-col justify-between h-full text-center p-4 hover:scale-[1.03] transition-transform duration-500 rounded-md shadow-sm bg-card border border-border"
 										>
 											<Image
 												src={service.icon}
@@ -163,7 +209,7 @@ export default function Home() {
 
 					<div className="px-5 xl:px-0 sm:px-10 lg:px-20 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-0 md:mt-12 sm:mt-20 max-w-[1600px]">
 						<Element name="process">
-							<main className="md:px-0 md:mx-auto">
+							<div className="fade-in opacity-0 md:px-0 md:mx-auto">
 								<h2 className="text-3xl md:text-5xl md:text-center font-medium flex flex-wrap items-center gap-x-2 mx-auto justify-center">
 									Our{" "}
 									<span className="text-dd-light-blue flex gap-x-1 items-center">
@@ -201,17 +247,18 @@ export default function Home() {
 										<BoxRevealDemo />
 									</div>
 								</div>
-							</main>
+							</div>
 						</Element>
 
 						{/* Testimonials - Start */}
-						<section className="mt-16 md:mt-20">
+						<section className="fade-in opacity-0 mt-16 md:mt-20">
 							{/* Trusted By - START */}
 							<h2 className="text-3xl md:text-5xl text-center font-medium flex flex-wrap items-center mx-auto justify-center">
 								Trusted by Local Australian Businesses
 							</h2>
 							<p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
-								Your local partner for tailored web solutions that drive results.
+								Your local partner for tailored web solutions
+								that drive results.
 							</p>
 							<div className="md:flex items-center justify-between gap-y-4 my-4 gap-x-28 mx-auto">
 								<div className="md:w-2/5">
@@ -285,7 +332,16 @@ export default function Home() {
 								/>
 								<div className="flex flex-col gap-y-5">
 									<h1 className="text-md md:text-md lg:text-lg ">
-										&quot;Aidan at digi designs was an absolute pleasure to work with. The continuous communication allowed for the website to be complete without any drafts or edits needed and was ready to go on schedule as discussed in the proposal. I would highly recommend Digi Designs to anyone that is looking to create an awesome website tailored to your businesses exact needs.&quot;
+										&quot;Aidan at digi designs was an
+										absolute pleasure to work with. The
+										continuous communication allowed for the
+										website to be complete without any
+										drafts or edits needed and was ready to
+										go on schedule as discussed in the
+										proposal. I would highly recommend Digi
+										Designs to anyone that is looking to
+										create an awesome website tailored to
+										your businesses exact needs.&quot;
 									</h1>
 									<div className="flex items-center gap-x-1">
 										<IconStarFilled className="text-4xl text-yellow-500" />
@@ -307,17 +363,20 @@ export default function Home() {
 					</div>
 
 					{/* Background Beams */}
-					<section className="mt-16 md:mt-20">
+					<section className="mt-16 md:mt-20 ">
 						<Element name="guarantees">
 							<BackgroundBeamsDemo />
 						</Element>
 					</section>
 
 					{/* Contact Section */}
-					<Element name="contact" className="px-5 sm:px-10 lg:px-20 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 md:mt-20 max-w-[1600px]">
+					<Element
+						name="contact"
+						className="px-5 sm:px-10 lg:px-20 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 md:mt-20 max-w-[1600px]"
+					>
 						<section
 							id="contact"
-							className="w-full flex flex-col md:grid md:grid-cols-2 bg-card border border-border p-5 xs:p-10 rounded-xl shadow md:gap-8"
+							className="fade-in opacity-0 w-full flex flex-col md:grid md:grid-cols-2 bg-card border border-border p-5 xs:p-10 rounded-xl shadow md:gap-8"
 						>
 							<div className="flex justify-center items-center order-2 md:order-1">
 								<ContactForm />
