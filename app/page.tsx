@@ -31,7 +31,7 @@ export default function Home() {
 					<div className="px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px]">
 						{/* Hero and CTA - START */}
 						<div className="">
-							<h1 className="text-[37px] leading-[40px] md:text-5xl lg:text-6xl xl:text-[4rem] mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
+							<h1 className="text-[11vw] leading-[11vw] xs:text-4xl md:text-5xl lg:text-6xl xl:text-[4rem] mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
 								<div className="flex justify-center">
 									<FadeText
 										className="text-dd-dark dark:text-dd-light"
@@ -62,11 +62,11 @@ export default function Home() {
 								/>
 							</h1>
 
-							<p className="md:text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-600">
+							<p className="text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-600">
 								Get an estimate tailored to your specific needs
 								by completing the form below.
 							</p>
-							<div className="flex justify-center items-center gap-4">
+							<div className="flex justify-center items-center gap-3 xs:gap-4">
 								<Link
 									href="mailto:hello@digidesigns.com.au"
 									className="px-4 sm:px-12 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
@@ -84,10 +84,11 @@ export default function Home() {
 							{/* Hero and CTA - END */}
 
 							{/* Box Reveal - START*/}
-							<div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 items-center text-left sm:justify-items-center md:mx-auto mt-10 md:mt-16 md:w-4/5 ">
+							{/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 items-center text-left sm:justify-items-center md:mx-auto mt-10 md:mt-16 md:w-4/5 "> */}
+							<div className="flex flex-row flex-wrap gap-3 sm:gap-4 items-center justify-center lg:gap-24 md:mx-auto mt-12 md:mt-16 md:w-4/5 text-xl font-semibold">
 								<BoxReveal boxColor={"#4e9edd"} duration={0.5}>
-									<p className="md:text-xl font-semibold flex gap-2 md:gap-x-4 items-center">
-										<CheckIcon className="text-dd-light-blue text-xl" />
+									<p className="flex gap-2 md:gap-x-4 items-center">
+										<CheckIcon className="text-dd-light-blue" />
 										Websites
 									</p>
 								</BoxReveal>
@@ -97,8 +98,8 @@ export default function Home() {
 									textDelay={0.5}
 									boxDelay={0.25}
 								>
-									<p className="md:text-xl font-semibold flex gap-2 md:gap-x-4 items-center">
-										<CheckIcon className="text-dd-light-blue text-xl" />
+									<p className="flex gap-2 md:gap-x-4 items-center">
+										<CheckIcon className="text-dd-light-blue" />
 										Applications
 									</p>
 								</BoxReveal>
@@ -108,8 +109,8 @@ export default function Home() {
 									textDelay={0.75}
 									boxDelay={0.5}
 								>
-									<p className="md:text-xl font-semibold flex gap-2 md:gap-x-4 items-center">
-										<CheckIcon className="text-dd-light-blue text-xl" />
+									<p className="flex gap-2 md:gap-x-4 items-center">
+										<CheckIcon className="text-dd-light-blue" />
 										Solutions
 									</p>
 								</BoxReveal>
@@ -119,11 +120,11 @@ export default function Home() {
 
 						{/* Services - Start */}
 						<Element name="services">
-							<div className="md:px-0 md:mx-auto pt-20">
+							<div className="md:px-0 md:mx-auto pt-16 md:pt-20">
 								<h2>
 									<WordPullUpDemo />
 								</h2>
-								<p className="md:text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+								<p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
 									All of our services are designed to help
 									your business stand out
 								</p>
@@ -156,12 +157,12 @@ export default function Home() {
 					</div>
 
 					{/* Scroll Velocity - Start */}
-					<section className="py-20">
+					<section className="py-16 md:py-20">
 						<ScrollBasedVelocityDemo />
 					</section>
 					{/* Scroll Velocity - End */}
 
-					<div className="px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px]">
+					<div className="px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-0 md:mt-12 sm:mt-20 max-w-[1600px]">
 						<Element name="process">
 							<main className="md:px-0 md:mx-auto">
 								<h2 className="text-3xl md:text-5xl md:text-center font-medium flex flex-wrap items-center gap-x-2 mx-auto justify-center">
@@ -205,9 +206,9 @@ export default function Home() {
 						</Element>
 
 						{/* Testimonials - Start */}
-						<section className="pt-20 my-10 sm:my-24">
+						<section className="mt-16 md:mt-20">
 							{/* Trusted By - START */}
-							<h2 className="text-3xl md:text-5xl md:text-center font-medium flex flex-wrap items-center mx-auto justify-center">
+							<h2 className="text-3xl md:text-5xl text-center font-medium flex flex-wrap items-center mx-auto justify-center">
 								Trusted by Local Australian Businesses
 							</h2>
 							<p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
@@ -307,7 +308,7 @@ export default function Home() {
 					</div>
 
 					{/* Background Beams */}
-					<section className="mt-20">
+					<section className="mt-16 md:mt-20">
 						<Element name="guarantees">
 							<BackgroundBeamsDemo />
 						</Element>

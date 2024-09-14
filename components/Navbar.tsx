@@ -61,7 +61,7 @@ const Navbar = () => {
 					</div>
 				</div>
 
-				<div className="flex flex-row items-center gap-6">
+				<div className="flex flex-row items-center gap-2 sm:gap-6">
 					<ScrollLink
 						to="contact"
 						smooth={true}
