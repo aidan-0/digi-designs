@@ -31,6 +31,7 @@ const config: Config = {
 				"dd-accent-orange": "#ffb032",
 				"dd-light": "#f7f7f7",
 				"dd-dark": "#1b1b1b",
+				"navbar-bg": "hsla(var(--navbar-bg))",
 				card: {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))",

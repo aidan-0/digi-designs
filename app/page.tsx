@@ -123,12 +123,12 @@ export default function Home() {
 								<h2>
 									<WordPullUpDemo />
 								</h2>
-								<p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+								<p className="text-center pt-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
 									All of our services are designed to help
 									your business stand out
 								</p>
 
-								<div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 ">
+								<div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 mt-10 ">
 									{services.map((service) => (
 										<div
 											key={service.title}
