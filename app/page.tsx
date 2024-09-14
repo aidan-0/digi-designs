@@ -90,13 +90,13 @@ export default function Home() {
 										Websites
 									</p>
 								</BoxReveal>
-								<BoxReveal boxColor={"#4e9edd"} duration={0.5}>
+								<BoxReveal boxColor={"#4e9edd"} duration={0.5} textDelay={.5} boxDelay={0.25}>
 									<p className="md:text-xl font-semibold flex gap-2 md:gap-x-4 items-center">
 										<CheckIcon className="text-dd-light-blue text-xl" />
 										Applications
 									</p>
 								</BoxReveal>
-								<BoxReveal boxColor={"#4e9edd"} duration={0.5}>
+								<BoxReveal boxColor={"#4e9edd"} duration={0.5} textDelay={.75} boxDelay={.5}>
 									<p className="md:text-xl font-semibold flex gap-2 md:gap-x-4 items-center">
 										<CheckIcon className="text-dd-light-blue text-xl" />
 										Solutions
