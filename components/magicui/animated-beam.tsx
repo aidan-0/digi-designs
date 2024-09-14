@@ -32,10 +32,11 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
   toRef,
   curvature = 0,
   reverse = false, // Include the reverse prop
-  duration = Math.random() * 3 + 4,
+  duration = Math.random() * 1.1 + 3,
+  // duration = 1,
   delay = 0,
   pathColor = "gray",
-  pathWidth = 2,
+  pathWidth = 3,
   pathOpacity = 0.2,
   gradientStartColor = "#a247f4",
   gradientStopColor = "#4e9edd",
@@ -166,7 +167,8 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
           transition={{
             delay,
             duration,
-            ease: [0.16, 1, 0.3, 1], // https://easings.net/#easeOutExpo
+            // ease: [0.16, 1, 0.3, 1], 
+            ease: "easeIn", // https://easings.net/#easeOutExpo
             repeat: Infinity,
             repeatDelay: 0,
           }}
