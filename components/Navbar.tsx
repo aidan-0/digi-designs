@@ -12,7 +12,7 @@ const Navbar = () => {
 			{/* full-width nav */}
 			<Element
 				name="top"
-				className="shadow rounded-b-xl top-0 sticky z-50 w-full bg-dd bg-card border-b border-border dark:bg-background-darker flex items-center justify-between py-6 px-4 md:px-8"
+				className="shadow rounded-b-xl top-0 sticky z-50 w-full bg-dd bg-navbar-bg border-b border-border dark:bg-navbar-bg flex items-center justify-between py-6 px-4 md:px-8"
 				id="navbar-style"
 			>
 				<Link href="/">

@@ -47,6 +47,8 @@
 		--chart-3: 197 37% 24%;
 		--chart-4: 43 74% 66%;
 		--chart-5: 27 87% 67%;
+
+		--navbar-bg: 225 100% 98.24%;
 	}
 
 	.dark {
@@ -83,6 +85,8 @@
 		--destructive-foreground: 215 8.2% 97.2%;
 
 		--ring: 210 2% 44%;
+		--navbar-bg: 225 100% 98.24%;
+
 	}
 }
 
@@ -96,8 +100,10 @@
 }
 
 
-#navbar-style {
-  backdrop-filter: blur(10px);
-  background-opacity: 0.8;
-}
-
+#navbar-style {	
+	/* Check if backdrop-filter is supported */
+	@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+	  backdrop-filter: blur(10px);
+	  -webkit-backdrop-filter: blur(10px); 
+	}
+  }
