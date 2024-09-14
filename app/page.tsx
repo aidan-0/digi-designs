@@ -3,7 +3,6 @@
 import { AnimatedBeamMultipleOutputDemo } from "@/components/demos/animated-beam-demo";
 import BoxRevealDemo from "@/components/demos/box-reveal-demo";
 import { ScrollBasedVelocityDemo } from "@/components/demos/scroll-based-velocity-demo";
-import { WordPullUpDemo } from "@/components/demos/word-pull-up-demo";
 import { CheckIcon } from "@/components/icons/check-icon";
 import BoxReveal from "@/components/magicui/box-reveal";
 import { FadeText } from "@/components/magicui/fade-text";
@@ -166,7 +165,6 @@ export default function Home() {
 						<Element name="services">
 							<div className="fade-in opacity-0 md:px-0 md:mx-auto pt-16 md:pt-20">
 								<h2 className="text-3xl md:text-5xl md:text-center font-medium">
-									{/* <WordPullUpDemo /> */}
 									Built from the ground up
 								</h2>
 								<p className="text-center pt-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
@@ -332,7 +330,7 @@ export default function Home() {
 								/>
 								<div className="flex flex-col gap-y-5">
 									<h1 className="text-md md:text-md lg:text-lg ">
-										&quot;Aidan at digi designs was an
+										&quot;Aidan at Digi Designs was an
 										absolute pleasure to work with. The
 										continuous communication allowed for the
 										website to be complete without any
