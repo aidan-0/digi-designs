@@ -90,13 +90,23 @@ export default function Home() {
 										Websites
 									</p>
 								</BoxReveal>
-								<BoxReveal boxColor={"#4e9edd"} duration={0.5} textDelay={.5} boxDelay={0.25}>
+								<BoxReveal
+									boxColor={"#4e9edd"}
+									duration={0.5}
+									textDelay={0.5}
+									boxDelay={0.25}
+								>
 									<p className="md:text-xl font-semibold flex gap-2 md:gap-x-4 items-center">
 										<CheckIcon className="text-dd-light-blue text-xl" />
 										Applications
 									</p>
 								</BoxReveal>
-								<BoxReveal boxColor={"#4e9edd"} duration={0.5} textDelay={.75} boxDelay={.5}>
+								<BoxReveal
+									boxColor={"#4e9edd"}
+									duration={0.5}
+									textDelay={0.75}
+									boxDelay={0.5}
+								>
 									<p className="md:text-xl font-semibold flex gap-2 md:gap-x-4 items-center">
 										<CheckIcon className="text-dd-light-blue text-xl" />
 										Solutions
@@ -177,8 +187,9 @@ export default function Home() {
 								</h2>
 
 								<p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
-									All of our services are designed to help
-									your business to get noticed.
+									We craft each of our services to ensure your
+									business stands out and gets the attention
+									it deserves.
 								</p>
 
 								<div className="flex flex-col md:flex-row items-center justify-center w-full max-w-[1100px] mx-auto gap-3 sm:gap-0 ">
@@ -308,7 +319,10 @@ export default function Home() {
 
 					{/* Contact Section */}
 					<Element name="contact">
-						<section className="w-full p-12 grid grid-cols-2 bg-card border border-border px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px] rounded-xl shadow">
+						<section
+							id="contact"
+							className="w-full p-12 grid grid-cols-2 bg-card border border-border px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px] rounded-xl shadow"
+						>
 							<div className="flex justify-center items-center">
 								<ContactForm />
 							</div>
