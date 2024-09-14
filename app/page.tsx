@@ -26,16 +26,16 @@ export default function Home() {
 	// Fade in
 	useGSAP(() => {
 		// Select all elements with class 'fade-in'
-		gsap.utils.toArray(".fade-in").forEach((element: any) => {
+		gsap.utils.toArray(".fade-in").forEach((element) => {
 			gsap.fromTo(
-				element,
+				element as HTMLElement,
 				{ opacity: 0 },
 				{
 					opacity: 1,
 					duration: 0.3,
 					ease: "power2.inOut",
 					scrollTrigger: {
-						trigger: element,
+						trigger: element as HTMLElement,
 						start: "top 80%", // start animation when element is 80% into view
 					},
 				}
