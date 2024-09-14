@@ -28,7 +28,7 @@ export default function Home() {
 
 				{/* Main Section */}
 				<main className="">
-					<div className="px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px]">
+					<div className="px-5 xl:px-0 sm:px-10 lg:px-20 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px]">
 						{/* Hero and CTA - START */}
 						<div className="">
 							<h1 className="text-[11vw] leading-[11vw] xs:text-4xl md:text-5xl lg:text-6xl xl:text-[4rem] mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
@@ -162,7 +162,7 @@ export default function Home() {
 					</section>
 					{/* Scroll Velocity - End */}
 
-					<div className="px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-0 md:mt-12 sm:mt-20 max-w-[1600px]">
+					<div className="px-5 xl:px-0 sm:px-10 lg:px-20 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-0 md:mt-12 sm:mt-20 max-w-[1600px]">
 						<Element name="process">
 							<main className="md:px-0 md:mx-auto">
 								<h2 className="text-3xl md:text-5xl md:text-center font-medium flex flex-wrap items-center gap-x-2 mx-auto justify-center">
@@ -315,16 +315,16 @@ export default function Home() {
 					</section>
 
 					{/* Contact Section */}
-					<Element name="contact">
+					<Element name="contact" className="px-5 sm:px-10 lg:px-20 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 md:mt-20 max-w-[1600px]">
 						<section
 							id="contact"
-							className="w-full p-12 grid grid-cols-2 bg-card border border-border px-5 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px] rounded-xl shadow"
+							className="w-full flex flex-col md:grid md:grid-cols-2 bg-card border border-border p-5 xs:p-10 rounded-xl shadow md:gap-8"
 						>
-							<div className="flex justify-center items-center">
+							<div className="flex justify-center items-center order-2 md:order-1">
 								<ContactForm />
 							</div>
-							<div className="flex flex-col justify-center">
-								<h4 className="text-5xl">
+							<div className="flex flex-col justify-center order-1 md:order-2">
+								<h4 className="text-3xl md:text-4xl lg:text-5xl">
 									Let&apos;s make things happen
 								</h4>
 								<p className="text-2xl">

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const BoxRevealDemo = () => {
   return (
-    <div className="h-full w-full items-center justify-center sm:ml-10 overflow-hidden pt-8  sm:space-y-2">
+    <div className="h-full w-full items-center justify-center sm:ml-10 overflow-hidden pt-8 sm:space-y-2 sm:pr-10">
       <BoxReveal boxColor={"#3b82f6"} duration={0.5}>
         
         <p className="text-3xl font-semibold">1. Connect</p>

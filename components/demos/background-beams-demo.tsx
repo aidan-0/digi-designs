@@ -9,10 +9,10 @@ export function BackgroundBeamsDemo() {
 
 
     <>
-      <div className="py-10 md:py-20 rounded-xl bg-dd-dark dark:bg-background-darkest flex flex-col items-center justify-center relative w-full px-6 shadow-md">
-        <h2 className="relative flex-col  z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 via-white to-white flex items-center gap-2 ">
+      <div className="py-12 md:py-20 rounded-xl sm:px-10 lg:px-20 xl:px-0 bg-dd-dark dark:bg-background-darkest flex flex-col items-center justify-center relative w-full px-6 shadow-md">
+        <h2 className="relative flex-col z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-400 via-white to-white flex items-center gap-2 ">
           The Digi Difference.
-          <p className="md:text-center   mx-auto  text-xl md:text-2xl text-gray-200">
+          <p className="md:text-center mx-auto  text-xl md:text-2xl text-gray-200">
             We ensure the highest quality of work, with the fastest delivery
             times.
           </p>
