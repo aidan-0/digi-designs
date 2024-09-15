@@ -15,6 +15,7 @@ const Footer = () => {
 				© {new Date().getFullYear()} Digi Designs - Aidan McDonald{" "}
 			</div>
 			<div className="flex flex-row gap-3 justify-center items-center">
+			<a href="https://github.com/aidan-0" target="_blank" rel="nofollow">
 				<Image
 					src="/icons/github-mark.svg"
 					alt="Github logo"
@@ -22,6 +23,8 @@ const Footer = () => {
 					height={30}
 					className="cursor-pointer h-8 w-8 hover:brightness-150 transition duration-400"
 				/>
+				</a>
+				<a href="https://www.linkedin.com/in/aidan-mcdonald0/" target="_blank" rel="nofollow">
 				<Image
 					src="/icons/linkedin-logo.svg"
 					alt="LinkedIn logo"
@@ -29,6 +32,7 @@ const Footer = () => {
 					height={30}
 					className="cursor-pointer h-9 w-9 hover:brightness-150 transition duration-400"
 				/>
+				</a>
 			</div>
 		</footer>
 	);
