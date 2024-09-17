@@ -24,25 +24,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 export default function Home() {
-	// Fade in
 	useGSAP(() => {
-		// Select all elements with class 'fade-in'
-		gsap.utils.toArray(".fade-in").forEach((element) => {
-			gsap.fromTo(
-				element as HTMLElement,
-				{ opacity: 0 },
-				{
-					opacity: 1,
-					duration: 0.3,
-					ease: "power2.inOut",
-					scrollTrigger: {
-						trigger: element as HTMLElement,
-						start: "top 80%", // start animation when element is 80% into view
-					},
-				}
-			);
-		});
-
 		gsap.fromTo(
 			".services-items",
 			{ opacity: 0 },
@@ -90,7 +72,7 @@ export default function Home() {
 										direction="right"
 										framerProps={{
 											show: {
-												transition: { delay: 0.3 },
+												transition: { delay: 0.35 },
 											},
 										}}
 										text="We make"
@@ -99,7 +81,7 @@ export default function Home() {
 										className=" text-dd-light-blue px-2"
 										direction="up"
 										framerProps={{
-											show: { transition: { delay: 0 } },
+											show: { transition: { delay: 0.1 } },
 										}}
 										text="damn"
 									/>
@@ -108,7 +90,7 @@ export default function Home() {
 									className="text-dd-dark dark:text-dd-light"
 									direction="left"
 									framerProps={{
-										show: { transition: { delay: 0.3 } },
+										show: { transition: { delay: 0.35 } },
 									}}
 									text="good websites."
 								/>
@@ -135,7 +117,7 @@ export default function Home() {
 							{/* Box Reveal - START*/}
 							<div id="services" /> {/* Scroll to services */}
 							<div className="fade-in opacity-0 flex flex-row flex-wrap gap-3 sm:gap-4 items-center justify-center lg:gap-44 md:mx-auto mt-12 md:mt-16 md:w-4/5 text-xl font-semibold">
-								<BoxReveal boxColor={"#4e9edd"} duration={0.5}>
+								<BoxReveal boxColor={"#4e9edd"} duration={0.5} textDelay={1} boxDelay={0.75}>
 									<p className="flex gap-2 md:gap-x-4 items-center">
 										<CheckIcon className="text-dd-light-blue" />
 										Websites
@@ -144,8 +126,8 @@ export default function Home() {
 								<BoxReveal
 									boxColor={"#4e9edd"}
 									duration={0.5}
-									textDelay={0.5}
-									boxDelay={0.25}
+									textDelay={1.25}
+									boxDelay={1}
 								>
 									<p className="flex gap-2 md:gap-x-4 items-center">
 										<CheckIcon className="text-dd-light-blue" />
@@ -155,8 +137,8 @@ export default function Home() {
 								<BoxReveal
 									boxColor={"#4e9edd"}
 									duration={0.5}
-									textDelay={0.75}
-									boxDelay={0.5}
+									textDelay={1.5}
+									boxDelay={1.25}
 								>
 									<p className="flex gap-2 md:gap-x-4 items-center">
 										<CheckIcon className="text-dd-light-blue" />
