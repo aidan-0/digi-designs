@@ -14,7 +14,7 @@ import Link from "next/link";
 import { Element } from "react-scroll";
 import { IconStarFilled } from "@tabler/icons-react";
 import { BackgroundBeamsDemo } from "@/components/demos/background-beams-demo";
-import Navbar from "@/components/Navbar";
+import NavbarHome from "@/components/NavbarHome";
 import ContactForm from "@/components/ContactForm";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -42,33 +42,40 @@ export default function Home() {
 			);
 		});
 
-		gsap.fromTo(".services-item", {opacity: 0},{
-			opacity: 1,
-			duration: 1,
-			stagger: 0.15,
-			scrollTrigger: {
-			  trigger: ".services-item", 
-			  start: "top 95%", 
-			},
-		  });
+		gsap.fromTo(
+			".services-item",
+			{ opacity: 0 },
+			{
+				opacity: 1,
+				duration: 1,
+				stagger: 0.15,
+				scrollTrigger: {
+					trigger: ".services-item",
+					start: "top 95%",
+				},
+			}
+		);
 
-
-		gsap.fromTo(".features-item", {opacity: 0},{
-			opacity: 1,
-			duration: 1,
-			stagger: 0.15,
-			scrollTrigger: {
-			  trigger: ".features-item", 
-			  start: "top 95%", 
-			},
-		  });
+		gsap.fromTo(
+			".features-item",
+			{ opacity: 0 },
+			{
+				opacity: 1,
+				duration: 1,
+				stagger: 0.15,
+				scrollTrigger: {
+					trigger: ".features-item",
+					start: "top 95%",
+				},
+			}
+		);
 	}, []);
 
 	return (
 		<>
 			<div className="min-h-screen bg-fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:14px_24px]">
 				{/* Nav Bar */}
-				<Navbar />
+				<NavbarHome />
 
 				{/* Main Section */}
 				<main className="">
@@ -105,7 +112,6 @@ export default function Home() {
 									text="good websites."
 								/>
 							</h1>
-
 							<p className="fade-in opacity-0 text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-600">
 								Get an estimate tailored to your specific needs
 								by completing the form below.
@@ -124,10 +130,9 @@ export default function Home() {
 									Showcase
 								</Link>
 							</div>
-
 							{/* Hero and CTA - END */}
-
 							{/* Box Reveal - START*/}
+							<div id="services" /> {/* Scroll to services */}
 							<div className="fade-in opacity-0 flex flex-row flex-wrap gap-3 sm:gap-4 items-center justify-center lg:gap-44 md:mx-auto mt-12 md:mt-16 md:w-4/5 text-xl font-semibold">
 								<BoxReveal boxColor={"#4e9edd"} duration={0.5}>
 									<p className="flex gap-2 md:gap-x-4 items-center">
@@ -202,6 +207,7 @@ export default function Home() {
 					{/* Scroll Velocity - Start */}
 					<section className="py-16 md:py-20">
 						<ScrollBasedVelocityDemo />
+						<div id="process" />
 					</section>
 					{/* Scroll Velocity - End */}
 
@@ -361,6 +367,7 @@ export default function Home() {
 					</div>
 
 					{/* Background Beams */}
+					<div id="guarantees" />
 					<section className="mt-16 md:mt-20 ">
 						<Element name="guarantees">
 							<BackgroundBeamsDemo />

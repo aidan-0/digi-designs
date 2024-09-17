@@ -1,9 +1,13 @@
-import React from 'react'
+import NavbarShowcase from "@/components/NavbarShowcase";
+import React from "react";
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+	return (
+		<div>
+			<NavbarShowcase />
+			page
+		</div>
+	);
+};
 
-export default page
+export default page;
