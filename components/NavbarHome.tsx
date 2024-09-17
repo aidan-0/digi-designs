@@ -19,7 +19,7 @@ const Navbar = () => {
 						alt="Digi Logo"
 						width={128}
 						height={128}
-						className="w-28"
+						className="w-28 h-14"
 					/>
 				</Link>
 

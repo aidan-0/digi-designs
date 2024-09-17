@@ -8,7 +8,6 @@ import BoxReveal from "@/components/magicui/box-reveal";
 import { FadeText } from "@/components/magicui/fade-text";
 import NumberTicker from "@/components/magicui/number-ticker";
 import { InfiniteMovingLogos } from "@/components/ui/infinite-moving-logos";
-import { services } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import { Element } from "react-scroll";
@@ -19,8 +18,10 @@ import ContactForm from "@/components/ContactForm";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
+import { services } from "@/data";
 
 gsap.registerPlugin(ScrollTrigger);
+
 
 export default function Home() {
 	// Fade in
@@ -43,14 +44,14 @@ export default function Home() {
 		});
 
 		gsap.fromTo(
-			".services-item",
+			".services-items",
 			{ opacity: 0 },
 			{
 				opacity: 1,
 				duration: 1,
 				stagger: 0.15,
 				scrollTrigger: {
-					trigger: ".services-item",
+					trigger: ".services-items",
 					start: "top 95%",
 				},
 			}

@@ -15,9 +15,9 @@ const Navbar = () => {
 					<Image
 						src="/webp-logos/Digi_Designs_Logo_Blue.webp"
 						alt="Digi Logo"
-						width={128}
-						height={128}
-						className="w-28"
+						width={150}
+						height={150}
+						className="w-28 h-14"
 					/>
 				</Link>
 
