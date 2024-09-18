@@ -166,7 +166,7 @@ export default function Home() {
 									{services.map((service) => (
 										<div
 											key={service.title}
-											className="services-items flex flex-col justify-between h-full text-center p-4 hover:scale-[1.03] transition-transform duration-500 rounded-md shadow-sm bg-card border border-border"
+											className="services-items flex flex-col justify-between h-full text-center p-4 hover:scale-[1.03] transition-transform duration-500 rounded-md  bg-card/90 border border-border shadow-md dark:shadow-custom-inset"
 										>
 											<Image
 												src={service.icon}
@@ -366,7 +366,7 @@ export default function Home() {
 					>
 						<section
 							id="contact"
-							className="fade-in opacity-0 w-full flex flex-col md:grid md:grid-cols-2 bg-card/85 border border-border p-5 xs:p-10 rounded-xl shadow md:gap-8"
+							className="fade-in opacity-0 w-full flex flex-col md:grid md:grid-cols-2 bg-card/85 border border-border p-5 xs:p-10 rounded-xl shadow dark:shadow-custom-inset md:gap-8"
 						>
 							<div className="flex justify-center items-center order-2 md:order-1">
 								<ContactForm />
