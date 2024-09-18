@@ -19,6 +19,9 @@ const config: Config = {
 			screens: {
 				xs: "500px",
 			},
+			boxShadow: {
+				'custom-inset': '1px 3px 12px 0px rgba(248,248,248,0.06) inset',
+			  },
 			colors: {
 				background: "hsl(var(--background))",
 				foreground: "hsl(var(--foreground))",
@@ -32,7 +35,6 @@ const config: Config = {
 				"dd-light": "#f7f7f7",
 				"dd-dark": "#1b1b1b",
 				"navbar-bg": "hsla(var(--navbar-bg))",
-				"inset-shadow": "shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]",
 				card: {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))",
