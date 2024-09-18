@@ -6,65 +6,64 @@ import { projects } from "@/data";
 import Image from "next/image";
 
 export default function ProjectCard() {
-
-  useEffect(() => {
-    const scale = [1, 1.1, 1];
-    const transform = [
-      "translateY(0px)",
-      "translateY(-4px)",
-      "translateY(0px)",
-    ];
-    const sequence = [
-      [
-        ".circle-1",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.8 },
-      ],
-      [
-        ".circle-2",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.8 },
-      ],
-      [
-        ".circle-3",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.8 },
-      ],
-      [
-        ".circle-4",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.8 },
-      ],
-      [
-        ".circle-5",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.8 },
-      ],
-    ];
+	useEffect(() => {
+		const scale = [1, 1.1, 1];
+		const transform = [
+			"translateY(0px)",
+			"translateY(-4px)",
+			"translateY(0px)",
+		];
+		const sequence = [
+			[
+				".circle-1",
+				{
+					scale,
+					transform,
+				},
+				{ duration: 0.8 },
+			],
+			[
+				".circle-2",
+				{
+					scale,
+					transform,
+				},
+				{ duration: 0.8 },
+			],
+			[
+				".circle-3",
+				{
+					scale,
+					transform,
+				},
+				{ duration: 0.8 },
+			],
+			[
+				".circle-4",
+				{
+					scale,
+					transform,
+				},
+				{ duration: 0.8 },
+			],
+			[
+				".circle-5",
+				{
+					scale,
+					transform,
+				},
+				{ duration: 0.8 },
+			],
+		];
 
 		// @ts-expect-error
-    // sequence causes an error
+		// sequence causes an error
 		animate(sequence, {
 			repeat: Infinity,
 			repeatDelay: 1,
 		});
-  }, []);
-  
+	}, []);
+
 	return (
 		<>
 			{projects.map((project, index) => (
@@ -74,7 +73,7 @@ export default function ProjectCard() {
 						width={300}
 						height={300}
 						alt={project.title}
-            className="rounded-xl border shadow-md w-full hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
+						className="rounded-lg border shadow-md w-full hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
 					/>
 					<CardSkeletonContainer>
 						<div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
@@ -121,7 +120,7 @@ export default function ProjectCard() {
 								</Container>
 							</div>
 
-							<div className="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
+							<div className="h-40 w-px absolute m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
 								<div className="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
 									<Sparkles />
 								</div>
@@ -136,7 +135,31 @@ export default function ProjectCard() {
 	);
 }
 
+// Container for the tech stack icons
+export const CardSkeletonContainer = ({
+	className,
+	children,
+	showGradient = true,
+}: {
+	className?: string;
+	children: React.ReactNode;
+	showGradient?: boolean;
+}) => {
+	return (
+		<div
+			className={cn(
+				"h-[180px] rounded-xl z-40",
+				className,
+				showGradient &&
+					"bg-card/80 dark:bg-card/80 [mask-image:radial-gradient(50%_50%_at_50%_50%,white_75%,transparent_100%)]"
+			)}
+		>
+			{children}
+		</div>
+	);
+};
 
+// Sparkles only
 const Sparkles = () => {
 	const randomMove = () => Math.random() * 2 - 1;
 	const randomOpacity = () => Math.random();
@@ -173,6 +196,8 @@ const Sparkles = () => {
 	);
 };
 
+
+// Outer Card
 export const Card = ({
 	className,
 	children,
@@ -183,7 +208,7 @@ export const Card = ({
 	return (
 		<div
 			className={cn(
-				"max-w-sm w-full mx-auto p-6 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-card/80 bg-card/80 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group flex flex-col",
+				"max-w-sm w-full mx-auto p-6 rounded-xl border border-border dark:border-[rgba(255,255,255,0.10)] dark:bg-card/80 bg-card/90 shadow-custom-inset group flex flex-col",
 				className
 			)}
 		>
@@ -192,6 +217,7 @@ export const Card = ({
 	);
 };
 
+// Title of the project
 export const CardTitle = ({
 	children,
 	className,
@@ -211,6 +237,7 @@ export const CardTitle = ({
 	);
 };
 
+// Description of the project
 export const CardDescription = ({
 	children,
 	className,
@@ -230,29 +257,7 @@ export const CardDescription = ({
 	);
 };
 
-export const CardSkeletonContainer = ({
-	className,
-	children,
-	showGradient = true,
-}: {
-	className?: string;
-	children: React.ReactNode;
-	showGradient?: boolean;
-}) => {
-	return (
-		<div
-			className={cn(
-				"h-[15rem] md:h-[20rem] rounded-xl z-40",
-				className,
-				showGradient &&
-					"bg-neutral-300 dark:bg-[rgba(40,40,40,0.70)] [mask-image:radial-gradient(60%_50%_at_50%_50%,white_0%,transparent_100%)]"
-			)}
-		>
-			{children}
-		</div>
-	);
-};
-
+// Balls that the tech stack icons are in
 const Container = ({
 	className,
 	children,
@@ -263,8 +268,9 @@ const Container = ({
 	return (
 		<div
 			className={cn(
-				`h-16 w-16 rounded-full flex items-center justify-center bg-[rgba(248,248,248,0.01)]
-    shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]
+				` rounded-full flex items-center justify-center bg-[rgba(248,248,248,0.01)]
+    dark:shadow-[0px_0px_8px_0px_rgba(248,248,248,0.25)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]
+    shadow-[0px_0px_8px_0px_rgba(30,30,30,0.2)_inset,0px_32px_24px_-16px_rgba(0,0,0,0.40)]
     `,
 				className
 			)}
