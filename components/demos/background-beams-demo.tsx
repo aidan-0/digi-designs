@@ -23,7 +23,7 @@ export function BackgroundBeamsDemo() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="features-item flex flex-col p-6 lg:p-10 bg-neutral-800 dark:bg-card rounded-xl cursor-pointer border-[#293956] border dark:border-border"
+              className="features-item flex flex-col p-6 lg:p-10 bg-neutral-800/80 dark:bg-card/80 rounded-xl cursor-pointer border-[#293956] border dark:border-border shadow-[1px_3px_12px_0px_rgba(248,248,248,0.06)_inset]"
             >
               <button
                 className="

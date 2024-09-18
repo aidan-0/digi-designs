@@ -3,6 +3,7 @@ import { FadeText } from "@/components/magicui/fade-text";
 import NavbarShowcase from "@/components/NavbarShowcase";
 import Link from "next/link";
 import React from "react";
+import ProjectCard from "@/components/ProjectCard";
 
 const page = () => {
 	return (
@@ -14,61 +15,70 @@ const page = () => {
 			<main className="">
 				<div className="px-5 xl:px-0 sm:px-10 lg:px-20 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px]">
 					{/* Hero and CTA - START */}
-					<div className="">
-						<h1 className="text-[11vw] leading-[11vw] xs:text-4xl md:text-5xl lg:text-6xl xl:text-[4rem] mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
-							<div className="flex justify-center">
-								<FadeText
-									className="text-dd-dark dark:text-dd-light"
-									direction="right"
-									framerProps={{
-										show: {
-											transition: { delay: 0.35 },
-										},
-									}}
-									text="Some of our"
-								/>
-								<FadeText
-									className=" text-dd-light-blue px-2"
-									direction="up"
-									framerProps={{
-										show: { transition: { delay: 0 } },
-									}}
-									text="damn"
-								/>
-							</div>
+					<h1 className="text-[11vw] leading-[11vw] xs:text-4xl md:text-5xl lg:text-6xl xl:text-[4rem] mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
+						<div className="flex justify-center">
 							<FadeText
 								className="text-dd-dark dark:text-dd-light"
-								direction="left"
+								direction="right"
 								framerProps={{
-									show: { transition: { delay: 0.35 } },
+									show: {
+										transition: { delay: 0.35 },
+									},
 								}}
-								text="good websites."
+								text="Some of our"
 							/>
-						</h1>
-						<p className="fade-in opacity-0 text-center text-xl my-2 md:text-2xl md:w-4/5 mx-auto text-gray-600">
-							(and other digital solutions)
-						</p>
-						<p className="fade-in opacity-0 text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-600">
-							Get an estimate tailored to your specific needs by
-							completing the form below.
-						</p>
-						<div className="flex justify-center items-center gap-3 xs:gap-4">
-							{/* <Link
+							<FadeText
+								className=" text-dd-light-blue px-2"
+								direction="up"
+								framerProps={{
+									show: { transition: { delay: 0 } },
+								}}
+								text="damn"
+							/>
+						</div>
+						<FadeText
+							className="text-dd-dark dark:text-dd-light"
+							direction="left"
+							framerProps={{
+								show: { transition: { delay: 0.35 } },
+							}}
+							text="good websites."
+						/>
+					</h1>
+					<p className="fade-in opacity-0 text-center text-xl my-2 md:text-2xl md:w-4/5 mx-auto text-gray-600">
+						(and other digital solutions)
+					</p>
+					<p className="fade-in opacity-0 text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-600">
+						Get an estimate tailored to your specific needs by
+						completing the form below.
+					</p>
+					<div className="flex justify-center items-center gap-3 xs:gap-4">
+						{/* <Link
 								href="mailto:hello@digidesigns.com.au"
 								className="fade-in opacity-0 md:w-[210px] text-center px-4 sm:px-12 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
 							>
 								Get in Touch
 							</Link> */}
-							<Link
-								href="mailto:hello@digidesigns.com.au"
-								className="fade-in opacity-0 md:w-[210px] text-center px-4 sm:px-12 py-2 font-semibold hover:bg-dd-dark hover:text-dd-light rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)] dark:hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)]"
-							>
-								Get in Touch
-							</Link>
-						</div>
+						<Link
+							href="mailto:hello@digidesigns.com.au"
+							className="fade-in opacity-0 md:w-[210px] text-center px-4 sm:px-12 py-2 font-semibold hover:bg-dd-dark hover:text-dd-light rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)] dark:hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)]"
+						>
+							Get in Touch
+						</Link>
 					</div>
+				</div>
 
-
+				{/* Projects Section */}
+				<div
+					id="projects"
+					className="px-5 sm:px-10 lg:px-20 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 md:mt-20 max-w-[1600px]"
+				>
+					<h2 className="text-3xl md:text-5xl md:text-center font-medium">
+						Built from the ground up
+					</h2>
+					<div className="flex py-124">
+						<ProjectCard />
+					</div>
 				</div>
 
 				{/* Contact Section */}

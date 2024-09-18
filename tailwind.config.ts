@@ -17,7 +17,7 @@ const config: Config = {
 	theme: {
 		extend: {
 			screens: {
-				'xs': '500px',
+				xs: "500px",
 			},
 			colors: {
 				background: "hsl(var(--background))",
@@ -32,6 +32,7 @@ const config: Config = {
 				"dd-light": "#f7f7f7",
 				"dd-dark": "#1b1b1b",
 				"navbar-bg": "hsla(var(--navbar-bg))",
+				"inset-shadow": "shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset]",
 				card: {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))",
@@ -78,6 +79,7 @@ const config: Config = {
 			},
 			animation: {
 				scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+				move: "move 5s linear infinite",
 			},
 			
 			keyframes: {
@@ -86,6 +88,10 @@ const config: Config = {
 						transform: "translate(calc(-50% - 0.5rem))",
 					},
 				},
+				move: {
+					"0%": { transform: "translateX(-200px)" },
+					"100%": { transform: "translateX(200px)" },
+				  },
 			},
 		},
 	},

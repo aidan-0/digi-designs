@@ -18,7 +18,7 @@ const GlobalAnimations = () => {
                 {
                     opacity: 1,
                     duration: 0.4,
-                    delay: 0.6,
+                    delay: 0.2,
                     ease: "power2.inOut",
                     scrollTrigger: {
                         trigger: element as HTMLElement,

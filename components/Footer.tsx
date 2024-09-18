@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
 	return (
-		<footer className="border-t bg-card dark:bg-background-darker font-medium mt-12 md:mt-20 min-h-20 rounded-t-xl flex flex-col md:flex-row justify-around items-center py-6 ">
+		<footer className="border-t bg-card dark:bg-background-darker font-medium min-h-20 rounded-t-xl flex flex-col md:flex-row justify-around items-center py-6 ">
 			<div>
 				<a
 					href="mailto:hello@digidesigns.com.au"

@@ -1,5 +1,7 @@
 "use client";
 
+// TODO - make card and other bgs /80 opacity
+
 import { AnimatedBeamMultipleOutputDemo } from "@/components/demos/animated-beam-demo";
 import BoxRevealDemo from "@/components/demos/box-reveal-demo";
 import { ScrollBasedVelocityDemo } from "@/components/demos/scroll-based-velocity-demo";
@@ -360,11 +362,11 @@ export default function Home() {
 					{/* Contact Section */}
 					<Element
 						name="contact"
-						className="px-5 sm:px-10 lg:px-20 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 md:mt-20 max-w-[1600px]"
+						className="px-5 sm:px-10 lg:px-20 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto max-w-[1600px] py-12 md:py-20"
 					>
 						<section
 							id="contact"
-							className="fade-in opacity-0 w-full flex flex-col md:grid md:grid-cols-2 bg-card border border-border p-5 xs:p-10 rounded-xl shadow md:gap-8"
+							className="fade-in opacity-0 w-full flex flex-col md:grid md:grid-cols-2 bg-card/85 border border-border p-5 xs:p-10 rounded-xl shadow md:gap-8"
 						>
 							<div className="flex justify-center items-center order-2 md:order-1">
 								<ContactForm />
