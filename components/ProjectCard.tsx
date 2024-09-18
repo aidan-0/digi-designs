@@ -1,8 +1,7 @@
 "use client";
 import { animate, motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { GoCopilot } from "react-icons/go";
 import { projects } from "@/data";
 import Image from "next/image";
 
@@ -58,7 +57,7 @@ export default function ProjectCard() {
       ],
     ];
 
-		// @ts-ignore
+		// @ts-expect-error
 		animate(sequence, {
 			repeat: Infinity,
 			repeatDelay: 1,
@@ -74,48 +73,48 @@ export default function ProjectCard() {
 						width={300}
 						height={300}
 						alt={project.title}
+            className="rounded-xl border shadow-md w-full hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
 					/>
 					<CardSkeletonContainer>
 						<div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
 							<div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
-								{/* Apply specific circle class styling */}
 								<Container className="h-12 w-12 circle-1">
 									<Image
 										src={project.techStack?.[0]?.icon}
-										width={16}
-										height={16}
+										width={28}
+										height={28}
 										alt={project.techStack?.[0]?.name}
 									/>
 								</Container>
 								<Container className="h-14 w-14 circle-2">
 									<Image
 										src={project.techStack?.[1]?.icon}
-										width={24}
-										height={24}
+										width={28}
+										height={28}
 										alt={project.techStack?.[1]?.name}
 									/>
 								</Container>
 								<Container className="h-16 w-16 circle-3">
 									<Image
 										src={project.techStack?.[2]?.icon}
-										width={32}
-										height={32}
+										width={36}
+										height={36}
 										alt={project.techStack?.[2]?.name}
 									/>
 								</Container>
 								<Container className="h-14 w-14 circle-4">
 									<Image
 										src={project.techStack?.[3]?.icon}
-										width={24}
-										height={24}
+										width={28}
+										height={28}
 										alt={project.techStack?.[3]?.name}
 									/>
 								</Container>
 								<Container className="h-12 w-12 circle-5">
 									<Image
 										src={project.techStack?.[4]?.icon}
-										width={40}
-										height={40}
+										width={28}
+										height={28}
 										alt={project.techStack?.[4]?.name}
 									/>
 								</Container>
@@ -183,7 +182,7 @@ export const Card = ({
 	return (
 		<div
 			className={cn(
-				"max-w-sm w-full mx-auto p-8 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-card/80 bg-card/80 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group",
+				"max-w-sm w-full mx-auto p-6 rounded-xl border border-[rgba(255,255,255,0.10)] dark:bg-card/80 bg-card/80 shadow-[2px_4px_16px_0px_rgba(248,248,248,0.06)_inset] group flex flex-col",
 				className
 			)}
 		>

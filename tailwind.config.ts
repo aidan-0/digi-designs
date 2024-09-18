@@ -20,7 +20,7 @@ const config: Config = {
 				xs: "500px",
 			},
 			boxShadow: {
-				'custom-inset': '1px 3px 12px 0px rgba(248,248,248,0.06) inset',
+				'custom-inset': '1px 3px 12px 0px rgba(150,150,150,0.06) inset',
 			  },
 			colors: {
 				background: "hsl(var(--background))",

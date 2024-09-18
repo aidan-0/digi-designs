@@ -76,7 +76,7 @@ const page = () => {
 					<h2 className="text-3xl md:text-5xl md:text-center font-medium">
 						Built from the ground up
 					</h2>
-					<div className="flex py-124">
+					<div className="flex py-12">
 						<ProjectCard />
 					</div>
 				</div>
@@ -84,11 +84,11 @@ const page = () => {
 				{/* Contact Section */}
 				<div
 					id="contact"
-					className="px-5 sm:px-10 lg:px-20 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 md:mt-20 max-w-[1600px]"
+					className="px-5 sm:px-10 lg:px-20 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto py-12 md:py-20 max-w-[1600px]"
 				>
 					<section
 						id="contact"
-						className="fade-in opacity-0 w-full flex flex-col md:grid md:grid-cols-2 bg-card border border-border p-5 xs:p-10 rounded-xl shadow md:gap-8"
+						className="fade-in opacity-0 w-full flex flex-col md:grid md:grid-cols-2 bg-card/90 border border-border shadow dark:shadow-custom-inset p-5 xs:p-10 rounded-xl md:gap-8"
 					>
 						<div className="flex justify-center items-center order-2 md:order-1">
 							<ContactForm />
