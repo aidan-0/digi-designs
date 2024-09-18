@@ -179,4 +179,116 @@ export const projects = [
 			},
 		],
 	},
+	{
+		title: "Richards Muscle Lab",
+		description:
+			"WordPress website for a Perth local Online Coaching business.",
+		image: "/projects/richards-muscle-lab.png",
+		techStack: [
+			{
+				icon: "/tech-stack/canva.svg",
+				name: "canva",
+			},
+			{
+				icon: "/tech-stack/css-3.svg",
+				name: "css",
+			},
+			{
+				icon: "/tech-stack/wordpress-icon.svg",
+				name: "wordpress",
+			},
+			{
+				icon: "/tech-stack/html-1.svg",
+				name: "html",
+			},
+			{
+				icon: "/tech-stack/elementor.svg",
+				name: "elementor",
+			},
+		],
+	},
+	{
+		title: "Richards Muscle Lab",
+		description:
+			"WordPress website for a Perth local Online Coaching business.",
+		image: "/projects/richards-muscle-lab.png",
+		techStack: [
+			{
+				icon: "/tech-stack/canva.svg",
+				name: "canva",
+			},
+			{
+				icon: "/tech-stack/css-3.svg",
+				name: "css",
+			},
+			{
+				icon: "/tech-stack/wordpress-icon.svg",
+				name: "wordpress",
+			},
+			{
+				icon: "/tech-stack/html-1.svg",
+				name: "html",
+			},
+			{
+				icon: "/tech-stack/elementor.svg",
+				name: "elementor",
+			},
+		],
+	},
+	{
+		title: "Richards Muscle Lab",
+		description:
+			"WordPress website for a Perth local Online Coaching business.",
+		image: "/projects/richards-muscle-lab.png",
+		techStack: [
+			{
+				icon: "/tech-stack/canva.svg",
+				name: "canva",
+			},
+			{
+				icon: "/tech-stack/css-3.svg",
+				name: "css",
+			},
+			{
+				icon: "/tech-stack/wordpress-icon.svg",
+				name: "wordpress",
+			},
+			{
+				icon: "/tech-stack/html-1.svg",
+				name: "html",
+			},
+			{
+				icon: "/tech-stack/elementor.svg",
+				name: "elementor",
+			},
+		],
+	},
+	{
+		title: "Richards Muscle Lab",
+		description:
+			"WordPress website for a Perth local Online Coaching business.",
+		image: "/projects/richards-muscle-lab.png",
+		techStack: [
+			{
+				icon: "/tech-stack/canva.svg",
+				name: "canva",
+			},
+			{
+				icon: "/tech-stack/css-3.svg",
+				name: "css",
+			},
+			{
+				icon: "/tech-stack/wordpress-icon.svg",
+				name: "wordpress",
+			},
+			{
+				icon: "/tech-stack/html-1.svg",
+				name: "html",
+			},
+			{
+				icon: "/tech-stack/elementor.svg",
+				name: "elementor",
+			},
+		],
+	},
 ];

@@ -4,6 +4,14 @@ import React, { useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { projects } from "@/data";
 import Image from "next/image";
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+  } from "@/components/ui/carousel"
+  
 
 export default function ProjectCard() {
 	useEffect(() => {
@@ -65,8 +73,12 @@ export default function ProjectCard() {
 
 	return (
 		<>
+		<Carousel className="max-w-[1600px] flex align-middle px-5 sm:px-10 lg:px-20 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto py-12 md:py-20 " 
+		opts={{align: "start", loop: true}}>
+		<CarouselContent className="m-0 max-w-[1600px]">
 			{projects.map((project, index) => (
-				<Card key={index}>
+				<CarouselItem className="md:basis-1/3 lg:basis-[410px] p-0" key={index}>
+				<Card >
 					<Image
 						src={project.image}
 						width={300}
@@ -129,7 +141,12 @@ export default function ProjectCard() {
 					<CardTitle>{project.title}</CardTitle>
 					<CardDescription>{project.description}</CardDescription>
 				</Card>
+				</CarouselItem >
 			))}
+			</CarouselContent >
+			<CarouselPrevious />
+			<CarouselNext />
+		</Carousel>
 		</>
 	);
 }
@@ -194,7 +211,6 @@ const Sparkles = () => {
 		</div>
 	);
 };
-
 
 // Outer Card
 export const Card = ({

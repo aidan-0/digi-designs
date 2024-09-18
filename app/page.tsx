@@ -97,7 +97,7 @@ export default function Home() {
 									text="good websites."
 								/>
 							</h1>
-							<p className="fade-in opacity-0 text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-600">
+							<p className="fade-in opacity-0 text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto dark:text-gray-400 text-gray-600">
 								Get an estimate tailored to your specific needs
 								by completing the form below.
 							</p>
@@ -157,7 +157,7 @@ export default function Home() {
 								<h2 className="text-3xl md:text-5xl md:text-center font-medium">
 									Built from the ground up
 								</h2>
-								<p className="text-center pt-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+								<p className="text-center pt-4 md:w-1/2 mx-auto text-xl md:text-2xl dark:text-gray-400 text-gray-500">
 									All of our services are designed to help
 									your business stand out
 								</p>
@@ -178,7 +178,7 @@ export default function Home() {
 											<h5 className="text-xl font-medium">
 												{service.title}
 											</h5>
-											<p className="text-gray-500">
+											<p className="dark:text-gray-400 text-gray-500">
 												{service.description}
 											</p>
 										</div>
@@ -222,7 +222,7 @@ export default function Home() {
 									Process
 								</h2>
 
-								<p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+								<p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl dark:text-gray-400 text-gray-500">
 									We craft each of our services to ensure your
 									business stands out and gets the attention
 									it deserves.
@@ -245,7 +245,7 @@ export default function Home() {
 							<h2 className="text-3xl md:text-5xl text-center font-medium flex flex-wrap items-center mx-auto justify-center">
 								Trusted by Local Australian Businesses
 							</h2>
-							<p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl text-gray-500">
+							<p className="text-center py-4 md:w-1/2 mx-auto text-xl md:text-2xl dark:text-gray-400 text-gray-500">
 								Your local partner for tailored web solutions
 								that drive results.
 							</p>
@@ -255,7 +255,7 @@ export default function Home() {
 										<div>
 											<h4 className="text-dd-light-blue text-3xl md:text-5xl">
 												<NumberTicker value={1000} /> +
-												<p className="text-gray-500 text-sm md:text-md">
+												<p className="dark:text-gray-400 text-gray-500 text-sm md:text-md">
 													Hours of Development
 												</p>
 											</h4>
@@ -266,7 +266,7 @@ export default function Home() {
 										<div className="flex-1 min-w-0">
 											<h4 className="text-dd-light-blue text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
 												<NumberTicker value={25} /> +
-												<p className="text-gray-500 text-sm md:text-md">
+												<p className="dark:text-gray-400 text-gray-500 text-sm md:text-md">
 													Projects Completed
 												</p>
 											</h4>

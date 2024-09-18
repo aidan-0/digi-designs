@@ -71,7 +71,7 @@ const page = () => {
 				{/* Projects Section */}
 				<div
 					id="projects"
-					className="px-5 sm:px-10 lg:px-20 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 md:mt-20 max-w-[1600px]"
+					className="px-5 sm:px-10 lg:px-20 xl:px-0 md:mx-auto mt-12 md:mt-20"
 				>
 					<h2 className="text-3xl md:text-5xl md:text-center font-medium">
 						Built from the ground up
