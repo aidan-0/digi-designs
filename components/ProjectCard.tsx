@@ -56,8 +56,7 @@ export default function ProjectCard() {
 			],
 		];
 
-		// @ts-expect-error
-		// sequence causes an error
+		// @ts-expect-error sequence causes an error
 		animate(sequence, {
 			repeat: Infinity,
 			repeatDelay: 1,
