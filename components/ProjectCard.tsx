@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+
 import React from "react";
 import { cn } from "@/lib/utils";
 import { projects } from "@/data";
@@ -134,7 +134,7 @@ export default function ProjectCard() {
 						</SheetTrigger>
 						<SheetContent side="right">
 							<SheetHeader className="pt-4">
-              <Image
+								<Image
 									src={project.image}
 									width={300}
 									height={300}
@@ -145,10 +145,8 @@ export default function ProjectCard() {
 								<SheetDescription>
 									{project.longDescription}
 								</SheetDescription>
-
 							</SheetHeader>
 							<div className="py-4">
-							
 								<h4 className="mt-4">Tech Stack:</h4>
 								<div className="flex flex-wrap gap-2 mt-2">
 									{project.techStack?.map((tech, idx) => (
