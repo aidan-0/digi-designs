@@ -71,12 +71,12 @@ const page = () => {
 				{/* Projects Section */}
 				<div
 					id="projects"
-					className="px-5 sm:px-10 lg:px-20 xl:px-0 md:mx-auto mt-12 md:mt-20"
+					className="px-5 sm:px-10 lg:px-20 xl:px-0 mt-12 md:mt-20 flex flex-col justify-center max-w-[1600px] xl:w-4/5 2xl:w-[68%] md:mx-auto"
 				>
-					<h2 className="text-3xl md:text-5xl md:text-center font-medium">
+					<h2 className="text-3xl md:text-5xl text-center font-medium">
 						Built from the ground up
 					</h2>
-					<div className="flex py-12">
+					<div className="flex py-12 justify-center">
 						<ProjectCard />
 					</div>
 				</div>
