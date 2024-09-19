@@ -1,6 +1,6 @@
 "use client";
-import { animate, motion } from "framer-motion";
-import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+import React from "react";
 import { cn } from "@/lib/utils";
 import { projects } from "@/data";
 import Image from "next/image";
@@ -13,64 +13,7 @@ import {
 } from "@/components/ui/carousel";
 
 
-// TODO: come back to animation - currently the sparkles dont align if the balls are the rong size - could change it to a hover effect
 export default function ProjectCard() {
-//   useEffect(() => {
-//     const scale = [1, 1.1, 1];
-//     const transform = [
-//       "translateY(0px)",
-//       "translateY(-4px)",
-//       "translateY(0px)",
-//     ];
-//     const sequence = [
-//       [
-//         ".circle-1",
-//         {
-//           scale,
-//           transform,
-//         },
-//         { duration: 0.8 },
-//       ],
-//       [
-//         ".circle-2",
-//         {
-//           scale,
-//           transform,
-//         },
-//         { duration: 0.8 },
-//       ],
-//       [
-//         ".circle-3",
-//         {
-//           scale,
-//           transform,
-//         },
-//         { duration: 0.8 },
-//       ],
-//       [
-//         ".circle-4",
-//         {
-//           scale,
-//           transform,
-//         },
-//         { duration: 0.8 },
-//       ],
-//       [
-//         ".circle-5",
-//         {
-//           scale,
-//           transform,
-//         },
-//         { duration: 0.8 },
-//       ],
-//     ];
-
-//     // @ts-expect-error sequence causes an error
-//     // animate(sequence, {
-//     //   repeat: Infinity,
-//     //   repeatDelay: 1,
-//     // });
-//   }, []);
 
   return (
     <Carousel className="w-full">
@@ -91,7 +34,7 @@ export default function ProjectCard() {
               <CardSkeletonContainer>
                 <div className="p-8  h-full relative flex items-center justify-center">
                   <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
-                    <Container className="h-10 w-10 xs:h-12 xs:w-12 lg:h-10 lg:w-10 circle-1 overflow-visible">
+                    <Container className="h-10 w-10 xs:h-12 xs:w-12 lg:h-10 lg:w-10 circle-1 overflow-visible hover:translate-y-[-4px] transition-transform duration-300">
                       <Image
                         src={project.techStack?.[0]?.icon}
                         width={28}
@@ -99,7 +42,7 @@ export default function ProjectCard() {
                         alt={project.techStack?.[0]?.name}
                       />
                     </Container>
-                    <Container className="h-12 w-12 xs:h-14 xs:w-14 lg:h-12 lg:w-12  circle-2">
+                    <Container className="h-12 w-12 xs:h-14 xs:w-14 lg:h-12 lg:w-12 circle-2 hover:translate-y-[-4px] transition-transform duration-300">
                       <Image
                         src={project.techStack?.[1]?.icon}
                         width={28}
@@ -107,7 +50,7 @@ export default function ProjectCard() {
                         alt={project.techStack?.[1]?.name}
                       />
                     </Container>
-                    <Container className="h-14 w-14 xs:h-16 xs:w-16 lg:h-14 lg:w-14 circle-3">
+                    <Container className="h-14 w-14 xs:h-16 xs:w-16 lg:h-14 lg:w-14 circle-3 hover:translate-y-[-4px] transition-transform duration-300">
                       <Image
                         src={project.techStack?.[2]?.icon}
                         width={36}
@@ -115,7 +58,7 @@ export default function ProjectCard() {
                         alt={project.techStack?.[2]?.name}
                       />
                     </Container>
-                    <Container className="h-12 w-12 xs:h-14 xs:w-14 lg:h-12 lg:w-12 circle-4">
+                    <Container className="h-12 w-12 xs:h-14 xs:w-14 lg:h-12 lg:w-12 circle-4 hover:translate-y-[-4px] transition-transform duration-300">
                       <Image
                         src={project.techStack?.[3]?.icon}
                         width={28}
@@ -123,7 +66,7 @@ export default function ProjectCard() {
                         alt={project.techStack?.[3]?.name}
                       />
                     </Container>
-                    <Container className="h-10 w-10 xs:h-12 xs:w-12 lg:h-10 lg:w-10 circle-5">
+                    <Container className="h-10 w-10 xs:h-12 xs:w-12 lg:h-10 lg:w-10 circle-5 hover:translate-y-[-4px] transition-transform duration-300">
                       <Image
                         src={project.techStack?.[4]?.icon}
                         width={28}
@@ -133,11 +76,6 @@ export default function ProjectCard() {
                     </Container>
                   </div>
 
-                  {/* <div className="h-40 w-px absolute m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
-                    <div className="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
-                      <Sparkles />
-                    </div>
-                  </div> */}
                 </div>
               </CardSkeletonContainer>
               <CardTitle>{project.title}</CardTitle>
