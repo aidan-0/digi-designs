@@ -5,7 +5,6 @@ import Link from "next/link";
 import React from "react";
 import ProjectCard from "@/components/ProjectCard";
 import BoxReveal from "@/components/magicui/box-reveal";
-import { CheckIcon } from "@/components/icons/check-icon";
 
 const page = () => {
 	return (
@@ -24,7 +23,7 @@ const page = () => {
 								direction="right"
 								framerProps={{
 									show: {
-										transition: { delay: 0 },
+										transition: { delay: 0.1 },
 									},
 								}}
 								text="Project"
@@ -33,7 +32,7 @@ const page = () => {
 								className=" text-dd-light-blue px-2"
 								direction="left"
 								framerProps={{
-									show: { transition: { delay: 0 } },
+									show: { transition: { delay: 0.1 } },
 								}}
 								text="Showcase"
 							/>
@@ -54,7 +53,7 @@ const page = () => {
 					id="projects"
 					className="px-5 sm:px-10 lg:px-20 xl:px-0 mt-12 md:mt-20 flex flex-col justify-center max-w-[1600px] xl:w-4/5 2xl:w-[68%] md:mx-auto fade-in opacity-0"
 				>
-					<div className="flex justify-center">
+					<div className="flex flex-col justify-center items-center">
 						<BoxReveal
 							boxColor={"#4e9edd"}
 							duration={0.65}
@@ -65,6 +64,9 @@ const page = () => {
 								Swipe through our latest projects
 							</h2>
 						</BoxReveal>
+							<p className="text-xl md:text-2xl pt-2 dark:text-gray-400 text-gray-600">
+								Or <span className="text-dd-light-blue">click</span> on a project to learn more
+							</p>
 					</div>
 					<div className="flex py-12 justify-center">
 						<ProjectCard />
