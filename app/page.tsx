@@ -371,11 +371,11 @@ export default function Home() {
 							<div className="flex justify-center items-center order-2 md:order-1">
 								<ContactForm />
 							</div>
-							<div className="flex flex-col justify-center order-1 md:order-2">
+							<div className="flex flex-col justify-center order-1 md:order-2 gap-4">
 								<h4 className="text-3xl md:text-4xl lg:text-5xl">
 									Let&apos;s make things happen
 								</h4>
-								<p className="text-2xl">
+								<p className="text-xl sm:text-2xl">
 									Get in touch with us today!
 								</p>
 							</div>

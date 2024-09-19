@@ -4,6 +4,8 @@ import NavbarShowcase from "@/components/NavbarShowcase";
 import Link from "next/link";
 import React from "react";
 import ProjectCard from "@/components/ProjectCard";
+import BoxReveal from "@/components/magicui/box-reveal";
+import { CheckIcon } from "@/components/icons/check-icon";
 
 const page = () => {
 	return (
@@ -22,43 +24,22 @@ const page = () => {
 								direction="right"
 								framerProps={{
 									show: {
-										transition: { delay: 0.35 },
+										transition: { delay: 0 },
 									},
 								}}
-								text="Some of our"
+								text="Project"
 							/>
 							<FadeText
 								className=" text-dd-light-blue px-2"
-								direction="up"
+								direction="left"
 								framerProps={{
 									show: { transition: { delay: 0 } },
 								}}
-								text="damn"
+								text="Showcase"
 							/>
 						</div>
-						<FadeText
-							className="text-dd-dark dark:text-dd-light"
-							direction="left"
-							framerProps={{
-								show: { transition: { delay: 0.35 } },
-							}}
-							text="good websites."
-						/>
 					</h1>
-					<p className="fade-in opacity-0 text-center text-xl my-2 md:text-2xl md:w-4/5 mx-auto text-gray-600">
-						(and other digital solutions)
-					</p>
-					<p className="fade-in opacity-0 text-center text-xl md:text-2xl my-6 md:my-10 md:w-4/5 mx-auto text-gray-600">
-						Get an estimate tailored to your specific needs by
-						completing the form below.
-					</p>
-					<div className="flex justify-center items-center gap-3 xs:gap-4">
-						{/* <Link
-								href="mailto:hello@digidesigns.com.au"
-								className="fade-in opacity-0 md:w-[210px] text-center px-4 sm:px-12 py-2 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
-							>
-								Get in Touch
-							</Link> */}
+					<div className="flex justify-center items-center gap-3 xs:gap-4 pt-12">
 						<Link
 							href="mailto:hello@digidesigns.com.au"
 							className="fade-in opacity-0 md:w-[210px] text-center px-4 sm:px-12 py-2 font-semibold hover:bg-dd-dark hover:text-dd-light rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)] dark:hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)]"
@@ -71,11 +52,20 @@ const page = () => {
 				{/* Projects Section */}
 				<div
 					id="projects"
-					className="px-5 sm:px-10 lg:px-20 xl:px-0 mt-12 md:mt-20 flex flex-col justify-center max-w-[1600px] xl:w-4/5 2xl:w-[68%] md:mx-auto"
+					className="px-5 sm:px-10 lg:px-20 xl:px-0 mt-12 md:mt-20 flex flex-col justify-center max-w-[1600px] xl:w-4/5 2xl:w-[68%] md:mx-auto fade-in opacity-0"
 				>
-					<h2 className="text-3xl md:text-5xl text-center font-medium">
-						Built from the ground up
-					</h2>
+					<div className="flex justify-center">
+						<BoxReveal
+							boxColor={"#4e9edd"}
+							duration={0.65}
+							textDelay={.5}
+							boxDelay={.25}
+						>
+							<h2 className="text-3xl md:text-5xl font-medium">
+								Swipe through our latest projects
+							</h2>
+						</BoxReveal>
+					</div>
 					<div className="flex py-12 justify-center">
 						<ProjectCard />
 					</div>
@@ -93,12 +83,13 @@ const page = () => {
 						<div className="flex justify-center items-center order-2 md:order-1">
 							<ContactForm />
 						</div>
-						<div className="flex flex-col justify-center order-1 md:order-2">
+						<div className="flex flex-col justify-center order-1 md:order-2 gap-4">
 							<h4 className="text-3xl md:text-4xl lg:text-5xl">
-								Let&apos;s make things happen
+								Get in touch today
 							</h4>
-							<p className="text-2xl">
-								Get in touch with us today!
+							<p className="text-xl sm:text-2xl">
+								Receive an estimate tailored to your specific
+								needs by completing the form.
 							</p>
 						</div>
 					</section>
