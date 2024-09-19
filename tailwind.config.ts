@@ -18,6 +18,8 @@ const config: Config = {
 		extend: {
 			screens: {
 				xs: "500px",
+				"reg": "1150px",
+				"3xl": "1850px",				
 			},
 			boxShadow: {
 				'custom-inset': '1px 3px 12px 0px rgba(150,150,150,0.06) inset',

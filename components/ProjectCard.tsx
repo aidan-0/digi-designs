@@ -12,70 +12,72 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-export default function ProjectCard() {
-  useEffect(() => {
-    const scale = [1, 1.1, 1];
-    const transform = [
-      "translateY(0px)",
-      "translateY(-4px)",
-      "translateY(0px)",
-    ];
-    const sequence = [
-      [
-        ".circle-1",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.8 },
-      ],
-      [
-        ".circle-2",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.8 },
-      ],
-      [
-        ".circle-3",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.8 },
-      ],
-      [
-        ".circle-4",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.8 },
-      ],
-      [
-        ".circle-5",
-        {
-          scale,
-          transform,
-        },
-        { duration: 0.8 },
-      ],
-    ];
 
-    // @ts-expect-error sequence causes an error
-    animate(sequence, {
-      repeat: Infinity,
-      repeatDelay: 1,
-    });
-  }, []);
+// TODO: come back to animation - currently the sparkles dont align if the balls are the rong size - could change it to a hover effect
+export default function ProjectCard() {
+//   useEffect(() => {
+//     const scale = [1, 1.1, 1];
+//     const transform = [
+//       "translateY(0px)",
+//       "translateY(-4px)",
+//       "translateY(0px)",
+//     ];
+//     const sequence = [
+//       [
+//         ".circle-1",
+//         {
+//           scale,
+//           transform,
+//         },
+//         { duration: 0.8 },
+//       ],
+//       [
+//         ".circle-2",
+//         {
+//           scale,
+//           transform,
+//         },
+//         { duration: 0.8 },
+//       ],
+//       [
+//         ".circle-3",
+//         {
+//           scale,
+//           transform,
+//         },
+//         { duration: 0.8 },
+//       ],
+//       [
+//         ".circle-4",
+//         {
+//           scale,
+//           transform,
+//         },
+//         { duration: 0.8 },
+//       ],
+//       [
+//         ".circle-5",
+//         {
+//           scale,
+//           transform,
+//         },
+//         { duration: 0.8 },
+//       ],
+//     ];
+
+//     // @ts-expect-error sequence causes an error
+//     // animate(sequence, {
+//     //   repeat: Infinity,
+//     //   repeatDelay: 1,
+//     // });
+//   }, []);
 
   return (
     <Carousel className="w-full">
       <CarouselContent className="m-0 gap-4">
         {projects.map((project, index) => (
           <CarouselItem
-            className="p-0 flex-shrink-0 basis-full sm:basis-[calc((100%-16px)/2)] lg:basis-[calc((100%-32px)/3)] 2xl:basis-[calc((100%-48px)/4)]"
+            className="p-0 flex-shrink-0 basis-full md:basis-[calc((100%-16px)/2)] reg:basis-[calc((100%-32px)/3)] 3xl:basis-[calc((100%-48px)/4)]"
             key={index}
           >
             <Card className="">
@@ -87,9 +89,9 @@ export default function ProjectCard() {
                 className="rounded-lg border shadow-md w-full hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
               />
               <CardSkeletonContainer>
-                <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
+                <div className="p-8  h-full relative flex items-center justify-center">
                   <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
-                    <Container className="h-12 w-12 circle-1">
+                    <Container className="h-10 w-10 xs:h-12 xs:w-12 lg:h-10 lg:w-10 circle-1 overflow-visible">
                       <Image
                         src={project.techStack?.[0]?.icon}
                         width={28}
@@ -97,7 +99,7 @@ export default function ProjectCard() {
                         alt={project.techStack?.[0]?.name}
                       />
                     </Container>
-                    <Container className="h-14 w-14 circle-2">
+                    <Container className="h-12 w-12 xs:h-14 xs:w-14 lg:h-12 lg:w-12  circle-2">
                       <Image
                         src={project.techStack?.[1]?.icon}
                         width={28}
@@ -105,7 +107,7 @@ export default function ProjectCard() {
                         alt={project.techStack?.[1]?.name}
                       />
                     </Container>
-                    <Container className="h-16 w-16 circle-3">
+                    <Container className="h-14 w-14 xs:h-16 xs:w-16 lg:h-14 lg:w-14 circle-3">
                       <Image
                         src={project.techStack?.[2]?.icon}
                         width={36}
@@ -113,7 +115,7 @@ export default function ProjectCard() {
                         alt={project.techStack?.[2]?.name}
                       />
                     </Container>
-                    <Container className="h-14 w-14 circle-4">
+                    <Container className="h-12 w-12 xs:h-14 xs:w-14 lg:h-12 lg:w-12 circle-4">
                       <Image
                         src={project.techStack?.[3]?.icon}
                         width={28}
@@ -121,7 +123,7 @@ export default function ProjectCard() {
                         alt={project.techStack?.[3]?.name}
                       />
                     </Container>
-                    <Container className="h-12 w-12 circle-5">
+                    <Container className="h-10 w-10 xs:h-12 xs:w-12 lg:h-10 lg:w-10 circle-5">
                       <Image
                         src={project.techStack?.[4]?.icon}
                         width={28}
@@ -131,11 +133,11 @@ export default function ProjectCard() {
                     </Container>
                   </div>
 
-                  <div className="h-40 w-px absolute m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
+                  {/* <div className="h-40 w-px absolute m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
                     <div className="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
                       <Sparkles />
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </CardSkeletonContainer>
               <CardTitle>{project.title}</CardTitle>
@@ -163,10 +165,11 @@ export const CardSkeletonContainer = ({
   return (
     <div
       className={cn(
-        "h-[180px] rounded-xl z-40",
+        "h-[180px] rounded-xl z-40 ",
         className,
         showGradient &&
-          "bg-card/80 dark:bg-card/80 [mask-image:radial-gradient(50%_50%_at_50%_50%,white_75%,transparent_100%)]"
+          "bg-card/80 dark:bg-card/80 3xl:[mask-image:radial-gradient(50%_50%_at_50%_50%,white_80%,transparent_100%)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_60%,transparent_100%)]"
+		//   sm:[mask-image:radial-gradient(50%_50%_at_50%_50%,white_75%,transparent_100%)] md:[mask-image:radial-gradient(50%_50%_at_50%_50%,white_75%,transparent_100%)] lg:[mask-image:radial-gradient(50%_50%_at_50%_50%,white_75%,transparent_100%)] xl:[mask-image:radial-gradient(90%_50%_at_50%_50%,white_75%,transparent_100%)]
       )}
     >
       {children}
