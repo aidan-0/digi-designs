@@ -71,84 +71,82 @@ export default function ProjectCard() {
   }, []);
 
   return (
-    <>
-      <Carousel className="w-full max-w-[1200px]">
-        <CarouselContent className="m-0 gap-4">
-          {projects.map((project, index) => (
-            <CarouselItem
-              className="p-0 w-[200px] md:basis-1/2 lg:basis-[30%]"
-              key={index}
-            >
-              <Card className="">
-                <Image
-                  src={project.image}
-                  width={300}
-                  height={300}
-                  alt={project.title}
-                  className="rounded-lg border shadow-md w-full hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
-                />
-                <CardSkeletonContainer>
-                  <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
-                    <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
-                      <Container className="h-12 w-12 circle-1">
-                        <Image
-                          src={project.techStack?.[0]?.icon}
-                          width={28}
-                          height={28}
-                          alt={project.techStack?.[0]?.name}
-                        />
-                      </Container>
-                      <Container className="h-14 w-14 circle-2">
-                        <Image
-                          src={project.techStack?.[1]?.icon}
-                          width={28}
-                          height={28}
-                          alt={project.techStack?.[1]?.name}
-                        />
-                      </Container>
-                      <Container className="h-16 w-16 circle-3">
-                        <Image
-                          src={project.techStack?.[2]?.icon}
-                          width={36}
-                          height={36}
-                          alt={project.techStack?.[2]?.name}
-                        />
-                      </Container>
-                      <Container className="h-14 w-14 circle-4">
-                        <Image
-                          src={project.techStack?.[3]?.icon}
-                          width={28}
-                          height={28}
-                          alt={project.techStack?.[3]?.name}
-                        />
-                      </Container>
-                      <Container className="h-12 w-12 circle-5">
-                        <Image
-                          src={project.techStack?.[4]?.icon}
-                          width={28}
-                          height={28}
-                          alt={project.techStack?.[4]?.name}
-                        />
-                      </Container>
-                    </div>
+    <Carousel className="w-full">
+      <CarouselContent className="m-0 gap-4">
+        {projects.map((project, index) => (
+          <CarouselItem
+            className="p-0 flex-shrink-0 basis-full sm:basis-[calc((100%-16px)/2)] lg:basis-[calc((100%-32px)/3)] 2xl:basis-[calc((100%-48px)/4)]"
+            key={index}
+          >
+            <Card className="">
+              <Image
+                src={project.image}
+                width={300}
+                height={300}
+                alt={project.title}
+                className="rounded-lg border shadow-md w-full hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
+              />
+              <CardSkeletonContainer>
+                <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
+                  <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
+                    <Container className="h-12 w-12 circle-1">
+                      <Image
+                        src={project.techStack?.[0]?.icon}
+                        width={28}
+                        height={28}
+                        alt={project.techStack?.[0]?.name}
+                      />
+                    </Container>
+                    <Container className="h-14 w-14 circle-2">
+                      <Image
+                        src={project.techStack?.[1]?.icon}
+                        width={28}
+                        height={28}
+                        alt={project.techStack?.[1]?.name}
+                      />
+                    </Container>
+                    <Container className="h-16 w-16 circle-3">
+                      <Image
+                        src={project.techStack?.[2]?.icon}
+                        width={36}
+                        height={36}
+                        alt={project.techStack?.[2]?.name}
+                      />
+                    </Container>
+                    <Container className="h-14 w-14 circle-4">
+                      <Image
+                        src={project.techStack?.[3]?.icon}
+                        width={28}
+                        height={28}
+                        alt={project.techStack?.[3]?.name}
+                      />
+                    </Container>
+                    <Container className="h-12 w-12 circle-5">
+                      <Image
+                        src={project.techStack?.[4]?.icon}
+                        width={28}
+                        height={28}
+                        alt={project.techStack?.[4]?.name}
+                      />
+                    </Container>
+                  </div>
 
-                    <div className="h-40 w-px absolute m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
-                      <div className="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
-                        <Sparkles />
-                      </div>
+                  <div className="h-40 w-px absolute m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
+                    <div className="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
+                      <Sparkles />
                     </div>
                   </div>
-                </CardSkeletonContainer>
-                <CardTitle>{project.title}</CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-              </Card>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious className="ml-8 lg:ml-0" />
-        <CarouselNext className="mr-8 lg:mr-0" />
-      </Carousel>
-    </>
+                </div>
+              </CardSkeletonContainer>
+              <CardTitle>{project.title}</CardTitle>
+              <CardDescription>{project.description}</CardDescription>
+            </Card>
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious className="ml-8 lg:ml-0" />
+      <CarouselNext className="mr-8 lg:mr-0" />
+    </Carousel>
   );
 }
 
