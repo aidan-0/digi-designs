@@ -25,7 +25,12 @@ import { Button } from "@/components/ui/button";
 
 export default function ProjectCard() {
 	return (
-		<Carousel className="w-full">
+		<Carousel className="w-full"   
+		opts={{
+			align: "start",
+			loop: true,
+			dragFree: true,
+		  }}>
 			<CarouselContent className="m-0 gap-4">
 				{projects.map((project, index) => (
 					<Sheet key={index}>
@@ -34,10 +39,10 @@ export default function ProjectCard() {
 								<Card className="h-full">
 									<Image
 										src={project.image}
-										width={300}
-										height={300}
+										width={400}
+										height={400}
 										alt={project.title}
-										className="rounded-lg border shadow-md w-full hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
+										className="rounded-lg border shadow-md w-full hover:scale-[1.02] transition-transform duration-300 cursor-pointer aspect-[16/9]"
 									/>
 									<CardSkeletonContainer>
 										<div className="p-8 h-full relative flex items-center justify-center">
@@ -165,9 +170,17 @@ export default function ProjectCard() {
 									))}
 								</div>
 							</div>
-							<SheetFooter>
+							<SheetFooter className="flex justify-start items-start align-top">
+								<a
+									href={project.link}
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									<Button className="w-auto cursor-pointer p-4 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark dark:border-card border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
+      >View Project</Button>
+								</a>
 								<SheetClose asChild>
-									<Button variant="outline">Close</Button>
+									<Button className="w-auto cursor-pointer p-4 font-semibold hover:bg-dd-dark hover:text-dd-light rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)] dark:hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)]">Close</Button>
 								</SheetClose>
 							</SheetFooter>
 						</SheetContent>
@@ -193,11 +206,10 @@ export const CardSkeletonContainer = ({
 	return (
 		<div
 			className={cn(
-				"h-[150px] rounded-xl z-40 ",
+				"h-[150px] rounded-xl z-40",
 				className,
 				showGradient &&
-					"bg-card/80 dark:bg-card/80 3xl:[mask-image:radial-gradient(50%_50%_at_50%_50%,white_80%,transparent_100%)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_60%,transparent_100%)]"
-				//   sm:[mask-image:radial-gradient(50%_50%_at_50%_50%,white_75%,transparent_100%)] md:[mask-image:radial-gradient(50%_50%_at_50%_50%,white_75%,transparent_100%)] lg:[mask-image:radial-gradient(50%_50%_at_50%_50%,white_75%,transparent_100%)] xl:[mask-image:radial-gradient(90%_50%_at_50%_50%,white_75%,transparent_100%)]
+					"bg-transparent 3xl:[mask-image:radial-gradient(50%_50%_at_50%_50%,white_80%,transparent_100%)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_60%,transparent_100%)]"
 			)}
 		>
 			{children}
@@ -216,7 +228,7 @@ export const Card = ({
 	return (
 		<div
 			className={cn(
-				"max-w-sm w-full mx-auto p-6 rounded-xl border border-border dark:border-[rgba(255,255,255,0.10)] dark:bg-card/80 bg-card/90 shadow-custom-inset group flex flex-col",
+				"max-w-sm w-full mx-auto p-5 rounded-xl border border-border dark:border-[rgba(255,255,255,0.10)] dark:bg-card/80 bg-card/90 shadow-custom-inset group flex flex-col transition duration-300 hover:dark:bg-border/80 hover:bg-border/70 cursor-pointer",
 				className
 			)}
 		>

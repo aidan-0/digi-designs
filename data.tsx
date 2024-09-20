@@ -95,12 +95,14 @@ export const features = [
 ];
 
 export const projects = [
+	// Richards Muscle Lab
 	{
 		title: "Richards Muscle Lab",
 		description:
 			"WordPress website for a Perth local Online Coaching business.",
 		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
 		image: "/projects/richards-muscle-lab.png",
+		link: "https://richardsmusclelab.com/",
 		techStack: [
 			{
 				icon: "/tech-stack/canva.svg",
@@ -124,70 +126,45 @@ export const projects = [
 			},
 		],
 	},
-	{
-		title: "Ironstate Capital Partners",
-		description:
-			"Ironstate Capital Partners.",
-		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
-		image: "/projects/richards-muscle-lab.png",
-		techStack: [
-			{
-				icon: "/tech-stack/canva.svg",
-				name: "canva",
-			},
-			{
-				icon: "/tech-stack/css-3.svg",
-				name: "css",
-			},
-			{
-				icon: "/tech-stack/wordpress-icon.svg",
-				name: "wordpress",
-			},
-			{
-				icon: "/tech-stack/html-1.svg",
-				name: "html",
-			},
-			{
-				icon: "/tech-stack/elementor.svg",
-				name: "elementor",
-			},
-		],
-	},
-	{
-		title: "Endeavour Caravan Centre",
-		description:
-			"Endeavour Caravan Centre.",
-		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
-		image: "/projects/richards-muscle-lab.png",
-		techStack: [
-			{
-				icon: "/tech-stack/canva.svg",
-				name: "canva",
-			},
-			{
-				icon: "/tech-stack/css-3.svg",
-				name: "css",
-			},
-			{
-				icon: "/tech-stack/wordpress-icon.svg",
-				name: "wordpress",
-			},
-			{
-				icon: "/tech-stack/html-1.svg",
-				name: "html",
-			},
-			{
-				icon: "/tech-stack/elementor.svg",
-				name: "elementor",
-			},
-		],
-	},
+	// Stride for Education
 	{
 		title: "Stride for Education",
 		description:
-			"WordPress website for a Perth local Online Coaching business.",
+			"A PWA that enables participants to track their kilometers while participating in challenges.",
+		longDescription: "Stride For Education is a progressive web app which enables participants to track their kilometers while engaging in a walking / running / wheeling challenge. Through the app, we aim to raise funds and awareness for Community Spirit Foundation. I helped create the app using Vue and Vuetify for the front-end interfaces and Python & Django for the back-end testing. The app is also PWA compliant and can be installed on any device.",
+		image: "/projects/stride-for-education.png",
+		link: "https://strideforeducation.org.au/",
+		techStack: [
+			{
+				icon: "/tech-stack/netlify-icon.svg",
+				name: "netlify",
+			},
+			{
+				icon: "/tech-stack/vuetify.svg",
+				name: "vuetify",
+			},
+			{
+				icon: "/tech-stack/vuejs-icon.svg",
+				name: "vue",
+			},
+			{
+				icon: "/tech-stack/python-icon.svg",
+				name: "python",
+			},
+			{
+				icon: "/tech-stack/djangoproject-icon.svg",
+				name: "django",
+			},
+		],
+	},
+	// Ironstate Capital Partners
+	{
+		title: "Ironstate Capital Partners",
+		description:
+			"Your Partner for Australian Commercial Real Estate Private Credit.",
 		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
-		image: "/projects/richards-muscle-lab.png",
+		image: "/projects/ironstate.png",
+		link: "https://ironstate.com.au/",
 		techStack: [
 			{
 				icon: "/tech-stack/canva.svg",
@@ -211,12 +188,45 @@ export const projects = [
 			},
 		],
 	},
+	// Endeavour Caravan Centre
+	{
+		title: "Endeavour Caravan Centre",
+		description:
+			"Quality Melbourne Caravan Repairs & Spare Parts Victoria.",
+		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
+		image: "/projects/endeavour-caravan-centre.png",
+		link: "https://endeavourcaravancentre.com.au/",
+		techStack: [
+			{
+				icon: "/tech-stack/canva.svg",
+				name: "canva",
+			},
+			{
+				icon: "/tech-stack/css-3.svg",
+				name: "css",
+			},
+			{
+				icon: "/tech-stack/wordpress-icon.svg",
+				name: "wordpress",
+			},
+			{
+				icon: "/tech-stack/html-1.svg",
+				name: "html",
+			},
+			{
+				icon: "/tech-stack/elementor.svg",
+				name: "elementor",
+			},
+		],
+	},
+	// Richards Muscle Lab
 	{
 		title: "Richards Muscle Lab",
 		description:
 			"WordPress website for a Perth local Online Coaching business.",
 		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
 		image: "/projects/richards-muscle-lab.png",
+		link: "https://richardsmusclelab.com/",
 		techStack: [
 			{
 				icon: "/tech-stack/canva.svg",
@@ -240,4 +250,128 @@ export const projects = [
 			},
 		],
 	},
+	// Stride for Education
+	{
+		title: "Stride for Education",
+		description:
+			"A PWA that enables participants to track their kilometers while participating in challenges.",
+		longDescription: "Stride For Education is a progressive web app which enables participants to track their kilometers while engaging in a walking / running / wheeling challenge. Through the app, we aim to raise funds and awareness for Community Spirit Foundation. I helped create the app using Vue and Vuetify for the front-end interfaces and Python & Django for the back-end testing. The app is also PWA compliant and can be installed on any device.",
+		image: "/projects/stride-for-education.png",
+		link: "https://strideforeducation.org.au/",
+		techStack: [
+			{
+				icon: "/tech-stack/netlify-icon.svg",
+				name: "netlify",
+			},
+			{
+				icon: "/tech-stack/vuetify.svg",
+				name: "vuetify",
+			},
+			{
+				icon: "/tech-stack/vuejs-icon.svg",
+				name: "vue",
+			},
+			{
+				icon: "/tech-stack/python-icon.svg",
+				name: "python",
+			},
+			{
+				icon: "/tech-stack/djangoproject-icon.svg",
+				name: "django",
+			},
+		],
+	},
+	// Ironstate Capital Partners
+	{
+		title: "Ironstate Capital Partners",
+		description:
+			"Your Partner for Australian Commercial Real Estate Private Credit.",
+		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
+		image: "/projects/ironstate.png",
+		link: "https://ironstate.com.au/",
+		techStack: [
+			{
+				icon: "/tech-stack/canva.svg",
+				name: "canva",
+			},
+			{
+				icon: "/tech-stack/css-3.svg",
+				name: "css",
+			},
+			{
+				icon: "/tech-stack/wordpress-icon.svg",
+				name: "wordpress",
+			},
+			{
+				icon: "/tech-stack/html-1.svg",
+				name: "html",
+			},
+			{
+				icon: "/tech-stack/elementor.svg",
+				name: "elementor",
+			},
+		],
+	},
+	// Endeavour Caravan Centre
+	{
+		title: "Endeavour Caravan Centre",
+		description:
+			"Quality Melbourne Caravan Repairs & Spare Parts Victoria.",
+		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
+		image: "/projects/endeavour-caravan-centre.png",
+		link: "https://endeavourcaravancentre.com.au/",
+		techStack: [
+			{
+				icon: "/tech-stack/canva.svg",
+				name: "canva",
+			},
+			{
+				icon: "/tech-stack/css-3.svg",
+				name: "css",
+			},
+			{
+				icon: "/tech-stack/wordpress-icon.svg",
+				name: "wordpress",
+			},
+			{
+				icon: "/tech-stack/html-1.svg",
+				name: "html",
+			},
+			{
+				icon: "/tech-stack/elementor.svg",
+				name: "elementor",
+			},
+		],
+	},
+
+	// {
+	// 	title: "Everett Smith",
+	// 	description:
+	// 		"A PWA that enables participants to track their kilometers while participating in challenges.",
+	// 	longDescription: "Stride For Education is a progressive web app which enables participants to track their kilometers while engaging in a walking / running / wheeling challenge. Through the app, we aim to raise funds and awareness for Community Spirit Foundation. I created the app using Vue and Vuetify for the front-end interfaces and Python & Django for the back-end testing. The app is also PWA compliant and can be installed on any device.",
+	// 	image: "/projects/stride-for-education.png",
+	// 	link: "https://strideforeducation.org.au/",
+	// 	techStack: [
+	// 		{
+	// 			icon: "/tech-stack/netlify-icon.svg",
+	// 			name: "netlify",
+	// 		},
+	// 		{
+	// 			icon: "/tech-stack/vuetify.svg",
+	// 			name: "vuetify",
+	// 		},
+	// 		{
+	// 			icon: "/tech-stack/vuejs-icon.svg",
+	// 			name: "vue",
+	// 		},
+	// 		{
+	// 			icon: "/tech-stack/python-icon.svg",
+	// 			name: "python",
+	// 		},
+	// 		{
+	// 			icon: "/tech-stack/djangoproject-icon.svg",
+	// 			name: "django",
+	// 		},
+	// 	],
+	// },
 ];

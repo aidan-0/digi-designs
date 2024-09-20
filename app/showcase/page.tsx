@@ -96,7 +96,7 @@ const page = () => {
 								Or <span className="text-dd-light-blue">click</span> on a project to learn more
 							</p>
 					</div>
-					<div className="flex py-12 justify-center">
+					<div className="flex py-12 md:py-20 justify-center">
 						<ProjectCard />
 					</div>
 				</div>
@@ -104,7 +104,7 @@ const page = () => {
 				{/* Contact Section */}
 				<div
 					id="contact"
-					className="fade-in opacity-0  px-5 sm:px-10 lg:px-20 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto py-12 md:py-20 max-w-[1600px]"
+					className="fade-in opacity-0  px-5 sm:px-10 lg:px-20 xl:px-0 xl:w-4/5 2xl:w-[68%] md:mx-auto pb-12 md:pb-20 max-w-[1600px]"
 				>
 					<section
 						id="contact"
