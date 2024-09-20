@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
 import ContactForm from "@/components/ContactForm";
 import { FadeText } from "@/components/magicui/fade-text";
 import NavbarShowcase from "@/components/NavbarShowcase";
-import Link from "next/link";
 import React from "react";
 import ProjectCard from "@/components/ProjectCard";
 import BoxReveal from "@/components/magicui/box-reveal";
@@ -13,9 +12,6 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
-
-
-
 const page = () => {
 	useGSAP(() => {
 		gsap.fromTo(
@@ -23,7 +19,7 @@ const page = () => {
 			{ opacity: 0 },
 			{
 				opacity: 1,
-				duration: .5,
+				duration: 0.5,
 				stagger: 0.25,
 				scrollTrigger: {
 					trigger: ".carousel-cards",
@@ -32,8 +28,6 @@ const page = () => {
 			}
 		);
 	}, []);
-
-
 
 	return (
 		<div className="min-h-screen bg-fixed inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#80808010_1px,transparent_1px),linear-gradient(to_bottom,#80808010_1px,transparent_1px)] bg-[size:14px_24px]">
@@ -85,16 +79,17 @@ const page = () => {
 						<BoxReveal
 							boxColor={"#4e9edd"}
 							duration={0.65}
-							textDelay={.5}
-							boxDelay={.25}
+							textDelay={0.5}
+							boxDelay={0.25}
 						>
 							<h2 className="text-3xl md:text-5xl font-medium">
 								Swipe through our latest projects
 							</h2>
 						</BoxReveal>
-							<p className="text-xl md:text-2xl pt-2 dark:text-gray-400 text-gray-600">
-								Or <span className="text-dd-light-blue">click</span> on a project to learn more
-							</p>
+						<p className="text-xl md:text-2xl pt-2 dark:text-gray-400 text-gray-600">
+							Or <span className="text-dd-light-blue">click</span>{" "}
+							on a project to learn more
+						</p>
 					</div>
 					<div className="flex py-12 md:py-20 justify-center">
 						<ProjectCard />

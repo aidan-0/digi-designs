@@ -31,11 +31,11 @@ export default function ProjectCard() {
 			loop: true,
 			dragFree: true,
 		  }}>
-			<CarouselContent className="m-0 gap-4">
+			<CarouselContent className="m-0 gap-4 px-4">
 				{projects.map((project, index) => (
 					<Sheet key={index}>
 						<SheetTrigger asChild>
-							<CarouselItem className="carousel-cards p-0 flex-shrink-0  basis-full md:basis-[calc((100%-16px)/2)] reg:basis-[calc((100%-32px)/3)] 3xl:basis-[calc((100%-48px)/4)] cursor pointer">
+							<CarouselItem className="carousel-cards p-0 flex-shrink-0 basis-full md:basis-[calc((100%+12px)/2)] reg:basis-[calc((100%)/3)] 3xl:basis-[calc((100%-16px)/4)] cursor pointer">
 								<Card className="h-full">
 									<Image
 										src={project.image}

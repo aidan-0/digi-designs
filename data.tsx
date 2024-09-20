@@ -100,29 +100,29 @@ export const projects = [
 		title: "Richards Muscle Lab",
 		description:
 			"WordPress website for a Perth local Online Coaching business.",
-		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
+		longDescription: "Richards Muscle Lab is a WordPress website built with Elementor, HTML, and CSS for an online coaching business seeking a clean and simple design. The site features a user-friendly layout that allows visitors to easily navigate and learn about the services offered. With a minimalist approach, the website emphasises clarity and functionality, ensuring users can quickly access the information they need without unnecessary distractions. The design is responsive, adapting well to all screen sizes, and focuses on providing a seamless experience for potential clients looking to connect with the business.",
 		image: "/projects/richards-muscle-lab.png",
 		link: "https://richardsmusclelab.com/",
 		techStack: [
 			{
-				icon: "/tech-stack/canva.svg",
-				name: "canva",
+				icon: "/tech-stack/css-3.svg",
+				name: "CSS",
 			},
 			{
-				icon: "/tech-stack/css-3.svg",
-				name: "css",
+				icon: "/tech-stack/canva.svg",
+				name: "Canva",
 			},
 			{
 				icon: "/tech-stack/wordpress-icon.svg",
-				name: "wordpress",
-			},
-			{
-				icon: "/tech-stack/html-1.svg",
-				name: "html",
+				name: "Wordpress",
 			},
 			{
 				icon: "/tech-stack/elementor.svg",
-				name: "elementor",
+				name: "Elementor",
+			},
+			{
+				icon: "/tech-stack/html-1.svg",
+				name: "HTML",
 			},
 		],
 	},
@@ -131,29 +131,29 @@ export const projects = [
 		title: "Stride for Education",
 		description:
 			"A PWA that enables participants to track their kilometers while participating in challenges.",
-		longDescription: "Stride For Education is a progressive web app which enables participants to track their kilometers while engaging in a walking / running / wheeling challenge. Through the app, we aim to raise funds and awareness for Community Spirit Foundation. I helped create the app using Vue and Vuetify for the front-end interfaces and Python & Django for the back-end testing. The app is also PWA compliant and can be installed on any device.",
+		longDescription: "Stride For Education is a progressive web app designed to allow participants to track their kilometers during a walking, running, or wheeling challenge. The goal of the app is to raise funds and awareness for the Community Spirit Foundation. I contributed to the app's development using Vue and Vuetify for the front-end, along with Python and Django for back-end testing. Additionally, the app is PWA-compliant, enabling it to be installed on any device, ensuring accessibility and ease of use for participants across various platforms.",
 		image: "/projects/stride-for-education.png",
 		link: "https://strideforeducation.org.au/",
 		techStack: [
 			{
 				icon: "/tech-stack/netlify-icon.svg",
-				name: "netlify",
+				name: "Netlify",
 			},
 			{
 				icon: "/tech-stack/vuetify.svg",
-				name: "vuetify",
+				name: "Vuetify",
 			},
 			{
 				icon: "/tech-stack/vuejs-icon.svg",
-				name: "vue",
+				name: "Vue",
 			},
 			{
 				icon: "/tech-stack/python-icon.svg",
-				name: "python",
+				name: "Python",
 			},
 			{
 				icon: "/tech-stack/djangoproject-icon.svg",
-				name: "django",
+				name: "Django",
 			},
 		],
 	},
@@ -162,29 +162,29 @@ export const projects = [
 		title: "Ironstate Capital Partners",
 		description:
 			"Your Partner for Australian Commercial Real Estate Private Credit.",
-		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
+		longDescription: "Ironstate Capital Partners is a WordPress website built for a financial services company specialising in Australian commercial real estate private credit. The site highlights the company's expertise and services, providing a user-friendly experience for potential clients. The tech stack includes HTML and CSS for structure and styling, with JavaScript adding interactivity. Design tools like Figma and Canva were used to create a clean, professional look. The responsive design ensures the site works smoothly across all devices, offering visitors easy navigation and access to essential information.",
 		image: "/projects/ironstate.png",
 		link: "https://ironstate.com.au/",
 		techStack: [
 			{
 				icon: "/tech-stack/canva.svg",
-				name: "canva",
+				name: "Canva",
 			},
 			{
 				icon: "/tech-stack/css-3.svg",
-				name: "css",
+				name: "CSS",
 			},
 			{
-				icon: "/tech-stack/wordpress-icon.svg",
-				name: "wordpress",
+				icon: "/tech-stack/javascript.svg",
+				name: "JavaScript",
 			},
 			{
 				icon: "/tech-stack/html-1.svg",
-				name: "html",
+				name: "HTML",
 			},
 			{
-				icon: "/tech-stack/elementor.svg",
-				name: "elementor",
+				icon: "/tech-stack/figma-icon.svg",
+				name: "Figma",
 			},
 		],
 	},
@@ -193,17 +193,17 @@ export const projects = [
 		title: "Endeavour Caravan Centre",
 		description:
 			"Quality Melbourne Caravan Repairs & Spare Parts Victoria.",
-		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
+		longDescription: "Endeavour Caravan Centre is a WordPress website designed to advertise their Melbourne-based caravan repair and spare parts services. The site serves as a key marketing tool, drawing potential customers to the business by showcasing their expertise and range of services.Built using Elementor with HTML, CSS, and JavaScript, the website is fully responsive and easy to navigate. Figma was used for design prototyping, ensuring a clean and professional layout. The site effectively highlights the company's offerings and makes it simple for users to access relevant information.",
 		image: "/projects/endeavour-caravan-centre.png",
 		link: "https://endeavourcaravancentre.com.au/",
 		techStack: [
 			{
-				icon: "/tech-stack/canva.svg",
-				name: "canva",
+				icon: "/tech-stack/css-3.svg",
+				name: "CSS",
 			},
 			{
-				icon: "/tech-stack/css-3.svg",
-				name: "css",
+				icon: "/tech-stack/javascript.svg",
+				name: "JavaScript",
 			},
 			{
 				icon: "/tech-stack/wordpress-icon.svg",
@@ -211,11 +211,11 @@ export const projects = [
 			},
 			{
 				icon: "/tech-stack/html-1.svg",
-				name: "html",
+				name: "HTML",
 			},
 			{
-				icon: "/tech-stack/elementor.svg",
-				name: "elementor",
+				icon: "/tech-stack/figma-icon.svg",
+				name: "Figma",
 			},
 		],
 	},
@@ -224,29 +224,29 @@ export const projects = [
 		title: "Richards Muscle Lab",
 		description:
 			"WordPress website for a Perth local Online Coaching business.",
-		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
+		longDescription: "Richards Muscle Lab is a WordPress website built with Elementor, HTML, and CSS for an online coaching business seeking a clean and simple design. The site features a user-friendly layout that allows visitors to easily navigate and learn about the services offered. With a minimalist approach, the website emphasises clarity and functionality, ensuring users can quickly access the information they need without unnecessary distractions. The design is responsive, adapting well to all screen sizes, and focuses on providing a seamless experience for potential clients looking to connect with the business.",
 		image: "/projects/richards-muscle-lab.png",
 		link: "https://richardsmusclelab.com/",
 		techStack: [
 			{
-				icon: "/tech-stack/canva.svg",
-				name: "canva",
+				icon: "/tech-stack/css-3.svg",
+				name: "CSS",
 			},
 			{
-				icon: "/tech-stack/css-3.svg",
-				name: "css",
+				icon: "/tech-stack/canva.svg",
+				name: "Canva",
 			},
 			{
 				icon: "/tech-stack/wordpress-icon.svg",
-				name: "wordpress",
-			},
-			{
-				icon: "/tech-stack/html-1.svg",
-				name: "html",
+				name: "Wordpress",
 			},
 			{
 				icon: "/tech-stack/elementor.svg",
-				name: "elementor",
+				name: "Elementor",
+			},
+			{
+				icon: "/tech-stack/html-1.svg",
+				name: "HTML",
 			},
 		],
 	},
@@ -255,29 +255,29 @@ export const projects = [
 		title: "Stride for Education",
 		description:
 			"A PWA that enables participants to track their kilometers while participating in challenges.",
-		longDescription: "Stride For Education is a progressive web app which enables participants to track their kilometers while engaging in a walking / running / wheeling challenge. Through the app, we aim to raise funds and awareness for Community Spirit Foundation. I helped create the app using Vue and Vuetify for the front-end interfaces and Python & Django for the back-end testing. The app is also PWA compliant and can be installed on any device.",
+		longDescription: "Stride For Education is a progressive web app designed to allow participants to track their kilometers during a walking, running, or wheeling challenge. The goal of the app is to raise funds and awareness for the Community Spirit Foundation. I contributed to the app's development using Vue and Vuetify for the front-end, along with Python and Django for back-end testing. Additionally, the app is PWA-compliant, enabling it to be installed on any device, ensuring accessibility and ease of use for participants across various platforms.",
 		image: "/projects/stride-for-education.png",
 		link: "https://strideforeducation.org.au/",
 		techStack: [
 			{
 				icon: "/tech-stack/netlify-icon.svg",
-				name: "netlify",
+				name: "Netlify",
 			},
 			{
 				icon: "/tech-stack/vuetify.svg",
-				name: "vuetify",
+				name: "Vuetify",
 			},
 			{
 				icon: "/tech-stack/vuejs-icon.svg",
-				name: "vue",
+				name: "Vue",
 			},
 			{
 				icon: "/tech-stack/python-icon.svg",
-				name: "python",
+				name: "Python",
 			},
 			{
 				icon: "/tech-stack/djangoproject-icon.svg",
-				name: "django",
+				name: "Django",
 			},
 		],
 	},
@@ -286,29 +286,29 @@ export const projects = [
 		title: "Ironstate Capital Partners",
 		description:
 			"Your Partner for Australian Commercial Real Estate Private Credit.",
-		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
+		longDescription: "Ironstate Capital Partners is a WordPress website built for a financial services company specialising in Australian commercial real estate private credit. The site highlights the company's expertise and services, providing a user-friendly experience for potential clients. The tech stack includes HTML and CSS for structure and styling, with JavaScript adding interactivity. Design tools like Figma and Canva were used to create a clean, professional look. The responsive design ensures the site works smoothly across all devices, offering visitors easy navigation and access to essential information.",
 		image: "/projects/ironstate.png",
 		link: "https://ironstate.com.au/",
 		techStack: [
 			{
 				icon: "/tech-stack/canva.svg",
-				name: "canva",
+				name: "Canva",
 			},
 			{
 				icon: "/tech-stack/css-3.svg",
-				name: "css",
+				name: "CSS",
 			},
 			{
-				icon: "/tech-stack/wordpress-icon.svg",
-				name: "wordpress",
+				icon: "/tech-stack/javascript.svg",
+				name: "JavaScript",
 			},
 			{
 				icon: "/tech-stack/html-1.svg",
-				name: "html",
+				name: "HTML",
 			},
 			{
-				icon: "/tech-stack/elementor.svg",
-				name: "elementor",
+				icon: "/tech-stack/figma-icon.svg",
+				name: "Figma",
 			},
 		],
 	},
@@ -317,17 +317,17 @@ export const projects = [
 		title: "Endeavour Caravan Centre",
 		description:
 			"Quality Melbourne Caravan Repairs & Spare Parts Victoria.",
-		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
+		longDescription: "Endeavour Caravan Centre is a WordPress website designed to advertise their Melbourne-based caravan repair and spare parts services. The site serves as a key marketing tool, drawing potential customers to the business by showcasing their expertise and range of services.Built using Elementor with HTML, CSS, and JavaScript, the website is fully responsive and easy to navigate. Figma was used for design prototyping, ensuring a clean and professional layout. The site effectively highlights the company's offerings and makes it simple for users to access relevant information.",
 		image: "/projects/endeavour-caravan-centre.png",
 		link: "https://endeavourcaravancentre.com.au/",
 		techStack: [
 			{
-				icon: "/tech-stack/canva.svg",
-				name: "canva",
+				icon: "/tech-stack/css-3.svg",
+				name: "CSS",
 			},
 			{
-				icon: "/tech-stack/css-3.svg",
-				name: "css",
+				icon: "/tech-stack/javascript.svg",
+				name: "JavaScript",
 			},
 			{
 				icon: "/tech-stack/wordpress-icon.svg",
@@ -335,14 +335,15 @@ export const projects = [
 			},
 			{
 				icon: "/tech-stack/html-1.svg",
-				name: "html",
+				name: "HTML",
 			},
 			{
-				icon: "/tech-stack/elementor.svg",
-				name: "elementor",
+				icon: "/tech-stack/figma-icon.svg",
+				name: "Figma",
 			},
 		],
 	},
+
 
 	// {
 	// 	title: "Everett Smith",
