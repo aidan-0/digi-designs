@@ -125,9 +125,9 @@ export const projects = [
 		],
 	},
 	{
-		title: "Richards Muscle Lab",
+		title: "Ironstate Capital Partners",
 		description:
-			"WordPress website for a Perth local Online Coaching business.",
+			"Ironstate Capital Partners.",
 		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
 		image: "/projects/richards-muscle-lab.png",
 		techStack: [
@@ -154,9 +154,9 @@ export const projects = [
 		],
 	},
 	{
-		title: "Richards Muscle Lab",
+		title: "Endeavour Caravan Centre",
 		description:
-			"WordPress website for a Perth local Online Coaching business.",
+			"Endeavour Caravan Centre.",
 		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
 		image: "/projects/richards-muscle-lab.png",
 		techStack: [
@@ -183,7 +183,7 @@ export const projects = [
 		],
 	},
 	{
-		title: "Richards Muscle Lab",
+		title: "Stride for Education",
 		description:
 			"WordPress website for a Perth local Online Coaching business.",
 		longDescription: "This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description This is a long description",
