@@ -152,7 +152,7 @@ export default function Home() {
 						{/* Services - Start */}
 						<Element name="services">
 							<div className="fade-in opacity-0 md:px-0 md:mx-auto pt-16 md:pt-20">
-								<h2 className="text-3xl md:text-5xl md:text-center font-medium">
+								<h2 className="text-3xl md:text-5xl text-center font-medium">
 									Built from the ground up
 								</h2>
 								<p className="text-center pt-4 md:w-1/2 mx-auto text-xl md:text-2xl dark:text-gray-400 text-gray-500">
