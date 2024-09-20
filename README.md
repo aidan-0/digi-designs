@@ -17,10 +17,10 @@ Images by Rubytone - Pixel.Market
 + [x] Fix client images on dark mode
 + [x] Responsively style contact section
 + [x] Responsively style footer
-+ [ ] Responsively style header
-+ [ ] Create and animate mobile header
-+ [ ] Add in additional animations
++ [x] Responsively style header
++ [x] Create and animate mobile header
++ [x] Add in additional animations
 
 ##### Showcase Page
-+ [ ] Build out showcase/portfolio section
++ [x] Build out showcase/portfolio section
 + [ ] Add "pointer follower" and "focus cards" for showcase cards (https://ui.aceternity.com/components/following-pointer, https://ui.aceternity.com/components/focus-cards)

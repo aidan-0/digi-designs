@@ -5,6 +5,7 @@ import { Space_Grotesk } from "next/font/google";
 import { Toaster } from "@/components/ui/toaster";
 import Footer from "@/components/Footer";
 import GlobalAnimations from "@/components/GlobalAnimations";
+import MobileNav from "@/components/MobileNav";
 
 const space_grotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
 				>
 					<GlobalAnimations />
 					{children}
+					<MobileNav />
 					<Footer />
 					<Toaster />
 				</ThemeProvider>
