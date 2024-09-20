@@ -39,12 +39,12 @@ export default function Showcase() {
 
 			{/* Main Section */}
 			<main className="">
-				<div className="px-5 xl:px-0 sm:px-10 lg:px-20 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 sm:mt-20 max-w-[1600px]">
+				<div className="px-5 xl:px-0 sm:px-10 lg:px-20 xl:w-4/5 2xl:w-[68%] md:mx-auto mt-12 reg:mt-20 max-w-[1600px]">
 					{/* Hero and CTA - START */}
 					<h1 className="text-[11vw] leading-[11vw] xs:text-4xl md:text-5xl lg:text-6xl xl:text-[4rem] mx-auto z-20 font-bold text-center flex flex-col sm:flex-row justify-center">
 						<div className="flex justify-center">
 							<FadeText
-								className="text-dd-dark dark:text-dd-light px-2"
+								className="text-dd-dark dark:text-dd-light px-1 xs:px-2"
 								direction="right"
 								framerProps={{
 									show: {
@@ -54,7 +54,7 @@ export default function Showcase() {
 								text="Project"
 							/>
 							<FadeText
-								className=" text-dd-light-blue px-2"
+								className=" text-dd-light-blue px-1 sm:px-2"
 								direction="left"
 								framerProps={{
 									show: { transition: { delay: 0.1 } },
@@ -63,38 +63,30 @@ export default function Showcase() {
 							/>
 						</div>
 					</h1>
-					{/* <div className="flex justify-center items-center gap-3 xs:gap-4 pt-12">
-						<Link
-							href="mailto:hello@digidesigns.com.au"
-							className="fade-in opacity-0 md:w-[210px] text-center px-4 sm:px-12 py-2 font-semibold hover:bg-dd-dark hover:text-dd-light rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)] dark:hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)]"
-						>
-							Get in Touch
-						</Link>
-					</div> */}
 				</div>
 
 				{/* Projects Section */}
 				<div
 					id="projects"
-					className="px-5 sm:px-10 lg:px-20 xl:px-0 mt-12 flex flex-col justify-center max-w-[1600px] xl:w-4/5 2xl:w-[68%] md:mx-auto fade-in opacity-0"
+					className="px-5 sm:px-10 lg:px-20 xl:px-0 mt-4 reg:mt-12 flex flex-col justify-center max-w-[1600px] xl:w-4/5 2xl:w-[68%] md:mx-auto fade-in opacity-0"
 				>
-					<div className="flex flex-col justify-center items-center">
+					<div className="flex flex-col justify-center items-center text-center">
 						<BoxReveal
 							boxColor={"#4e9edd"}
 							duration={0.65}
 							textDelay={0.5}
 							boxDelay={0.25}
 						>
-							<h2 className="text-3xl md:text-5xl font-medium">
+							<h2 className="text-2xl sm:text-4xl md:text-4xl reg:text-5xl font-medium">
 								Swipe through our latest projects
 							</h2>
 						</BoxReveal>
 						<p className="text-xl md:text-2xl pt-2 dark:text-gray-400 text-gray-600">
-							Or <span className="text-dd-light-blue">click</span>{" "}
-							on a project to learn more
+							or <span className="text-dd-light-blue">click</span>{" "}
+							to learn more
 						</p>
 					</div>
-					<div className="flex py-12 md:py-20 justify-center">
+					<div className="flex py-8 reg:py-20 justify-center">
 						<ProjectCard />
 					</div>
 				</div>

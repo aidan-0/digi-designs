@@ -35,7 +35,7 @@ export default function ProjectCard() {
 				{projects.map((project, index) => (
 					<Sheet key={index}>
 						<SheetTrigger asChild>
-							<CarouselItem className="carousel-cards p-0 flex-shrink-0 basis-full md:basis-[calc((100%+12px)/2)] reg:basis-[calc((100%)/3)] 3xl:basis-[calc((100%-16px)/4)] cursor pointer">
+							<CarouselItem className="carousel-cards p-0 flex-shrink-0 basis-[calc((100%+32px))] md:basis-[calc((100%+12px)/2)] reg:basis-[calc((100%)/3)] 3xl:basis-[calc((100%-16px)/4)] cursor pointer">
 								<Card className="h-full">
 									<Image
 										src={project.image}
