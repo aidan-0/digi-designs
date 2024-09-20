@@ -12,7 +12,10 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const page = () => {
+
+
+
+export default function Showcase() {
 	useGSAP(() => {
 		gsap.fromTo(
 			".carousel-cards",
@@ -123,5 +126,3 @@ const page = () => {
 		</div>
 	);
 };
-
-export default page;
