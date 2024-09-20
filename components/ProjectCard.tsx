@@ -30,8 +30,8 @@ export default function ProjectCard() {
 				{projects.map((project, index) => (
 					<Sheet key={index}>
 						<SheetTrigger asChild>
-							<CarouselItem className="p-0 flex-shrink-0 basis-full md:basis-[calc((100%-16px)/2)] reg:basis-[calc((100%-32px)/3)] 3xl:basis-[calc((100%-48px)/4)] cursor pointer">
-								<Card className="">
+							<CarouselItem className="carousel-cards p-0 flex-shrink-0  basis-full md:basis-[calc((100%-16px)/2)] reg:basis-[calc((100%-32px)/3)] 3xl:basis-[calc((100%-48px)/4)] cursor pointer">
+								<Card className="h-full">
 									<Image
 										src={project.image}
 										width={300}
@@ -40,7 +40,7 @@ export default function ProjectCard() {
 										className="rounded-lg border shadow-md w-full hover:scale-[1.02] transition-transform duration-300 cursor-pointer"
 									/>
 									<CardSkeletonContainer>
-										<div className="p-8  h-full relative flex items-center justify-center">
+										<div className="p-8 h-full relative flex items-center justify-center">
 											<div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
 												<Container className="h-10 w-10 xs:h-12 xs:w-12 lg:h-10 lg:w-10 circle-1 overflow-visible hover:translate-y-[-4px] transition-transform duration-300">
 													<Image
@@ -193,7 +193,7 @@ export const CardSkeletonContainer = ({
 	return (
 		<div
 			className={cn(
-				"h-[180px] rounded-xl z-40 ",
+				"h-[150px] rounded-xl z-40 ",
 				className,
 				showGradient &&
 					"bg-card/80 dark:bg-card/80 3xl:[mask-image:radial-gradient(50%_50%_at_50%_50%,white_80%,transparent_100%)] [mask-image:radial-gradient(50%_50%_at_50%_50%,white_60%,transparent_100%)]"
