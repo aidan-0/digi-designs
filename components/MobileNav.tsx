@@ -7,6 +7,10 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
 
+// TODO: when clicking outside of nav, close it
+// Add something down the bottom, like an email or something
+
+
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false)
 
@@ -37,7 +41,8 @@ export default function MobileNav() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
-            className="fixed inset-y-0 right-0 w-64 bg-background shadow-lg p-6 z-40"
+            className="fixed inset-y-0 right-0 w-64 bg-background/85 shadow-lg p-6 z-40"
+            id="mobile-navbar-style"
           >
             <div className="flex flex-col h-full">
               <motion.div

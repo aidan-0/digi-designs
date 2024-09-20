@@ -25,12 +25,14 @@ import { Button } from "@/components/ui/button";
 
 export default function ProjectCard() {
 	return (
-		<Carousel className="w-full"   
-		opts={{
-			align: "start",
-			loop: true,
-			dragFree: true,
-		  }}>
+		<Carousel
+			className="w-full"
+			opts={{
+				align: "start",
+				loop: true,
+				dragFree: true,
+			}}
+		>
 			<CarouselContent className="m-0 gap-4 px-4">
 				{projects.map((project, index) => (
 					<Sheet key={index}>
@@ -137,8 +139,11 @@ export default function ProjectCard() {
 								</Card>
 							</CarouselItem>
 						</SheetTrigger>
-						<SheetContent side="right">
-							<SheetHeader className="pt-4">
+						<SheetContent
+							side="right"
+							className="overflow-scroll w-[80%] p-4"
+						>
+							<SheetHeader className="">
 								<Image
 									src={project.image}
 									width={300}
@@ -146,13 +151,15 @@ export default function ProjectCard() {
 									alt={project.title}
 									className="rounded-lg border shadow-md w-full"
 								/>
-								<SheetTitle>{project.title}</SheetTitle>
-								<SheetDescription>
+								<SheetTitle className="text-left">
+									{project.title}
+								</SheetTitle>
+								<SheetDescription className="text-left">
 									{project.longDescription}
 								</SheetDescription>
 							</SheetHeader>
-							<div className="py-4">
-								<h4 className="mt-4">Tech Stack:</h4>
+							<div className="py-8">
+								<h4>Tech Stack:</h4>
 								<div className="flex flex-wrap gap-2 mt-2">
 									{project.techStack?.map((tech, idx) => (
 										<div
@@ -165,22 +172,27 @@ export default function ProjectCard() {
 												height={28}
 												alt={tech.name}
 											/>
-											<span>{tech.name}</span>
+											<span className="text-sm sm:text-base">
+												{tech.name}
+											</span>
 										</div>
 									))}
 								</div>
 							</div>
-							<SheetFooter className="flex justify-start items-start align-top">
+							<SheetFooter className="flex flex-wrap justify-start items-start align-top">
 								<a
 									href={project.link}
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									<Button className="w-auto cursor-pointer p-4 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark dark:border-card border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]"
-      >View Project</Button>
+									<Button className="w-auto cursor-pointer p-4 font-semibold hover:bg-dd-light hover:text-dd-dark rounded-[6px] text-dd-light border-dd-dark dark:border-card border-2  bg-dd-dark dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)] dark:hover:shadow-[1px_1px_rgba(78,158,221),2px_2px_rgba(78,158,221),3px_3px_rgba(78,158,221),4px_4px_rgba(78,158,221)]">
+										View Project
+									</Button>
 								</a>
 								<SheetClose asChild>
-									<Button className="w-auto cursor-pointer p-4 font-semibold hover:bg-dd-dark hover:text-dd-light rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)] dark:hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)]">Close</Button>
+									<Button className="w-auto cursor-pointer p-4 font-semibold hover:bg-dd-dark hover:text-dd-light rounded-[6px] text-dd-dark border-dd-dark border-2  bg-dd-light dark:bg-foreground dark:text-dd-dark transition duration-200 text-lg hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)] dark:hover:shadow-[1px_1px_rgba(255,176,50),2px_2px_rgba(255,176,50),3px_3px_rgba(255,176,50),4px_4px_rgba(255,176,50)]">
+										Close
+									</Button>
 								</SheetClose>
 							</SheetFooter>
 						</SheetContent>
