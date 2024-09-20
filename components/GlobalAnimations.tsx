@@ -24,7 +24,7 @@ const GlobalAnimations = () => {
 					ease: "power2.inOut",
 					scrollTrigger: {
 						trigger: element as HTMLElement,
-						start: "top 80%",
+						start: "top 95%",
 					},
 				}
 			);
