@@ -278,27 +278,32 @@ export default function Home() {
 										direction="left"
 										items={[
 											{
-												logo: "/client-logos/ETC-logo.webp",
+												logoLight: "/client-logos/Logo-Edmonds-Twins-Dark.webp",
+												logoDark: "/client-logos/Logo-Edmonds-Twins-light.webp",
 												name: "Edmonds Twins Coaching",
 												url: "https://edmondstwinscoaching.au",
 											},
 											{
-												logo: "/client-logos/Endeavour-Caravan-Centre-Logo-dark.webp",
+												logoLight: "/client-logos/Endeavour-Caravan-Centre-Logo-dark.webp",
+												logoDark: "/client-logos/endeavour-caravan-logo-light.webp",
 												name: "Endeavour Caravan Centre",
 												url: "https://endeavourcaravancentre.com.au",
 											},
 											{
-												logo: "/client-logos/House-of-stuart-logo.webp",
+												logoLight: "/client-logos/House-of-stuart-logo.webp",
+												logoDark: "/client-logos/House-of-stuart-logo.webp",
 												name: "House of Stuart",
 												url: "https://houseofstuart.com.au",
 											},
 											{
-												logo: "/client-logos/Ironstate-Capital-Partners-logo.webp",
+												logoLight: "/client-logos/Ironstate-Capital-Partners-logo.webp",
+												logoDark: "/client-logos/Ironstate-Capital-Partners-gold.webp",
 												name: "Ironstate Capital Partners",
 												url: "https://ironstate.com.au",
 											},
 											{
-												logo: "/client-logos/white-round-richards-muscle-lab-no-background.webp",
+												logoLight: "/client-logos/white-round-richards-muscle-lab-no-background.webp",
+												logoDark: "/client-logos/white-round-richards-muscle-lab-no-background.webp",
 												name: "Richards Muscle Lab",
 												url: "https://richardsmusclelab.com",
 											},

@@ -11,7 +11,8 @@ export const InfiniteMovingLogos = ({
   className,
 }: {
   items: {
-    logo: string;
+    logoLight: string;
+    logoDark: string;
     name: string;
     url: string;
   }[];
@@ -96,12 +97,20 @@ export const InfiniteMovingLogos = ({
             key={item.name}
           >
             <Link href={item.url} target="_blank" rel="noopener noreferrer">
+              {/* Show different logos based on dark mode */}
               <Image
-                src={item.logo}
+                src={item.logoLight}
                 alt={item.name}
                 width={512}
                 height={512}
-                className="h-12 md:h-16 w-auto"
+                className="h-12 md:h-16 w-auto dark:hidden"
+              />
+              <Image
+                src={item.logoDark}
+                alt={item.name}
+                width={512}
+                height={512}
+                className="h-12 md:h-16 w-auto hidden dark:block"
               />
             </Link>
           </li>

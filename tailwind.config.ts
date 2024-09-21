@@ -76,6 +76,9 @@ const config: Config = {
 					"5": "hsl(var(--chart-5))",
 				},
 			},
+			backgroundImage: {
+				'custom-gradient': 'linear-gradient(to right, transparent 0%, #f7f7f733 30%, #f7f7f733 70%, transparent 100%)',
+			},
 			borderRadius: {
 				lg: "var(--radius)",
 				md: "calc(var(--radius) - 2px)",
