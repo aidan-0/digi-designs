@@ -7,7 +7,7 @@ const Navbar = () => {
 	return (
 		<>
 			<div
-				className="shadow rounded-b-xl top-0 sticky z-50 w-full bg-navbar-bg border-b border-border dark:bg-navbar-bg flex items-center justify-between py-6 px-4 md:px-8"
+				className="shadow rounded-b-xl top-0 sticky z-50 w-full bg-navbar-bg border-b border-border dark:bg-navbar-bg flex items-center justify-between py-6 px-4 md:pl-8 reg:px-8"
 				id="navbar-style"
 			>
 				<Link href="/">

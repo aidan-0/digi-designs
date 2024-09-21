@@ -141,7 +141,7 @@ export default function ProjectCard() {
 						</SheetTrigger>
 						<SheetContent
 							side="right"
-							className="overflow-scroll w-[80%] p-4"
+							className="overflow-scroll w-[80%] p-4 md:p-6"
 						>
 							<SheetHeader className="">
 								<Image

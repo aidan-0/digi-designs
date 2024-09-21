@@ -45,11 +45,11 @@ export default function MobileNav() {
 		{ text: "Services", href: "/#services" },
 		{ text: "Process", href: "/#process" },
 		{ text: "Guarantees", href: "/#guarantees" },
-		{ text: "Contact Us", href: "/#contact" },
+		{ text: "Contact Us", href: "#contact" },
 	];
 
 	return (
-		<div className="absolute z-50">
+		<div className="absolute z-50 mobile-nav-menu">
 			<Button
 				variant="outline"
 				size="icon"
