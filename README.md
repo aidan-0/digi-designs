@@ -24,3 +24,4 @@ Images by Rubytone - Pixel.Market
 ##### Showcase Page
 + [x] Build out showcase/portfolio section
 + [ ] Add "pointer follower" and "focus cards" for showcase cards (https://ui.aceternity.com/components/following-pointer, https://ui.aceternity.com/components/focus-cards)
++ [x] Compress Images
