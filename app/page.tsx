@@ -261,10 +261,10 @@ export default function Home() {
 
 										<div className="w-px bg-gray-300 self-stretch"></div>
 
-										<div className="flex-1 min-w-0">
-											<h4 className="text-dd-light-blue text-3xl md:text-5xl whitespace-nowrap overflow-hidden">
+										<div className="flex-1 m-auto">
+											<h4 className="text-dd-light-blue text-3xl md:text-5xl whitespace-nowrap">
 												<NumberTicker value={25} /> +
-												<p className="dark:text-gray-400 text-gray-500 text-sm md:text-md">
+												<p className="dark:text-gray-400 text-gray-500 text-sm md:text-md text-wrap">
 													Projects Completed
 												</p>
 											</h4>

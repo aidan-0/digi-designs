@@ -44,10 +44,10 @@ export default function ProjectCard() {
 										width={400}
 										height={400}
 										alt={project.title}
-										className="rounded-lg border shadow-md w-full hover:scale-[1.02] transition-transform duration-300 cursor-pointer aspect-[16/9]"
+										className="select-none pointer-events-none rounded-lg border shadow-md w-full hover:scale-[1.02] transition-transform duration-300 cursor-pointer aspect-[16/9]"
 									/>
 									<CardSkeletonContainer>
-										<div className="p-8 h-full relative flex items-center justify-center">
+										<div className="select-none pointer-events-none p-8 h-full relative flex items-center justify-center">
 											<div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
 												<Container className="h-10 w-10 xs:h-12 xs:w-12 lg:h-10 lg:w-10 circle-1 overflow-visible hover:translate-y-[-4px] transition-transform duration-300">
 													<Image
@@ -132,8 +132,8 @@ export default function ProjectCard() {
 											</div>
 										</div>
 									</CardSkeletonContainer>
-									<CardTitle>{project.title}</CardTitle>
-									<CardDescription>
+									<CardTitle className="select-none pointer-events-none">{project.title}</CardTitle>
+									<CardDescription className="select-none pointer-events-none" >
 										{project.description}
 									</CardDescription>
 								</Card>
@@ -149,7 +149,7 @@ export default function ProjectCard() {
 									width={300}
 									height={300}
 									alt={project.title}
-									className="rounded-lg border shadow-md w-full"
+									className="rounded-lg border shadow-md w-full select-none pointer-events-none"
 								/>
 								<SheetTitle className="text-left">
 									{project.title}

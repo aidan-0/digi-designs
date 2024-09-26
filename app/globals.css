@@ -119,3 +119,9 @@
 		display: none;
 	}
 }
+
+
+::selection {
+	background: #4e9edd;
+	color: white;
+}
