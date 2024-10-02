@@ -7,7 +7,7 @@ export const services = [
 	},
 	{
 		icon: "/service-images/seo.svg",
-		title: "Search Engine Optimization",
+		title: "Search Engine Optimisation",
 		description:
 			"Tailor-made software solutions that streamline operations and fulfill your unique business requirements.",
 	},
@@ -27,7 +27,7 @@ export const services = [
 		icon: "/service-images/integration.svg",
 		title: "Solutions Architecture & Integration",
 		description:
-			"Architect scalable solutions and integrate platforms seamlessly to optimize your business workflows.",
+			"Architect scalable solutions and integrate platforms seamlessly to optimise your business workflows.",
 	},
 	{
 		icon: "/service-images/guaranteed-up-time.svg",
