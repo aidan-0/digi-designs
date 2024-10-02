@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { AnimatedBeamMultipleOutputDemo } from "@/components/demos/animated-beam-demo";
 import BoxRevealDemo from "@/components/demos/box-reveal-demo";
 import { ScrollBasedVelocityDemo } from "@/components/demos/scroll-based-velocity-demo";
